@@ -80,20 +80,24 @@ else:
      *
      * If you are only running on Pantheon, you can ignore this block.
      */
-    define('DB_NAME',          'database_name');
-    define('DB_USER',          'database_username');
-    define('DB_PASSWORD',      'database_password');
-    define('DB_HOST',          'database_host');
-    define('DB_CHARSET',       'utf8');
-    define('DB_COLLATE',       '');
-    define('AUTH_KEY',         'put your unique phrase here');
-    define('SECURE_AUTH_KEY',  'put your unique phrase here');
-    define('LOGGED_IN_KEY',    'put your unique phrase here');
-    define('NONCE_KEY',        'put your unique phrase here');
-    define('AUTH_SALT',        'put your unique phrase here');
-    define('SECURE_AUTH_SALT', 'put your unique phrase here');
-    define('LOGGED_IN_SALT',   'put your unique phrase here');
-    define('NONCE_SALT',       'put your unique phrase here');
+    // ** MySQL settings - You can get this info from your web host ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'viewsourDBwr7xd');
+
+    /** MySQL database username */
+    define('DB_USER', 'viewsourDBwr7xd');
+
+    /** MySQL database password */
+    define('DB_PASSWORD', 'f4lrz7DLu2');
+
+    /** MySQL hostname */
+    define('DB_HOST', '127.0.0.1');
+
+    /** Database Charset to use in creating database tables. */
+    define('DB_CHARSET', 'utf8');
+
+    /** The Database Collate type. Don't change this if in doubt. */
+    define('DB_COLLATE', '');
   endif;
 endif;
 
@@ -127,7 +131,7 @@ define('WPLANG', '');
  * You may want to examine $_ENV['PANTHEON_ENVIRONMENT'] to set this to be
  * "true" in dev, but false in test and live.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy Pressing. */
 

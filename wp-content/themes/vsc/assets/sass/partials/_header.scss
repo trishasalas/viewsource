@@ -1,0 +1,97 @@
+.site-header {
+	background: url(assets/images/sky.png) no-repeat top center;
+	background-size: cover;
+	height: 90vh;
+	width: 100%;
+	position: relative;
+	margin-bottom: 60px;
+
+	.header-top {
+		@include cf();
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 50;
+	}
+
+	.logo {
+		width: 243px;
+		float: left;
+		padding-top: 40px;
+		svg {
+			path {
+				fill: $white;
+			}
+		}
+	}
+
+	.main-navigation {
+		width: 50%;
+		float: right;
+		padding-top: 40px;
+
+
+	}
+
+	.fa {
+		color: $white;
+		line-height: 2;
+		padding: 0 10px;
+	}
+
+	.mountains {
+		background: url(assets/images/mountains.png) no-repeat top center;
+		background-size: cover;
+		height: 90vh;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
+
+	h2.description {
+		font-family: $headings-lt;
+		color: $white;
+		font-size: 40px;
+		line-height: 1.2;
+		letter-spacing: 1px;
+		text-align: center;
+		position: absolute;
+		bottom: 38%;
+		left: 50%;
+		transform: translateX(-50%);
+
+		.word1,
+		.word2,
+		.word3 {
+			letter-spacing: 3px;
+		}
+
+		.word3 {
+			&:after {
+				content: '';
+				display: table;
+			}
+		}
+
+		.word5 {
+			&:after {
+				content: '';
+				display: table;
+			}
+		}
+
+	}
+}
+
+.main {
+	width: 800px;
+	margin: 0 auto;
+}
+
+nav {
+	.menu {
+		display: inline-block;
+		float: right;
+	}
+}

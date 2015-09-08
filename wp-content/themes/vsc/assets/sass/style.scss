@@ -1,0 +1,27 @@
+/*!
+Theme Name: View Source Conference
+Theme URI: http://viewsourceconf.com/
+Author: Trisha Salas
+Author URI: http://www.codebrainmedia.com
+Description:
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: viewsource
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "helpers/helpers";
+@import "susy/susy";
+@import "base/base";
+@import "base/typography";
+@import "forms/forms";
+@import "navigation/navigation";
+@import "modules/accessibility";
+@import "modules/alignments";
+@import "modules/clearings";
+@import "partials/partials";
+@import "media/media";
