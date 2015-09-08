@@ -26,7 +26,7 @@
 		<div class="header-top">
 			<div class="site-title logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php echo file_get_contents('http://viewsource.dev/wp-content/themes/vsc/assets/images/branding.svg');?>
+					<?php echo file_get_contents('http://dev-viewsourceconf.pantheon.io/wp-content/themes/vsc/assets/images/branding.svg');?>
 				</a>
 			</div>
 

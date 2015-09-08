@@ -16,7 +16,7 @@
 <section class="page-header">
 
 	<div class="branding">
-		<?php echo file_get_contents('http://viewsource.dev/wp-content/themes/vsc/assets/images/branding.svg');?>
+		<?php echo file_get_contents('http://dev-viewsourceconf.pantheon.io/wp-content/themes/vsc/assets/images/branding.svg');?>
 	</div>
 	<nav id="site-navigation" class="main-navigation dark" role="navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
