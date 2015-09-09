@@ -21,21 +21,16 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', '_sophie_' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-top">
-			<div class="site-title logo">
+	<div id="main" class="main">
+		<section id="page-header" class="page-header">
+			<div class="branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php echo file_get_contents('http://dev-viewsourceconf.pantheon.io/wp-content/themes/vsc/assets/images/branding.svg');?>
+					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
 				</a>
 			</div>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_sophie_' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-		</div><!-- .header-top -->
-		<h2 class="description"><?php bloginfo('description'); ?></h2>
-		<div class="mountains"></div>
-	</header><!-- #masthead -->
-	<div id="main" class="main">
+			<nav id="site-navigation" class="main-navigation dark" role="navigation">
+				<?php view_source_registration_link();?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav>
+			<hr>
+		</section>

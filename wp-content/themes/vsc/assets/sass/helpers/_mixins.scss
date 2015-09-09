@@ -79,49 +79,40 @@
 
 // Media Queries
 @mixin bp($point) {
-	@if $point == 1280 {
-		@media screen and (max-width: 1280px) {
+	@if $point == large-desktop {
+		@media screen and (min-width: 1280px) {
 			@content;
 		}
-	} @else if $point == 1140 {
-		@media screen and (max-width: 1140px) {
+	} @else if $point == desktop {
+		@media screen and (min-width: 1140px) {
 			@content;
 		}
-	} @else if $point == 1024 {
-		@media screen and (max-width: 1024px) {
+	} @else if $point == small-desktop {
+		@media screen and (min-width: 1024px) {
 			@content;
 		}
-	} @else if $point == 900 {
-		@media screen and (max-width: 900px) {
+	} @else if $point == nexus {
+		@media screen and (min-width: 900px) {
 			@content;
 		}
-	} @else if $point == 800 {
-		@media screen and (max-width: 800px) {
+	} @else if $point == large-tablet {
+		@media screen and (min-width: 800px) {
 			@content;
 		}
-	} @else if $point == 768 {
-		@media screen and (max-width: 768px) {
+	} @else if $point == tablet {
+		@media screen and (min-width: 768px) {
 			@content;
 		}
-	} @else if $point == 600 {
-		@media screen and (max-width: 600px) {
+	} @else if $point == small-tablet {
+		@media screen and (min-width: 600px) {
 			@content;
 		}
-	} @else if $point == 480 {
-		@media screen and (max-width: 480px) {
+	} @else if $point == phablet {
+		@media screen and (min-width: 480px) {
 			@content;
 		}
-	} @else if $point == 320 {
-		@media screen and (max-width: 320px) {
-			@content;
-		}
-
-	} @else if $point == iphone6max {
-		@media screen and (max-width: 736px) {
-			@content;
-		}
-	} @else if $point == iphone6min {
-		@media screen and (min-width: 736px) {
+	} @else if $point == phone {
+		@media screen and (min-width: 320px) {
 			@content;
 		}
 	}

@@ -1,6 +1,7 @@
 .main-navigation {
 	@include cf();
 	font-family: $font-main;
+	position: relative;
 
 	ul {
 		display: none;
@@ -69,7 +70,7 @@
 	}
 	a {
 		color: $white;
-		display: block;
+		display: inline-block;
 		letter-spacing: .5px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -79,6 +80,14 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+
+	.registration-link {
+		padding: 5px 10px;
+		background: $persian-green;
+		position: absolute;
+		bottom: 0;
+		right: 200px;
+	}
 }
 
 .dark {
@@ -87,6 +96,7 @@
 	a {
 		color: $black;
 	}
+
 }
 
 /* Small menu. */

@@ -1,0 +1,33 @@
+.schedule {
+	margin-bottom: 60px;
+	ul.day,
+	ul.header {
+		li {
+			width: 50%;
+			float: left;
+			display: inline-block;
+			padding: 10px 30px;
+
+			&:first-child {
+				width: 35%;
+			}
+		}
+	}
+
+	ul {
+		.time {
+			text-align: left;
+			padding-left: 30px;
+		}
+	}
+}
+
+ul.day {
+	background: transparent;
+	margin-top: 60px;
+	li {
+		font-family: $headings-b;
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}

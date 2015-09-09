@@ -38,5 +38,4 @@
 		echo '</ul>';
 	}
 	?>
-
-	<a class="btn btn-primary" href="#"><?php _e( 'Register Now', 'view_source' );?></a>
+<?php view_source_registration_btn_link();?>

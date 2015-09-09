@@ -1,5 +1,5 @@
 section {
-	padding: 30px 0 90px 0;
+	padding: 30px 0;
 
 	h2 {
 		@include rem(font-size, 24px);
@@ -12,6 +12,14 @@ section {
 	p {
 		line-height: 1.6;
 		margin-bottom: 40px;
+	}
+}
+
+#page-header {
+	padding-bottom: 0;
+	a.registration-link {
+		color: $white;
+		right: 200px;
 	}
 }
 .page-header {
@@ -189,6 +197,10 @@ hr::before {
 			width: 60%;
 			padding-top: 30px;
 			padding-left: 30px;
+
+			span {
+				display: block;
+			}
 		}
 
 		.fa {
@@ -199,6 +211,11 @@ hr::before {
 		a {
 			text-decoration: none;
 		}
+	}
+
+	.date {
+		margin-bottom: 10px;
+		padding: 10px;
 	}
 
 }

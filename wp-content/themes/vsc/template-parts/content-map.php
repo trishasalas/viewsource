@@ -1,0 +1,46 @@
+<div id="map-overlay">
+	<h3><?php _e( 'Venue', 'viewsource' );?></h3>
+	<span class="address"><?php _e( 'Gerding Theater at the Armory', 'view_source' );?></span>
+	<span><?php _e( '128 NW Eleventh Avenue', 'view_source' );?></span>
+	<span><?php _e( 'Portland, OR 97209', 'view_source' );?></span>
+	<a class="button" href="<?php _e( '#' );?>"><?php _e( 'Full Venue Info', 'viewsource' );?></a>
+</div>
+
+
+	<div id="map" style="height: 400px;width: 100%;"></div>
+
+<script>
+	function initMap() {
+		var myLatLng = {lat: 45.524167, lng: -122.6816826};
+
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 14,
+			center: myLatLng,
+			scrollwheel: false
+		});
+
+		var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'Gerding Theater at The Armory'
+		});
+
+		var contentString = '<div id="content">'+
+			'<p><strong>Gerding Theater at The Armory</strong></p>'+
+			'<p> ' + '128 NW 11th Ave Portland, OR 97209' +
+			'</p>'+
+			'</div>';
+
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString
+		});
+
+		marker.addListener('click', function() {
+			infowindow.open(map, marker);
+		});
+	}
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOEJGx84-mPKcvCwoSsx1ODpruD92T7C8&callback=initMap">
+</script>

@@ -17,6 +17,13 @@ h2 {
 }
 
 article {
+	margin-bottom: 90px;
+
+	.featured-image {
+		float: right;
+		margin: 0 0 30px 30px;
+	}
+
 	footer {
 		padding-bottom: 30px;
 	}
