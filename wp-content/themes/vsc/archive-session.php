@@ -4,7 +4,7 @@
 	 *
 	 * Learn more: http://codex.wordpress.org/Template_Hierarchy
 	 *
-	 * @package _sophie
+	 * @package view_source
 	 */
 
 	get_header(); ?>

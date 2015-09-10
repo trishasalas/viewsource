@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package _sophie
+ * @package view_source
  */
 
 ?><!DOCTYPE html>
@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', '_sophie_' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'view_source' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-top">
@@ -31,7 +31,7 @@
 			</div>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_sophie_' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'view_source' ); ?></button>
 				<?php view_source_registration_link()?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
 			</nav><!-- #site-navigation -->

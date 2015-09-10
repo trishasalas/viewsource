@@ -1,11 +1,11 @@
 <?php
 /**
- * _sophie functions and definitions
+ * view_source functions and definitions
  *
- * @package _sophie
+ * @package view_source
  */
 
-if ( ! function_exists( '_sophie__setup' ) ) :
+if ( ! function_exists( 'view_source_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -13,14 +13,14 @@ if ( ! function_exists( '_sophie__setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function _sophie__setup() {
+function view_source_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on _sophie, use a find and replace
-	 * to change '_sophie_' to the name of your theme in all the template files
+	 * If you're building a theme based on view_source, use a find and replace
+	 * to change 'view_source' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( '_sophie_', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'view_source', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,7 +42,7 @@ function _sophie__setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', '_sophie_' ),
+		'primary' => esc_html__( 'Primary Menu', 'view_source' ),
 	) );
 
 	/*
@@ -58,8 +58,8 @@ function _sophie__setup() {
 	) );
 
 }
-endif; // _sophie__setup
-add_action( 'after_setup_theme', '_sophie__setup' );
+endif; // view_source_setup
+add_action( 'after_setup_theme', 'view_source_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -68,19 +68,19 @@ add_action( 'after_setup_theme', '_sophie__setup' );
  *
  * @global int $content_width
  */
-function _sophie__content_width() {
-	$GLOBALS['content_width'] = apply_filters( '_sophie__content_width', 810 );
+function view_source_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'view_source_content_width', 810 );
 }
-add_action( 'after_setup_theme', '_sophie__content_width', 0 );
+add_action( 'after_setup_theme', 'view_source_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function _sophie__widgets_init() {
+function view_source_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', '_sophie_' ),
+		'name'          => esc_html__( 'Sidebar', 'view_source' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -89,19 +89,19 @@ function _sophie__widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 }
-add_action( 'widgets_init', '_sophie__widgets_init' );
+add_action( 'widgets_init', 'view_source_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function _sophie__scripts() {
-	//wp_enqueue_style( '_sophie_-style', get_stylesheet_uri() );
+function view_source_scripts() {
+	//wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'vsc-style', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/style.min.css' );
 
-	wp_enqueue_script( '_sophie_-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'view_source-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( '_sophie_-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'view_source-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.js', array( 'jquery' ), '.7', false );
 	wp_enqueue_script( 'vs-js', get_template_directory_uri() . '/assets/js/vs-functions.js', array( 'jquery', 'lettering-js' ), '1.0', true );
 
@@ -109,7 +109,7 @@ function _sophie__scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', '_sophie__scripts' );
+add_action( 'wp_enqueue_scripts', 'view_source_scripts' );
 
 
 require get_template_directory() . '/inc/post-types.php';

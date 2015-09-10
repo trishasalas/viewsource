@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package _sophie
+ * @package view_source
  */
 
 ?><!DOCTYPE html>
@@ -20,7 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', '_sophie_' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'view_source' ); ?></a>
 	<div id="main" class="main">
 		<section id="page-header" class="page-header">
 			<div class="branding">

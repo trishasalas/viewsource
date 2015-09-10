@@ -2,7 +2,7 @@
 	/**
 	 * The template for displaying all single posts.
 	 *
-	 * @package _sophie
+	 * @package view_source
 	 */
 
 	get_header(); ?>
@@ -23,7 +23,7 @@
 				</div><!-- .entry-content -->
 
 				<footer class="entry-footer">
-					<?php _sophie__entry_footer(); ?>
+					<?php view_source_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
 			</article><!-- #post-## -->
 

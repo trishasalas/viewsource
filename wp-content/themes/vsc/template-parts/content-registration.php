@@ -3,7 +3,7 @@
 	 * Template part of the registration portion of the front page.
 	 */
 ?>
-	<h2><?php _e ( 'Registration', 'viewsource' ); ?></h2>
+	<h2><?php _e ( 'Registration', 'view_source' ); ?></h2>
 <?php
 
 	$reg_intro_text = esc_html ( get_post_meta ( get_the_ID (), 'vs_reg_intro_text', true ) );

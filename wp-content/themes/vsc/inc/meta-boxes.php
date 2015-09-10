@@ -25,7 +25,7 @@
 
 			add_meta_box(
 				'vs_session_start_time',
-				__( 'Session Start Time', 'viewsource' ),
+				__( 'Session Start Time', 'view_source' ),
 				array( $this, 'render_metabox' ),
 				'session',
 				'advanced',
@@ -46,9 +46,9 @@
 			echo '<table class="form-table">';
 
 			echo '	<tr>';
-			echo '		<th><label for="vs_vs_session_start_time" class="vs_vs_session_start_time_label">' . __( '', 'viewsource' ) . '</label></th>';
+			echo '		<th><label for="vs_vs_session_start_time" class="vs_vs_session_start_time_label">' . __( '', 'view_source' ) . '</label></th>';
 			echo '		<td>';
-			echo '			<input type="time" id="vs_vs_session_start_time" name="vs_vs_session_start_time" class="vs_vs_session_start_time_field" placeholder="' . esc_attr__( '', 'viewsource' ) . '" value="' . esc_attr__( $vs_vs_session_start_time ) . '">';
+			echo '			<input type="time" id="vs_vs_session_start_time" name="vs_vs_session_start_time" class="vs_vs_session_start_time_field" placeholder="' . esc_attr__( '', 'view_source' ) . '" value="' . esc_attr__( $vs_vs_session_start_time ) . '">';
 			echo '		</td>';
 			echo '	</tr>';
 

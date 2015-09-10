@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package _sophie
+ * @package view_source
  */
 
 get_header(); ?>

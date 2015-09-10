@@ -2,7 +2,7 @@
 	/**
 	 * The template for displaying all single posts.
 	 *
-	 * @package _sophie
+	 * @package view_source
 	 */
 
 	get_header(); ?>
@@ -21,14 +21,14 @@
 					<?php the_content(); ?>
 					<?php
 						wp_link_pages( array(
-							               'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_sophie_' ),
+							               'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'view_source' ),
 							               'after'  => '</div>',
 						               ) );
 					?>
 				</div><!-- .entry-content -->
 
 				<footer class="entry-footer">
-					<?php _sophie__entry_footer(); ?>
+					<?php view_source_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
 			</article><!-- #post-## -->
 

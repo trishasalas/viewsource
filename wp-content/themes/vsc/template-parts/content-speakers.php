@@ -3,14 +3,14 @@
 	 * Template part for the front page Speakers section.
 	 */
 	?>
-	<h2><?php _e( 'Speakers', 'viewsource' );?></h2>
+	<h2><?php _e( 'Speakers', 'view_source' );?></h2>
 	<p><?php echo esc_html( get_post_meta( get_the_ID(), 'vs_speakers_intro_text', true ) );?></p>
 
 	<?php
 	$posts = get_field('vs_speakers_list');
 	if( $posts ): ?>
 		<ul>
-			<?php foreach( $posts as $post ): // variable must be called $post (IMPORTANT) ?>
+			<?php foreach( $posts as $post ):?>
 				<?php setup_postdata( $post ); ?>
 				<li>
 					<a href="<?php the_permalink(); ?>"><i class="fa fa-plus"></i></a>
