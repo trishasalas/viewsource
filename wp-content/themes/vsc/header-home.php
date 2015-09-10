@@ -20,6 +20,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'view_source' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -29,7 +30,11 @@
 					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
 				</a>
 			</div>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'view_source' ); ?></button>
+			<a id="responsive-menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" href="#sidr"><i class="fa fa-bars fa-2x"></i></a>
+			<nav id="mobile-navigation" class="main-navigation" role="navigation">
+				<?php view_source_registration_link()?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php view_source_registration_link()?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>

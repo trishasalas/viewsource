@@ -19,11 +19,11 @@
 	}
 
 	.logo {
-		width: 243px;
+		width: 200px;
 		position: absolute;
 		top: 10px;
-		left: 50%;
-		transform: translateX(-50%);
+		left: 0;
+		//transform: translateX(-50%);
 
 		@include bp(phablet) {
 			left: 100px;
@@ -52,6 +52,12 @@
 
 	}
 
+	.menu-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
 	.fa {
 		color: $white;
 		line-height: 2;
@@ -73,7 +79,7 @@
 		color: $white;
 		letter-spacing: 1px;
 		text-align: center;
-		margin-top: 50px;
+		margin-top: 220px;
 
 		@include bp(large-tablet) {
 			font-size: 40px;

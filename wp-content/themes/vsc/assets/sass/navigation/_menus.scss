@@ -108,8 +108,7 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-	width: 120px;
-	margin: 70px auto 0 auto;
+	margin: 0;
 	text-align: center;
 
 	@include bp(phablet) {
