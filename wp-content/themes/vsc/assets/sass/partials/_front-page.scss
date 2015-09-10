@@ -234,15 +234,9 @@ hr::before {
 		}
 
 		.session-info {
-			width: 50%;
-			padding-top: 10px;
-			padding-left: 15px;
-
-			@include bp(large-tablet) {
 				width: 60%;
 				padding-top: 30px;
 				padding-left: 30px;
-			}
 
 			span {
 				display: block;
@@ -250,8 +244,11 @@ hr::before {
 		}
 
 		.fa {
-			padding-top: 30px;
-			width: 5%;
+			display: none;
+			@include bp(large-tablet) {
+				padding-top: 30px;
+				width: 5%;
+			}
 		}
 
 		a {

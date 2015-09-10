@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c955214-22f8-4047-baf8-0c34dc68c8e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_header.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/navigation/_menus.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/navigation/_menus.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_posts.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_posts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/front-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/front-page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/style.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -32,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_front-page.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_front-page.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.375">
-              <caret line="236" column="20" selection-start-line="236" selection-start-column="20" selection-end-line="236" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.2037037">
+              <caret line="238" column="35" selection-start-line="238" selection-start-column="35" selection-end-line="238" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39753085">
-              <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+            <state vertical-scroll-proportion="-17.166666">
+              <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -101,10 +96,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-sessions-front.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/front-page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_posts.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/navigation/_menus.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_header.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" />
       </list>
     </option>
   </component>
@@ -530,7 +525,7 @@
     <frame x="0" y="23" width="1920" height="954" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32714617" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -944,18 +939,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.375">
-          <caret line="236" column="20" selection-start-line="236" selection-start-column="20" selection-end-line="236" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/navigation/_menus.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.875">
           <caret line="117" column="25" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.166666">
+          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -968,10 +963,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39753085">
-          <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.2037037">
+          <caret line="238" column="35" selection-start-line="238" selection-start-column="35" selection-end-line="238" selection-end-column="35" />
           <folding />
         </state>
       </provider>
