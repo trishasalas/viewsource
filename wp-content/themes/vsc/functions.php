@@ -95,8 +95,9 @@ add_action( 'widgets_init', '_sophie__widgets_init' );
  * Enqueue scripts and styles.
  */
 function _sophie__scripts() {
-	wp_enqueue_style( '_sophie_-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+	//wp_enqueue_style( '_sophie_-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'vsc-style', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/style.min.css' );
 
 	wp_enqueue_script( '_sophie_-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 
