@@ -131,3 +131,30 @@ nav {
 		float: right;
 	}
 }
+
+#page-header {
+	.branding {
+		position: relative;
+		z-index: 10;
+	}
+	.main-navigation {
+		.registration-link {
+			top: 0;
+		}
+	}
+	.main-navigation {
+		a {
+			@include bp(large-tablet) {
+				color: $black;
+			}
+		}
+	}
+	.dark {
+		a {
+			color: $white;
+			@include bp(large-tablet) {
+				color: $black;
+			}
+		}
+	}
+}
