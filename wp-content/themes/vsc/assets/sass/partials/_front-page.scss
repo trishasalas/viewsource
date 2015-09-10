@@ -7,11 +7,13 @@ section {
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin-bottom: 20px;
+		padding: 0 15px;
 	}
 
 	p {
 		line-height: 1.6;
 		margin-bottom: 40px;
+		padding: 0 15px;
 	}
 }
 
@@ -21,6 +23,10 @@ section {
 		color: $white;
 		right: 200px;
 	}
+	.menu-toggle {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 .page-header {
 	@include container(800px);
@@ -29,7 +35,9 @@ section {
 	.branding {
 		width: 242px;
 		height: auto;
-		display: inline-block;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 10px;
 		svg {
 			path {
 				fill: $black;
@@ -64,19 +72,30 @@ hr::before {
 }
 
 .registration {
+	padding-bottom: 60px;
 	ul {
 		margin: 0 auto;
 		padding: 0;
-		width: 98%;
+
+		@include bp(large-tablet) {
+			width: 98%;
+		}
 		li {
 			background: $lt-grayish-yellow;
 			display:inline-block;
 			list-style-type: none;
+			margin-bottom: 10px;
 			padding: 25px;
-			width: 48%;
+			width: 100%;
+
+			@include bp(large-tablet) {
+				width: 48%;
+			}
 
 			&:first-child {
-				margin-right: 2%;
+				@include bp(large-tablet) {
+					margin-right: 2%;
+				}
 			}
 
 			h2 {
@@ -99,12 +118,24 @@ hr::before {
 		list-style-type: none;
 		margin: 0 auto;
 		padding: 0;
-		width: 90%;
+		width: 100%;
+
+		@include bp(large-tablet) {
+			width: 90%;
+		}
+
 		li {
-			@include gallery(3 of 12);
+			width: 46%;
+			float: left;
+			display: inline-block;
 			border: 3px solid $lt-grayish-yellow;
 			height: 190px;
 			position: relative;
+			margin: 5px;
+
+			@include bp(large-tablet) {
+				@include gallery(3 of 12);
+			}
 
 			a {
 				color: $black;
@@ -179,13 +210,22 @@ hr::before {
 		}
 
 		.time {
-			width: 20%;
+			width: 50%;
 			text-align: center;
 			padding-top: 30px;
+
+			@include bp(large-tablet) {
+				padding-top: 30px;
+				width: 20%;
+			}
 		}
 
 		.featured-image {
-			width: 15%;
+			width: 50%;
+
+			@include bp(large-tablet) {
+				width: 15%;
+			}
 
 			img {
 				width: 100%;
@@ -194,9 +234,15 @@ hr::before {
 		}
 
 		.session-info {
-			width: 60%;
-			padding-top: 30px;
-			padding-left: 30px;
+			width: 50%;
+			padding-top: 10px;
+			padding-left: 15px;
+
+			@include bp(large-tablet) {
+				width: 60%;
+				padding-top: 30px;
+				padding-left: 30px;
+			}
 
 			span {
 				display: block;
@@ -231,7 +277,12 @@ hr::before {
 		z-index: 5;
 		position: absolute;
 		top: 150px;
-		left: 100px;
+		left: 10px;
+
+		@include bp(large-tablet) {
+			left: 100px;
+		}
+
 
 		h3 {
 			@include rem(font-size, 24px);
@@ -258,10 +309,14 @@ hr::before {
 }
 
 .btn {
-	width: 30%;
+	width: 80%;
 	position: relative;
 	top: 40px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
+
+	@include bp(large-tablet) {
+		width: 30%;
+	}
 }

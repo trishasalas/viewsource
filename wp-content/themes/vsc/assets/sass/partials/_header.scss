@@ -8,10 +8,14 @@
 
 	.header-top {
 		@include cf();
-		width: 60%;
+		width: 90%;
 		margin: 0 auto;
 		position: relative;
 		z-index: 50;
+
+		@include bp(small-tablet) {
+			width: 60%;
+		}
 	}
 
 	.logo {
@@ -22,9 +26,16 @@
 		transform: translateX(-50%);
 
 		@include bp(phablet) {
+			left: 100px;
+		}
+
+		@include bp(large-tablet) {
 			width: 243px;
-			float: left;
-			padding-top: 40px;
+			display: inline-block;
+			left: 0;
+			padding-top: 30px;
+			position: relative;
+			transform: none;
 		}
 		svg {
 			path {
@@ -60,14 +71,19 @@
 	h2.description {
 		font-family: $headings-lt;
 		color: $white;
-		font-size: 40px;
-		line-height: 1.2;
 		letter-spacing: 1px;
 		text-align: center;
-		position: absolute;
-		bottom: 35%;
-		left: 50%;
-		transform: translateX(-50%);
+		margin-top: 50px;
+
+		@include bp(large-tablet) {
+			font-size: 40px;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			position: absolute;
+			bottom: 35%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 
 		.word1,
 		.word2,
@@ -78,7 +94,7 @@
 		.word3 {
 			&:after {
 
-				@include bp(phablet) {
+				@include bp(large-tablet) {
 					content: '';
 					display: table;
 				}
@@ -87,7 +103,7 @@
 
 		.word5 {
 			&:after {
-				@include bp(phablet) {
+				@include bp(large-tablet) {
 					content: '';
 					display: table;
 				}

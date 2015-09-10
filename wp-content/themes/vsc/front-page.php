@@ -15,7 +15,9 @@
 
 <section id="page-header" class="page-header">
 	<div class="branding">
-		<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
+		</a>
 	</div>
 	<nav id="site-navigation" class="main-navigation dark" role="navigation">
 		<?php view_source_registration_link();?>

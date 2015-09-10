@@ -4,6 +4,10 @@
 	font-family: $font-main;
 	position: relative;
 
+	@include bp(large-tablet) {
+		display: block;
+	}
+
 	ul {
 		display: none;
 		list-style: none;
@@ -107,9 +111,15 @@
 	width: 120px;
 	margin: 70px auto 0 auto;
 	text-align: center;
+
+	@include bp(phablet) {
+		display:inline-block;
+		float: right;
+		margin-top: 20px;
+	}
 }
 
-@include bp(phablet) {
+@include bp(large-tablet) {
 	.menu-toggle {
 		display: none;
 	}
