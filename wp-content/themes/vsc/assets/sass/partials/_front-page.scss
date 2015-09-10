@@ -38,6 +38,11 @@ section {
 		display: block;
 		margin: 0 auto;
 		padding-bottom: 10px;
+
+		@include bp(large-tablet) {
+			display: inline-block;
+			float: left;
+		}
 		svg {
 			path {
 				fill: $black;
