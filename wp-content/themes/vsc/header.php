@@ -29,13 +29,9 @@
 				</a>
 			</div>
 			<a id="responsive-menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" href="#sidr"><i class="fa fa-bars fa-2x"></i></a>
-			<nav id="mobile-navigation" class="main-navigation" role="navigation">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php view_source_registration_link()?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
-			<nav id="site-navigation" class="main-navigation dark" role="navigation">
-				<?php view_source_registration_link();?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav>
 			<hr>
 		</section>

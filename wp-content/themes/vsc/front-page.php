@@ -14,16 +14,7 @@
 	get_header( 'home' ); ?>
 
 <section id="page-header" class="page-header">
-	<div class="branding">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-			<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
-		</a>
-	</div>
-	<nav id="site-navigation" class="main-navigation dark" role="navigation">
-		<?php view_source_registration_link();?>
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-	</nav>
-	<hr>
+	<?php get_template_part( 'template-parts/content', 'secondary-header' );?>
 </section>
 
 <section id="registration" class="registration">

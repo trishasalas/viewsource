@@ -346,3 +346,18 @@
 			<?php wp_reset_postdata (); ?>
 		<?php endif;
 	}
+
+	function view_source_sponsors( $sponsor_type ) {
+		$args = array(
+			'post_type'     => 'sponsor',
+			'post_status'   => 'publish',
+			'meta_value'    => $sponsor_type,
+		);
+		$posts = get_posts ( $args );
+		foreach ( $posts as $post ) {
+			echo '<li class="' . strtolower( $sponsor_type ) . '">';
+			echo '<small>' . $sponsor_type . '</small>';
+			echo get_the_post_thumbnail ( $post->ID );
+			echo '</li>';
+		}
+	}

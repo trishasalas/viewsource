@@ -95,6 +95,17 @@
 	}
 }
 
+#mobile-navigation {
+	@include bp(large-tablet) {
+		display: none;
+	}
+	.registration-link {
+		@include bp(large-tablet) {
+			display: none;
+		}
+	}
+}
+
 .dark {
 	width: 60%;
 	float: right;
