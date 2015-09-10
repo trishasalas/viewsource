@@ -16,8 +16,16 @@
 
 	.logo {
 		width: 243px;
-		float: left;
-		padding-top: 40px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include bp(phablet) {
+			width: 243px;
+			float: left;
+			padding-top: 40px;
+		}
 		svg {
 			path {
 				fill: $white;
@@ -69,15 +77,20 @@
 
 		.word3 {
 			&:after {
-				content: '';
-				display: table;
+
+				@include bp(phablet) {
+					content: '';
+					display: table;
+				}
 			}
 		}
 
 		.word5 {
 			&:after {
-				content: '';
-				display: table;
+				@include bp(phablet) {
+					content: '';
+					display: table;
+				}
 			}
 		}
 
@@ -85,7 +98,8 @@
 }
 
 .main {
-	width: 800px;
+	max-width: 800px;
+	width: 100%;
 	margin: 0 auto;
 }
 

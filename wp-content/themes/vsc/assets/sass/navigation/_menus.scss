@@ -1,4 +1,5 @@
 .main-navigation {
+	display: none;
 	@include cf();
 	font-family: $font-main;
 	position: relative;
@@ -103,9 +104,12 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	width: 120px;
+	margin: 70px auto 0 auto;
+	text-align: center;
 }
 
-@media screen and (min-width: 37.5em) {
+@include bp(phablet) {
 	.menu-toggle {
 		display: none;
 	}

@@ -345,23 +345,22 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #00aa86;
-  border-radius: 3px;
+  border-radius: 1px;
   background: #00aa86;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
   padding: 0.6em 1em 0.4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  /* line 16, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/forms/_buttons.scss */
+  text-transform: uppercase; }
+  /* line 15, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/forms/_buttons.scss */
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     border-color: #00aa86;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  /* line 22, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/forms/_buttons.scss */
+  /* line 21, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/forms/_buttons.scss */
   button:active,
   button:focus,
   input[type="button"]:active,
@@ -432,6 +431,7 @@ a {
 --------------------------------------------------------------*/
 /* line 1, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
 .main-navigation {
+  display: none;
   *zoom: 1;
   font-family: "montserratregular", sans-serif;
   position: relative; }
@@ -442,13 +442,13 @@ a {
   /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
   .main-navigation:after {
     clear: both; }
-  /* line 6, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 7, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
-    /* line 12, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+    /* line 13, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -456,44 +456,44 @@ a {
       top: 1.5em;
       left: -999em;
       z-index: 99999; }
-      /* line 20, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+      /* line 21, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      /* line 27, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+      /* line 28, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
-      /* line 32, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+      /* line 33, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
       .main-navigation ul ul a {
         width: 200px; }
-    /* line 46, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+    /* line 47, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
-  /* line 50, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 51, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation li {
     float: left;
     position: relative;
     padding: 5px 10px; }
-  /* line 59, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 60, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation li.register {
     background: #00aa86;
     margin-right: 10px; }
-    /* line 62, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+    /* line 63, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
     .main-navigation li.register a {
       color: #fff; }
-  /* line 67, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 68, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation li.twitter:before {
     content: '\f099'; }
-  /* line 71, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 72, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation a {
     color: #fff;
     display: inline-block;
     letter-spacing: .5px;
     text-decoration: none;
     text-transform: uppercase; }
-  /* line 84, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 85, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation .registration-link {
     padding: 5px 10px;
     background: #00aa86;
@@ -501,43 +501,46 @@ a {
     bottom: 0;
     right: 200px; }
 
-/* line 93, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+/* line 94, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
 .dark {
   width: 60%;
   float: right; }
-  /* line 96, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 97, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .dark a {
     color: #000; }
 
 /* Small menu. */
-/* line 104, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+/* line 105, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: block;
+  width: 120px;
+  margin: 70px auto 0 auto;
+  text-align: center; }
 
-@media screen and (min-width: 37.5em) {
-  /* line 109, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+@media screen and (min-width: 480px) {
+  /* line 113, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .menu-toggle {
     display: none; }
-  /* line 112, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+  /* line 116, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block; } }
 
-/* line 121, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+/* line 125, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
 
-/* line 126, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+/* line 130, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%; }
 
-/* line 131, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
+/* line 135, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -644,22 +647,32 @@ a {
   /* line 17, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .logo {
     width: 243px;
-    float: left;
-    padding-top: 40px; }
-    /* line 22, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    @media screen and (min-width: 480px) {
+      /* line 17, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+      .site-header .logo {
+        width: 243px;
+        float: left;
+        padding-top: 40px; } }
+    /* line 30, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
     .site-header .logo svg path {
       fill: #fff; }
-  /* line 28, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 36, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .main-navigation {
     width: 50%;
     float: right;
     padding-top: 40px; }
-  /* line 36, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 44, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .fa {
     color: #fff;
     line-height: 2;
     padding: 0 10px; }
-  /* line 42, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 50, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .mountains {
     background: url(assets/img/mountains.png) no-repeat top center;
     background-size: cover;
@@ -668,7 +681,7 @@ a {
     position: absolute;
     top: 0;
     z-index: 1; }
-  /* line 52, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 60, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header h2.description {
     font-family: "moonlight", sans-serif;
     color: #fff;
@@ -682,26 +695,29 @@ a {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
-    /* line 66, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+    /* line 74, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
     .site-header h2.description .word1,
     .site-header h2.description .word2,
     .site-header h2.description .word3 {
       letter-spacing: 3px; }
-    /* line 71, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
-    .site-header h2.description .word3:after {
-      content: '';
-      display: table; }
-    /* line 78, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
-    .site-header h2.description .word5:after {
-      content: '';
-      display: table; }
+    @media screen and (min-width: 480px) {
+      /* line 79, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+      .site-header h2.description .word3:after {
+        content: '';
+        display: table; } }
+    @media screen and (min-width: 480px) {
+      /* line 89, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+      .site-header h2.description .word5:after {
+        content: '';
+        display: table; } }
 
-/* line 87, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 100, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 .main {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   margin: 0 auto; }
 
-/* line 93, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 107, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 nav .menu {
   display: inline-block;
   float: right; }
