@@ -42,7 +42,7 @@
 					<p class="company"><?php the_field ( 'company' ); ?></p>
 				</div>
 				<div class="right">
-					<h5><?php echo get_the_title ( $session[ 0 ] ); ?></h5>
+					<h5><?php if( $session ) : echo get_the_title ( $session[ 0 ] ); endif; ?></h5>
 					<p><?php echo get_the_content ( $session[ 0 ] ); ?></p>
 				</div>
 

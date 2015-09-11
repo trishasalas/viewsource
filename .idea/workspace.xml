@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c955214-22f8-4047-baf8-0c34dc68c8e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/remodal.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/css-filters-polyfills.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/site.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/site.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/skip-link-focus-fix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/touchswipe.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_modal.scss" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_modal.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/header-home.php" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/header-home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/vsc/style.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/vsc/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vs.iws" />
@@ -37,21 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="content-speakers.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content-speakers.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.125">
-              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_modal.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_modal.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16171224">
-              <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.7491082">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -106,9 +84,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/js/remodal.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/header-home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_front-page.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_modal.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php" />
       </list>
     </option>
   </component>
@@ -844,18 +822,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_modal.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state vertical-scroll-proportion="1.6599287">
+          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/assets/sass/partials/_modal.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/vsc/template-parts/content-speakers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16171224">
-          <caret line="98" column="32" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.7491082">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
