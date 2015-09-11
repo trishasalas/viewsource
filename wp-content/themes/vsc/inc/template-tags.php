@@ -286,7 +286,7 @@
 	function view_source_registration_link () {
 		$registration_link = esc_html ( get_post_meta ( 1031, 'vs_registration_link', true ) );
 		if ( $registration_link ) :
-			echo '<a class="registration-link" href="' . $registration_link . '">';
+			echo '<a class="registration-link" href="' . $registration_link . '" target="_blank">';
 			echo __ ( 'Register Now', 'view_source' );
 			echo '</a>';
 		endif;
@@ -295,7 +295,7 @@
 	function view_source_registration_btn_link () {
 		$registration_link = esc_html ( get_post_meta ( 1031, 'vs_registration_link', true ) );
 		if ( $registration_link ) :
-			echo '<a class="btn btn-primary" href="' . $registration_link . '">';
+			echo '<a class="btn btn-primary" href="' . $registration_link . '" target="_blank">';
 			echo __ ( 'Register Now', 'view_source' );
 			echo '</a>';
 		endif;
