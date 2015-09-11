@@ -99,26 +99,21 @@ function view_source_scripts() {
 	wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
 	//wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
-
-	wp_enqueue_script( 'view_source-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/sidr.min.js', array( 'jquery' ), '', true );
-	wp_enqueue_script( 'touch-swipe', get_template_directory_uri() . '/assets/js/touchswipe.min.js', array( 'jquery' ), '1.6', true );
 	wp_enqueue_script( 'view_source-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.js', array( 'jquery' ), '.7', false );
 	wp_enqueue_script( 'vs-js', get_template_directory_uri() . '/assets/js/vs-functions.js', array( 'jquery', 'lettering-js' ), '1.0', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_script( 'sticky', get_template_directory_uri() . '/assets/js/sticky.js', array( 'jquery' ), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'view_source_scripts' );
-
 
 require get_template_directory() . '/inc/post-types.php';
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/admin.php';
 
+	add_filter('acf/settings/show_admin', '__return_false');
 	// Fixes Chrome Slim Paint Bug in WordPress Admin Panel
 	function chromefix_inline_css() {
 		wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );

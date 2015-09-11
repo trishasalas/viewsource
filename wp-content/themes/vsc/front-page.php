@@ -13,7 +13,7 @@
 
 	get_header( 'home' ); ?>
 
-<section id="page-header" class="page-header">
+<section id="page-header" class="page-header sticky">
 	<?php get_template_part( 'template-parts/content', 'secondary-header' );?>
 </section>
 

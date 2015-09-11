@@ -10,4 +10,6 @@ jQuery(document).ready(function($) {
 		source: '#mobile-navigation',
 		side: 'right'
 	});
+
+	$("#page-header").sticky({topSpacing:0});
 });

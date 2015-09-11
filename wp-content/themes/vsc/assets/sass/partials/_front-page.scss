@@ -18,7 +18,11 @@ section {
 }
 
 #page-header {
+	position: relative;
 	padding-bottom: 0;
+	background: $white;
+	width: 100%;
+	z-index: 100;
 	a.registration-link {
 		color: $white;
 		right: 200px;
@@ -29,8 +33,6 @@ section {
 	}
 }
 .page-header {
-	@include container(800px);
-	width: 100%;
 
 	.branding {
 		width: 242px;
@@ -58,7 +60,7 @@ section {
 hr {
 	position: relative;
 	width: 90%;
-	height: 50px;
+	height: 20px;
 	border: 0;
 	margin: 0 auto;
 	overflow: hidden;

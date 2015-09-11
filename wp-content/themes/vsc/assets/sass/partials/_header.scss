@@ -79,14 +79,13 @@
 		color: $white;
 		letter-spacing: 1px;
 		text-align: center;
-		margin-top: 220px;
 
 		@include bp(large-tablet) {
 			font-size: 40px;
 			line-height: 1.2;
 			letter-spacing: 1px;
 			position: absolute;
-			bottom: 35%;
+			top: 30%;
 			left: 50%;
 			transform: translateX(-50%);
 		}
