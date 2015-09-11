@@ -1304,7 +1304,8 @@ hr::before {
   @media screen and (min-width: 768px) {
     /* line 158, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li.silver {
-      width: 24%; } }
+      width: 24%;
+      margin-right: 1%; } }
 
 /* line 2, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_posts.scss */
 h1 a {
