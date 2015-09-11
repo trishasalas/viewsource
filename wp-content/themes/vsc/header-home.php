@@ -62,4 +62,4 @@ help support Mozilla.-->
 		<h2 class="description"><?php bloginfo('description'); ?></h2>
 		<div class="mountains"></div>
 	</header><!-- #masthead -->
-	<div id="main" class="main">
+	<div id="main" class="main remodal-bg">

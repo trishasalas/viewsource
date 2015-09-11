@@ -203,6 +203,53 @@ hr::before {
 	}
 }
 
+// modal
+
+.remodal {
+
+	h4 {
+		font-family: $font-main-bold;
+		font-size: 15px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	h5 {
+		font-family: $font-main-bold;
+		font-size: 11px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 12px;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	small {
+		font-size: 10px;
+		text-align: left;
+	}
+
+	img {
+		float: left;
+		margin-bottom: 10px;
+	}
+	.left,
+	.right {
+		display: inline-block;
+		width: 48%;
+	}
+	.left {
+		float: left;
+		margin-right: 2%;
+	}
+	.right {
+		float: right;
+	}
+}
+
 .schedule {
 	ul {
 		@include cf();
