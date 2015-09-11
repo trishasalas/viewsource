@@ -47,7 +47,7 @@
 	.main-navigation {
 		width: 50%;
 		float: right;
-		padding-top: 40px;
+		padding: 40px 60px 0 0;
 
 
 	}
@@ -160,5 +160,20 @@ nav {
 	}
 	.menu-toggle {
 		color: $black;
+	}
+}
+
+#masthead {
+	.social-media {
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 40px;
+		right: 0;
+		li {
+			list-style: none;
+			float: left;
+			display: inline-block;
+		}
 	}
 }

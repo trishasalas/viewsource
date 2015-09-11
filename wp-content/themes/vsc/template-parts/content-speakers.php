@@ -33,6 +33,7 @@
 		foreach ( $posts as $post ):
 			setup_postdata ( $post );
 			$session = get_post_meta ( $post->ID, 'vs_speaker_session', true );
+			$twitter = esc_html( get_post_meta ( $post->ID, 'vs_speaker_twitter_handle', true ) );
 			?>
 			<div class="remodal" data-remodal-id="<?php echo $post->ID; ?>">
 				<button data-remodal-action="close" class="remodal-close"></button>
@@ -40,6 +41,7 @@
 					<?php echo get_the_post_thumbnail ( $post->ID ); ?>
 					<h4><?php the_title (); ?></h4>
 					<p class="company"><?php the_field ( 'company' ); ?></p>
+					<p class="twitter-handle"><?php if( $twitter ) : echo '<i class="fa fa-twitter fa-2x"></i>@' . $twitter; endif; ?></p>
 				</div>
 				<div class="right">
 					<h5><?php if( $session ) : echo get_the_title ( $session[ 0 ] ); endif; ?></h5>

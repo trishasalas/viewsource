@@ -58,6 +58,10 @@ help support Mozilla.-->
 				<?php view_source_registration_link()?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<ul class="social-media">
+				<li><a href="<?php esc_html_e( get_theme_mod( 'twitter' ) );?>"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>"><i class="fa fa-facebook"></i></a></li>
+			</ul>
 		</div><!-- .header-top -->
 		<h2 class="description"><?php bloginfo('description'); ?></h2>
 		<div class="mountains"></div>
