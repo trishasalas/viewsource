@@ -242,8 +242,14 @@ hr::before {
 	}
 	.left,
 	.right {
-		display: inline-block;
-		width: 48%;
+		display: block;
+		width: 98%;
+		margin-left: 1%;
+
+		@include bp(large-tablet) {
+			display: inline-block;
+			width: 48%;
+		}
 	}
 	.left {
 		float: left;

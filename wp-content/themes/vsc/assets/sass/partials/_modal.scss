@@ -1,30 +1,11 @@
-/*
- *  Remodal - v1.0.3
- *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
- *  http://vodkabears.github.io/remodal/
- *
- *  Made by Ilya Makarov
- *  Under MIT License
- */
-
-/* ==========================================================================
-   Remodal's necessary styles
-   ========================================================================== */
-
-/* Hide scroll bar */
-
 html.remodal-is-locked {
 	overflow: hidden;
 }
-
-/* Anti FOUC */
 
 .remodal,
 [data-remodal-id] {
 	display: none;
 }
-
-/* Necessary styles of the overlay */
 
 .remodal-overlay {
 	position: fixed;
@@ -33,11 +14,8 @@ html.remodal-is-locked {
 	right: -5000px;
 	bottom: -5000px;
 	left: -5000px;
-
 	display: none;
 }
-
-/* Necessary styles of the wrapper */
 
 .remodal-wrapper {
 	position: fixed;
@@ -46,33 +24,24 @@ html.remodal-is-locked {
 	right: 0;
 	bottom: 0;
 	left: 0;
-
 	display: none;
 	overflow: auto;
-
 	text-align: center;
-
 	-webkit-overflow-scrolling: touch;
 }
 
 .remodal-wrapper:after {
 	display: inline-block;
-
 	height: 100%;
 	margin-left: -0.05em;
-
 	content: "";
 }
-
-/* Fix iPad, iPhone glitches */
 
 .remodal-overlay,
 .remodal-wrapper {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
-/* Necessary styles of the modal dialog */
 
 .remodal {
 	position: relative;
@@ -81,19 +50,13 @@ html.remodal-is-locked {
 }
 
 .remodal-is-initialized {
-	/* Disable Anti-FOUC */
 	display: inline-block;
 }
 
-/* Default theme styles for the background */
-
 .remodal-bg.remodal-is-opening,
 .remodal-bg.remodal-is-opened {
-	-webkit-filter: blur(3px);
-	filter: blur(3px);
+	filter: blur(5px);
 }
-
-/* Default theme styles of the overlay */
 
 .remodal-overlay {
 	background: rgba($white, 0.8);
@@ -115,13 +78,9 @@ html.remodal-is-locked {
 	animation: remodal-overlay-closing-keyframes 0.3s;
 }
 
-/* Default theme styles of the wrapper */
-
 .remodal-wrapper {
 	padding: 10px 10px 0;
 }
-
-/* Default theme styles of the modal dialog */
 
 .remodal {
 	-webkit-box-sizing: border-box;
@@ -153,14 +112,10 @@ html.remodal-is-locked {
 	animation: remodal-closing-keyframes 0.3s;
 }
 
-/* Vertical align of the modal dialog */
-
 .remodal,
 .remodal-wrapper:after {
 	vertical-align: middle;
 }
-
-/* Close button */
 
 .remodal-close {
 	position: absolute;
@@ -208,8 +163,6 @@ html.remodal-is-locked {
 	text-align: center;
 }
 
-/* Dialog buttons */
-
 .remodal-confirm,
 .remodal-cancel {
 	font: inherit;
@@ -252,8 +205,6 @@ html.remodal-is-locked {
 	background: #ef5350;
 }
 
-/* Remove inner padding and border in Firefox 4+ for the button tag. */
-
 .remodal-confirm::-moz-focus-inner,
 .remodal-cancel::-moz-focus-inner,
 .remodal-close::-moz-focus-inner {
@@ -261,9 +212,6 @@ html.remodal-is-locked {
 
 	border: 0;
 }
-
-/* Keyframes
-   ========================================================================== */
 
 @-webkit-keyframes remodal-opening-keyframes {
 	from {
@@ -361,17 +309,11 @@ html.remodal-is-locked {
 	}
 }
 
-/* Media queries
-   ========================================================================== */
-
 @media only screen and (min-width: 641px) {
 	.remodal {
 		max-width: 500px;
 	}
 }
-
-/* IE8
-   ========================================================================== */
 
 .lt-ie9 .remodal-overlay {
 	background: #2b2e38;
@@ -380,4 +322,3 @@ html.remodal-is-locked {
 .lt-ie9 .remodal {
 	width: 500px;
 }
-

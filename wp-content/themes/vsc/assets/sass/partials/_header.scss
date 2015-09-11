@@ -8,14 +8,11 @@
 
 	.header-top {
 		@include cf();
-		width: 90%;
+		width: 800px;
+		max-width: 100%;
 		margin: 0 auto;
 		position: relative;
 		z-index: 50;
-
-		@include bp(small-tablet) {
-			width: 60%;
-		}
 	}
 
 	.logo {
@@ -23,11 +20,6 @@
 		position: absolute;
 		top: 10px;
 		left: 0;
-		//transform: translateX(-50%);
-
-		@include bp(phablet) {
-			left: 100px;
-		}
 
 		@include bp(large-tablet) {
 			width: 243px;
@@ -79,18 +71,12 @@
 		color: $white;
 		letter-spacing: 1px;
 		text-align: center;
+		font-size: 40px;
+		line-height: 1.2;
 		position: absolute;
-		top: 30%;
-
-		@include bp(large-tablet) {
-			font-size: 40px;
-			line-height: 1.2;
-			letter-spacing: 1px;
-			position: absolute;
-			top: 30%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
+		top: 20%;
+		left: 50%;
+		transform: translateX(-50%);
 
 		.word1,
 		.word2,
@@ -165,11 +151,16 @@ nav {
 
 #masthead {
 	.social-media {
-		position: absolute;
-		margin: 0;
-		padding: 0;
-		top: 40px;
-		right: 0;
+		display: none;
+
+		@include bp(large-tablet) {
+			display: block;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 40px;
+			right: 0;
+		}
 		li {
 			list-style: none;
 			float: left;

@@ -33,7 +33,8 @@ brighter future for the Web.
 
 Visit https://careers.mozilla.org to learn about our current job openings.
 Visit https://www.mozilla.org/contribute for more ways to get involved and
-help support Mozilla.-->
+help support Mozilla.
+-->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">

@@ -652,7 +652,8 @@ a {
   /* line 9, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .header-top {
     *zoom: 1;
-    width: 90%;
+    width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 50; }
@@ -663,22 +664,14 @@ a {
     /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
     .site-header .header-top:after {
       clear: both; }
-    @media screen and (min-width: 600px) {
-      /* line 9, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
-      .site-header .header-top {
-        width: 60%; } }
-  /* line 21, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 18, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .logo {
     width: 200px;
     position: absolute;
     top: 10px;
     left: 0; }
-    @media screen and (min-width: 480px) {
-      /* line 21, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
-      .site-header .logo {
-        left: 100px; } }
     @media screen and (min-width: 768px) {
-      /* line 21, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+      /* line 18, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
       .site-header .logo {
         width: 243px;
         display: inline-block;
@@ -688,25 +681,25 @@ a {
         -webkit-transform: none;
             -ms-transform: none;
                 transform: none; } }
-    /* line 41, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+    /* line 33, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
     .site-header .logo svg path {
       fill: #fff; }
-  /* line 47, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 39, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .main-navigation {
     width: 50%;
     float: right;
     padding: 40px 60px 0 0; }
-  /* line 55, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 47, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .menu-toggle {
     position: absolute;
     top: 0;
     right: 0; }
-  /* line 61, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 53, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .fa {
     color: #fff;
     line-height: 2;
     padding: 0 10px; }
-  /* line 67, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 59, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header .mountains {
     background: url(assets/img/mountains.png) no-repeat top center;
     background-size: cover;
@@ -715,87 +708,86 @@ a {
     position: absolute;
     top: 0;
     z-index: 1; }
-  /* line 77, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 69, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   .site-header h2.description {
     font-family: "moonlight", sans-serif;
     color: #fff;
     letter-spacing: 1px;
     text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
     position: absolute;
-    top: 30%; }
-    @media screen and (min-width: 768px) {
-      /* line 77, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
-      .site-header h2.description {
-        font-size: 40px;
-        line-height: 1.2;
-        letter-spacing: 1px;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%); } }
-    /* line 97, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    /* line 83, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
     .site-header h2.description .word1,
     .site-header h2.description .word2,
     .site-header h2.description .word3 {
       letter-spacing: 3px; }
     @media screen and (min-width: 768px) {
-      /* line 102, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+      /* line 88, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
       .site-header h2.description .word3:after {
         content: '';
         display: table; } }
     @media screen and (min-width: 768px) {
-      /* line 112, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+      /* line 98, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
       .site-header h2.description .word5:after {
         content: '';
         display: table; } }
 
-/* line 123, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 109, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 .main {
   max-width: 800px;
   width: 100%;
   margin: 0 auto; }
 
-/* line 130, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 116, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 nav .menu {
   display: inline-block;
   float: right; }
 
-/* line 137, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 123, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 #page-header .branding {
   position: relative;
   z-index: 10; }
 
-/* line 142, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 128, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 #page-header .main-navigation .registration-link {
   top: 0; }
 
 @media screen and (min-width: 768px) {
-  /* line 147, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  /* line 133, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   #page-header .main-navigation a {
     color: #000; } }
 
-/* line 154, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 140, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 #page-header .dark a {
   color: #fff; }
   @media screen and (min-width: 768px) {
-    /* line 154, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+    /* line 140, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
     #page-header .dark a {
       color: #000; } }
 
-/* line 161, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 147, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 #page-header .menu-toggle {
   color: #000; }
 
-/* line 167, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+/* line 153, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
 #masthead .social-media {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 40px;
-  right: 0; }
-  /* line 173, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+  display: none; }
+  @media screen and (min-width: 768px) {
+    /* line 153, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
+    #masthead .social-media {
+      display: block;
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 40px;
+      right: 0; } }
+  /* line 164, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_header.scss */
   #masthead .social-media li {
     list-style: none;
     float: left;
@@ -1077,19 +1069,26 @@ hr::before {
 /* line 244, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .remodal .left,
 .remodal .right {
-  display: inline-block;
-  width: 48%; }
+  display: block;
+  width: 98%;
+  margin-left: 1%; }
+  @media screen and (min-width: 768px) {
+    /* line 244, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    .remodal .left,
+    .remodal .right {
+      display: inline-block;
+      width: 48%; } }
 
-/* line 248, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+/* line 254, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .remodal .left {
   float: left;
   margin-right: 2%; }
 
-/* line 252, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+/* line 258, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .remodal .right {
   float: right; }
 
-/* line 258, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+/* line 264, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .schedule ul {
   *zoom: 1;
   background: #f0f0e8;
@@ -1103,62 +1102,62 @@ hr::before {
   /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
   .schedule ul:after {
     clear: both; }
-  /* line 264, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 270, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .schedule ul li {
     display: inline-block;
     float: left;
     position: relative; }
-  /* line 270, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 276, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .schedule ul .time {
     width: 50%;
     text-align: center;
     padding-top: 30px; }
     @media screen and (min-width: 768px) {
-      /* line 270, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+      /* line 276, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
       .schedule ul .time {
         padding-top: 30px;
         width: 20%; } }
-  /* line 281, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 287, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .schedule ul .featured-image {
     width: 50%; }
     @media screen and (min-width: 768px) {
-      /* line 281, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+      /* line 287, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
       .schedule ul .featured-image {
         width: 15%; } }
-    /* line 288, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    /* line 294, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
     .schedule ul .featured-image img {
       width: 100%;
       height: auto; }
-  /* line 294, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 300, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .schedule ul .session-info {
     width: 60%;
     padding-top: 30px;
     padding-left: 30px; }
-    /* line 299, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    /* line 305, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
     .schedule ul .session-info span {
       display: block; }
-  /* line 304, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 310, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .schedule ul .fa {
     display: none; }
     @media screen and (min-width: 768px) {
-      /* line 304, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+      /* line 310, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
       .schedule ul .fa {
         padding-top: 30px;
         width: 5%; } }
-  /* line 312, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 318, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .schedule ul a {
     text-decoration: none; }
 
-/* line 317, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+/* line 323, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .schedule .date {
   margin-bottom: 10px;
   padding: 10px; }
 
-/* line 324, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+/* line 330, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .venue {
   margin-bottom: 60px;
   position: relative; }
-  /* line 328, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+  /* line 334, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
   .venue #map-overlay {
     background: #fff;
     width: 260px;
@@ -1168,10 +1167,10 @@ hr::before {
     top: 150px;
     left: 10px; }
     @media screen and (min-width: 768px) {
-      /* line 328, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+      /* line 334, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
       .venue #map-overlay {
         left: 100px; } }
-    /* line 342, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    /* line 348, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
     .venue #map-overlay h3 {
       font-size: 24px;
       font-size: 2.4rem;
@@ -1179,11 +1178,11 @@ hr::before {
       letter-spacing: 1px;
       text-transform: uppercase;
       padding: 20px 20px 0 20px; }
-    /* line 350, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    /* line 356, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
     .venue #map-overlay span,
     .venue #map-overlay a {
       padding: 0 20px; }
-    /* line 354, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    /* line 360, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
     .venue #map-overlay a {
       display: block;
       background: #00aa86;
@@ -1193,7 +1192,7 @@ hr::before {
       text-decoration: none;
       margin-top: 30px; }
 
-/* line 366, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+/* line 372, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
 .btn {
   width: 80%;
   position: relative;
@@ -1204,7 +1203,7 @@ hr::before {
           transform: translateX(-50%);
   text-align: center; }
   @media screen and (min-width: 768px) {
-    /* line 366, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
+    /* line 372, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_front-page.scss */
     .btn {
       width: 30%; } }
 
@@ -1597,30 +1596,16 @@ ul.day {
   #mobile-navigation .sidr-class-branding:after {
     clear: both; }
 
-/*
- *  Remodal - v1.0.3
- *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
- *  http://vodkabears.github.io/remodal/
- *
- *  Made by Ilya Makarov
- *  Under MIT License
- */
-/* ==========================================================================
-   Remodal's necessary styles
-   ========================================================================== */
-/* Hide scroll bar */
-/* line 16, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 1, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 html.remodal-is-locked {
   overflow: hidden; }
 
-/* Anti FOUC */
-/* line 23, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 6, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal,
 [data-remodal-id] {
   display: none; }
 
-/* Necessary styles of the overlay */
-/* line 29, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 10, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-overlay {
   position: fixed;
   z-index: 9999;
@@ -1630,8 +1615,7 @@ html.remodal-is-locked {
   left: -5000px;
   display: none; }
 
-/* Necessary styles of the wrapper */
-/* line 42, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 20, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-wrapper {
   position: fixed;
   z-index: 10000;
@@ -1644,22 +1628,20 @@ html.remodal-is-locked {
   text-align: center;
   -webkit-overflow-scrolling: touch; }
 
-/* line 58, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 33, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-wrapper:after {
   display: inline-block;
   height: 100%;
   margin-left: -0.05em;
   content: ""; }
 
-/* Fix iPad, iPhone glitches */
-/* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 41, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-overlay,
 .remodal-wrapper {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-/* Necessary styles of the modal dialog */
-/* line 77, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 46, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal {
   position: relative;
   outline: none;
@@ -1667,46 +1649,41 @@ html.remodal-is-locked {
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%; }
 
-/* line 83, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 52, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-is-initialized {
-  /* Disable Anti-FOUC */
   display: inline-block; }
 
-/* Default theme styles for the background */
-/* line 91, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 57, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-bg.remodal-is-opening,
 .remodal-bg.remodal-is-opened {
-  -webkit-filter: blur(3px);
-  filter: blur(3px); }
+  -webkit-filter: blur(5px);
+          filter: blur(5px); }
 
-/* Default theme styles of the overlay */
-/* line 98, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 61, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-overlay {
   background: rgba(255, 255, 255, 0.8); }
 
-/* line 103, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 66, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-overlay.remodal-is-opening,
 .remodal-overlay.remodal-is-closing {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 108, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 71, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-overlay.remodal-is-opening {
   -webkit-animation: remodal-overlay-opening-keyframes 0.3s;
   animation: remodal-overlay-opening-keyframes 0.3s; }
 
-/* line 113, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 76, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-overlay.remodal-is-closing {
   -webkit-animation: remodal-overlay-closing-keyframes 0.3s;
   animation: remodal-overlay-closing-keyframes 0.3s; }
 
-/* Default theme styles of the wrapper */
-/* line 120, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 81, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-wrapper {
   padding: 10px 10px 0; }
 
-/* Default theme styles of the modal dialog */
-/* line 126, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 85, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal {
   box-sizing: border-box;
   width: 100%;
@@ -1717,30 +1694,28 @@ html.remodal-is-locked {
   color: #2b2e38;
   background: #f0efe8; }
 
-/* line 141, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 100, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal.remodal-is-opening,
 .remodal.remodal-is-closing {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-/* line 146, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 105, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal.remodal-is-opening {
   -webkit-animation: remodal-opening-keyframes 0.3s;
   animation: remodal-opening-keyframes 0.3s; }
 
-/* line 151, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 110, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal.remodal-is-closing {
   -webkit-animation: remodal-closing-keyframes 0.3s;
   animation: remodal-closing-keyframes 0.3s; }
 
-/* Vertical align of the modal dialog */
-/* line 159, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 116, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal,
 .remodal-wrapper:after {
   vertical-align: middle; }
 
-/* Close button */
-/* line 165, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 120, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-close {
   position: absolute;
   top: 0;
@@ -1759,12 +1734,12 @@ html.remodal-is-locked {
   outline: 0;
   background: transparent; }
 
-/* line 190, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 145, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-close:hover,
 .remodal-close:focus {
   color: #2b2e38; }
 
-/* line 194, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 149, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-close:before {
   font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
   font-size: 25px;
@@ -1777,8 +1752,7 @@ html.remodal-is-locked {
   content: "\00d7";
   text-align: center; }
 
-/* Dialog buttons */
-/* line 214, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 167, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-confirm,
 .remodal-cancel {
   font: inherit;
@@ -1795,36 +1769,33 @@ html.remodal-is-locked {
   border: 0;
   outline: 0; }
 
-/* line 235, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 188, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-confirm {
   color: #fff;
   background: #81c784; }
 
-/* line 241, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 194, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-confirm:hover,
 .remodal-confirm:focus {
   background: #66bb6a; }
 
-/* line 245, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 198, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-cancel {
   color: #fff;
   background: #e57373; }
 
-/* line 251, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 204, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-cancel:hover,
 .remodal-cancel:focus {
   background: #ef5350; }
 
-/* Remove inner padding and border in Firefox 4+ for the button tag. */
-/* line 259, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 210, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .remodal-confirm::-moz-focus-inner,
 .remodal-cancel::-moz-focus-inner,
 .remodal-close::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
-/* Keyframes
-   ========================================================================== */
 @-webkit-keyframes remodal-opening-keyframes {
   from {
     -webkit-transform: scale(1.05);
@@ -1889,20 +1860,16 @@ html.remodal-is-locked {
   to {
     opacity: 0; } }
 
-/* Media queries
-   ========================================================================== */
 @media only screen and (min-width: 641px) {
-  /* line 368, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+  /* line 313, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
   .remodal {
     max-width: 500px; } }
 
-/* IE8
-   ========================================================================== */
-/* line 376, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 318, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .lt-ie9 .remodal-overlay {
   background: #2b2e38; }
 
-/* line 380, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
+/* line 322, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_modal.scss */
 .lt-ie9 .remodal {
   width: 500px; }
 
