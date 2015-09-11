@@ -43,7 +43,7 @@
 				</div>
 				<div class="right">
 					<h5><?php if( $session ) : echo get_the_title ( $session[ 0 ] ); endif; ?></h5>
-					<p><?php echo get_the_content ( $session[ 0 ] ); ?></p>
+					<p><?php if( $session ) : echo get_the_content ( $session[ 0 ] ); endif; ?></p>
 				</div>
 
 			</div>
