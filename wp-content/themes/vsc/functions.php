@@ -104,6 +104,7 @@ function view_source_scripts() {
 	wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.js', array( 'jquery' ), '.7', false );
 	wp_enqueue_script( 'vs-js', get_template_directory_uri() . '/assets/js/vs-functions.js', array( 'jquery', 'lettering-js' ), '1.0', true );
 	wp_enqueue_script( 'sticky', get_template_directory_uri() . '/assets/js/sticky.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'konami', get_template_directory_uri() . '/assets/js/konami.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'view_source_scripts' );
 
