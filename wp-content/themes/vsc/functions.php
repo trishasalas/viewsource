@@ -6,50 +6,18 @@
  */
 
 if ( ! function_exists( 'view_source_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
+
 function view_source_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on view_source, use a find and replace
-	 * to change 'view_source' to the name of your theme in all the template files
-	 */
+
 	load_theme_textdomain( 'view_source', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
-
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
 	add_theme_support( 'title-tag' );
-
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
 	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'view_source' ),
 		'footer' => esc_html__( 'Footer Menu', 'view_source' ),
 	) );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
 	add_theme_support( 'html5', array(
 		'search-form',
 		'comment-form',
@@ -62,23 +30,11 @@ function view_source_setup() {
 endif; // view_source_setup
 add_action( 'after_setup_theme', 'view_source_setup' );
 
-/**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
 function view_source_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'view_source_content_width', 810 );
 }
 add_action( 'after_setup_theme', 'view_source_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- */
 function view_source_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'view_source' ),
@@ -92,19 +48,19 @@ function view_source_widgets_init() {
 }
 add_action( 'widgets_init', 'view_source_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
 function view_source_scripts() {
 	//wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
 	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/sidr.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'konami', get_template_directory_uri() . '/assets/js/konami.min.js', array(), '', true );
+	wp_enqueue_script( 'konami-init', get_template_directory_uri() . '/assets/js/konami-init.js', array( 'konami' ), '', true );
 	wp_enqueue_script( 'sticky', get_template_directory_uri() . '/assets/js/sticky.min.js', array(), '', true );
 	wp_enqueue_script( 'vs-js', get_template_directory_uri() . '/assets/js/vs-functions.js', array( 'jquery', 'sticky', 'sidr' ), '1.0', true );
 
 	if( is_front_page() ) :
+		wp_enqueue_script( 'google-map-init', get_template_directory_uri() . '/assets/js/google-map-init.js', array(), '', true );
+		wp_enqueue_script( 'google-map-api', get_template_directory_uri() . '/assets/js/google-map-api.js', array( 'google-map-init' ), '', true );
 		wp_enqueue_script( 'remodal', get_template_directory_uri() . '/assets/js/remodal.min.js', array(), '', true );
 		wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.min.js', array( 'jquery' ), '.7', false );
 		wp_enqueue_script( 'lettering-init', get_template_directory_uri() . '/assets/js/lettering-init.js', array( 'jquery', 'lettering-js' ), '1.0', false );
