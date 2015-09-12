@@ -75,7 +75,7 @@ gulp.task('compress', function () {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngcrush()]
         }))
-        .pipe(gulp.dest('img'));
+        .pipe(gulp.dest('../images'));
 });
 
 gulp.task('watch', function() {
