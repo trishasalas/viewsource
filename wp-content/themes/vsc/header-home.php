@@ -48,11 +48,11 @@ help support Mozilla.
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'view_source' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-top">
+	<header id="masthead" class="site-header" role="banner" style="background:url(<?php echo get_template_directory_uri();?>/images/sky.png) no-repeat top center;background-size:cover;height:90vh;width:100%;position:relative;margin-bottom:60px;">
+		<div class="header-top" style="width:800px;max-width:100%;margin:0 auto;position:relative;z-index:50;">
 			<div class="site-title logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
+					<?php echo file_get_contents( get_template_directory_uri() . '/images/branding.svg' );?>
 				</a>
 			</div>
 			<a id="responsive-menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" href="#sidr"><i class="fa fa-bars fa-2x"></i></a>
@@ -65,7 +65,7 @@ help support Mozilla.
 				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>"><i class="fa fa-facebook"></i></a></li>
 			</ul>
 		</div><!-- .header-top -->
-		<h2 class="description"><?php bloginfo('description'); ?></h2>
-		<div class="mountains"></div>
+		<h2 class="description"><?php bloginfo( 'description' ); ?></h2>
+		<div class="mountains" style="background: url(<?php echo get_template_directory_uri();?>/images/mountains.png) no-repeat top center;background-size:cover;height:90vh;width:100%;position:absolute;top:0;z-index:1;"></div>
 	</header><!-- #masthead -->
 	<div id="main" class="main remodal-bg">

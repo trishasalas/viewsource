@@ -1,18 +1,6 @@
 .site-header {
-	background: url(images/sky.png) no-repeat top center;
-	background-size: cover;
-	height: 90vh;
-	width: 100%;
-	position: relative;
-	margin-bottom: 60px;
-
 	.header-top {
 		@include cf();
-		width: 800px;
-		max-width: 100%;
-		margin: 0 auto;
-		position: relative;
-		z-index: 50;
 	}
 
 	.logo {
@@ -54,16 +42,6 @@
 		color: $white;
 		line-height: 2;
 		padding: 0 10px;
-	}
-
-	.mountains {
-		background: url(images/mountains.png) no-repeat top center;
-		background-size: cover;
-		height: 90vh;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		z-index: 1;
 	}
 
 	h2.description {
