@@ -9,11 +9,22 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-# compress text, html, javascript, css, xml:
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/xml
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE application/xml
-AddOutputFilterByType DEFLATE application/xhtml+xml
-AddOutputFilterByType DEFLATE application/javascript
+
+
+# ######################################################################
+# # CROSS-ORIGIN                                                       #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Cross-origin requests                                              |
+# ----------------------------------------------------------------------
+
+# Allow cross-origin requests.
+
+ https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+ http://enable-cors.org/
+ http://www.w3.org/TR/cors/
+
+ <IfModule mod_headers.c>
+     Header set Access-Control-Allow-Origin "*"
+ </IfModule>
