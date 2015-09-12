@@ -3,8 +3,6 @@
  */
 
 jQuery(document).ready(function($) {
-	$( ".description" ).lettering('words');
-	$( ".speaker-name" ).lettering('words');
 
 	$('#responsive-menu').sidr({
 		source: '#mobile-navigation',

@@ -42,6 +42,10 @@ Icon?
 Thumbs.db
 ._*
 
+# PHPStorm files     #
+######################
+.idea
+
 # Vim generated files #
 ######################
 *.un~
@@ -51,4 +55,3 @@ Thumbs.db
 .sass-cache
 
 wp-content/themes/vsc/assets/node_modules
-.idea/workspace.xml
