@@ -96,9 +96,9 @@ add_action( 'widgets_init', 'view_source_widgets_init' );
  * Enqueue scripts and styles.
  */
 function view_source_scripts() {
-	wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
-	//wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
+	wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
 	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/sidr.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.min.js', array( 'jquery' ), '.7', false );
 	wp_enqueue_script( 'vs-js', get_template_directory_uri() . '/assets/js/vs-functions.js', array( 'jquery', 'lettering-js' ), '1.0', true );
