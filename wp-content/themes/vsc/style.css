@@ -3933,12 +3933,12 @@ hr::before {
   @media screen and (min-width: 768px) {
     /* line 144, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li.platinum {
-      width: 49%;
+      width: 100%;
       margin-right: 1%; } }
   @media screen and (min-width: 768px) {
     /* line 151, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li.gold {
-      width: 24%;
+      width: 49%;
       margin-right: 1%; } }
   @media screen and (min-width: 768px) {
     /* line 158, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
