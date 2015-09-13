@@ -186,7 +186,6 @@ hr::before {
 				left: 10px;
 
 				a.speaker-name {
-					font-size: 12px;
 					text-transform: uppercase;
 					.word2,
 					.word3 {
@@ -219,6 +218,7 @@ hr::before {
 		font-size: 11px;
 		text-align: left;
 		text-transform: uppercase;
+		margin-bottom: 10px;
 	}
 
 	p {
@@ -333,7 +333,7 @@ hr::before {
 
 	#map-overlay {
 		background: $white;
-		width: 260px;
+		width: 250px;
 		height: auto;
 		z-index: 5;
 		position: absolute;
@@ -354,6 +354,7 @@ hr::before {
 		}
 		span,
 		a {
+			font-size: 14px;
 			padding: 0 20px;
 		}
 

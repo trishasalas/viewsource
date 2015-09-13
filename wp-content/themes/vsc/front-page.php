@@ -21,7 +21,7 @@
 	<?php get_template_part( 'template-parts/content', 'registration' );?>
 </section>
 
-<section id="speakers" class="speakers">
+<section id="speakers" class="speakers speakers-front">
 	<?php get_template_part( 'template-parts/content', 'speakers' );?>
 </section>
 

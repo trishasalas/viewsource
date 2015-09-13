@@ -84,12 +84,6 @@
 	}
 }
 
-.main {
-	max-width: 800px;
-	width: 100%;
-	margin: 0 auto;
-}
-
 nav {
 	.menu {
 		display: inline-block;
@@ -145,4 +139,10 @@ nav {
 			display: inline-block;
 		}
 	}
+}
+
+.main {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
 }

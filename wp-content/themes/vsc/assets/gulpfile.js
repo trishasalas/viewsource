@@ -29,8 +29,8 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({
-            style: 'expanded',
-            sourceComments: true
+            style: 'compact',
+            sourceComments: false
         })
             .on('error', notify.onError(function(error) {
                 return "Error: " + error.message;
@@ -49,24 +49,6 @@ gulp.task('sass', function() {
             message: "Styles task complete!"
         }));
 });
-
-//gulp.task('lint', function() {
-//    return gulp.src('js/*.js')
-//        .pipe(jshint())
-//        .pipe(jshint.reporter('default'));
-//});
-
-// Concatenate & Minify JS
-//gulp.task('scripts', function(){
-//    return gulp.src('js/*.js')
-//        .pipe(concat('site.js'))
-//        .pipe(gulp.dest('js'))
-//        .pipe(rename('site.min.js'))
-//        .pipe(uglify())
-//        .pipe(gulp.dest('js'));
-//});
-
-
 
 gulp.task('compress', function () {
     return gulp.src('images/*')
