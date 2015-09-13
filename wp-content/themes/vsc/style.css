@@ -3877,10 +3877,10 @@ hr::before {
 .site-footer ul#sponsors {
   *zoom: 1;
   display: block;
-  margin: 0;
   padding: 0;
   max-width: 800px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
   /* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
   .site-footer ul#sponsors:before, .site-footer ul#sponsors:after {
     content: '';
