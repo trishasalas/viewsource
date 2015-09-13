@@ -9,7 +9,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<style>
-		<?php file_get_contents( get_template_directory_uri() . '/assets/css/critical-css.css' );?>
+		<?php echo file_get_contents( get_template_directory_uri() . '/assets/css/critical-css.css' );?>
 	</style>
 	<script>
 		// minified loadCSS function
