@@ -19,6 +19,11 @@ $sidr-text-color: $white;
 	overflow-x: none;
 	overflow-y: auto;
 
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+
 	.sidr-inner {
 		padding: 0 0 15px;
 
@@ -55,16 +60,13 @@ $sidr-text-color: $white;
 
 
 	h1, h2, h3, h4, h5, h6 {
-		font-size: $sidr-font-size - 4;
 		font-weight: normal;
 		padding: 0 15px;
 		margin: 0 0 5px;
 		color: $sidr-text-color;
-		line-height: 24px;
 	}
 
 	p {
-		font-size: $sidr-font-size - 2;
 		margin: 0 0 12px;
 		a {
 			color: rgba($sidr-text-color, .9);
@@ -78,24 +80,23 @@ $sidr-text-color: $white;
 
 	ul {
 		display: block;
-		margin: 0 0 15px;
+		margin: 0;
 		padding: 0;
-		border-top: 1px solid darken($sidr-background, 10%);
-		border-bottom: 1px solid lighten($sidr-background, 10%);
+		//border-top: 1px solid darken($sidr-background, 10%);
+		//border-bottom: 1px solid lighten($sidr-background, 10%);
 
 		li {
 			display: block;
 			margin: 0;
-			line-height: 48px;
 			border-top: 1px solid lighten($sidr-background, 10%);
 			border-bottom: 1px solid darken($sidr-background, 10%);
 			width: 100%;
+			line-height: 3;
 
 			&:hover,
 			&.active,
 			&.sidr-class-active {
-				border-top: none;
-				line-height: 49px;
+				background: darken($sidr-background, 5%);
 
 				> a, > span {
 
@@ -114,7 +115,6 @@ $sidr-text-color: $white;
 				border-bottom: none;
 				margin: 0;
 				li {
-					line-height: 40px;
 					font-size: $sidr-font-size - 2;
 
 					&:last-child {
@@ -125,7 +125,6 @@ $sidr-text-color: $white;
 					&.active,
 					&.sidr-class-active {
 						border-top: none;
-						line-height: 41px;
 
 						> a, > span {
 
@@ -195,6 +194,10 @@ $sidr-text-color: $white;
 	display: block !important;
 	text-align: center;
 	padding: 15px;
+
+	&:hover {
+		background: darken($persian-green, 5%);
+	}
 
 	@include bp(large-tablet) {
 		display: inline-block;

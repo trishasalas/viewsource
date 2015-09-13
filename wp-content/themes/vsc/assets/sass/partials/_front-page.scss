@@ -382,3 +382,15 @@ hr::before {
 		width: 30%;
 	}
 }
+
+#page-header.sticky {
+	width: 100% !important;
+	left: 0;
+
+	.secondary-header {
+		@include cf();
+		width: 900px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}

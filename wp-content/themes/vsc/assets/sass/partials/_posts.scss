@@ -1,11 +1,18 @@
-h1 {
+h1,
+h1.entry-title {
+	font-size: 30px;
+	margin-bottom: 20px;
 	a {
+		font-size: 30px;
+		margin-bottom: 20px;
 		text-decoration: none;
 	}
 }
 
 h2 {
 	a {
+		font-size: 28px;
+	margin-bottom: 20px;
 		text-decoration: none;
 	}
 }
@@ -28,4 +35,8 @@ article {
 	footer {
 		padding-bottom: 30px;
 	}
+}
+
+.page-header {
+
 }

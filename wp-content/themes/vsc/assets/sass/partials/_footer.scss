@@ -40,6 +40,7 @@
 	}
 	.branding {
 		width: 243px;
+		float: left;
 		height: auto;
 		display: block;
 		margin: 0 auto;
@@ -95,7 +96,7 @@
 		@include cf();
 		display: block;
 		padding: 0;
-		max-width: 800px;
+		max-width: 900px;
 		width: 100%;
 		margin: 0 auto;
 

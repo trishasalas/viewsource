@@ -121,7 +121,7 @@
 	margin: 0;
 	text-align: center;
 
-	@include bp(phablet) {
+	@include bp(large-tablet) {
 		display:inline-block;
 		float: right;
 		margin-top: 20px;
