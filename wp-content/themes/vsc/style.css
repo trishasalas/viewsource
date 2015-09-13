@@ -3877,9 +3877,10 @@ hr::before {
 .site-footer ul#sponsors {
   *zoom: 1;
   display: block;
-  width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  max-width: 800px;
+  width: 100%; }
   /* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
   .site-footer ul#sponsors:before, .site-footer ul#sponsors:after {
     content: '';
@@ -3887,7 +3888,7 @@ hr::before {
   /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
   .site-footer ul#sponsors:after {
     clear: both; }
-  /* line 101, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+  /* line 102, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
   .site-footer ul#sponsors li {
     border: 5px solid #e6e5dc;
     display: block;
@@ -3896,7 +3897,7 @@ hr::before {
     width: 100%;
     margin-bottom: 10px;
     position: relative; }
-    /* line 110, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+    /* line 111, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li small {
       position: absolute;
       top: 3px;
@@ -3904,44 +3905,44 @@ hr::before {
       color: #e6e5dc;
       font-size: 12px;
       text-transform: uppercase; }
-    /* line 119, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+    /* line 120, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li img {
       display: block;
       margin-left: auto;
       margin-right: auto; }
       @media screen and (min-width: 768px) {
-        /* line 119, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+        /* line 120, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
         .site-footer ul#sponsors li img {
           position: relative;
           top: 50%;
           -webkit-transform: translateY(-50%);
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%); } }
-  /* line 133, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+  /* line 134, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
   .site-footer ul#sponsors li.platinum,
   .site-footer ul#sponsors li.gold,
   .site-footer ul#sponsors li.silver {
     border: 5px solid #e6e5dc;
     width: 100%; }
     @media screen and (min-width: 768px) {
-      /* line 133, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+      /* line 134, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
       .site-footer ul#sponsors li.platinum,
       .site-footer ul#sponsors li.gold,
       .site-footer ul#sponsors li.silver {
         display: inline-block;
         height: 110px; } }
   @media screen and (min-width: 768px) {
-    /* line 144, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+    /* line 145, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li.platinum {
       width: 100%;
       margin-right: 1%; } }
   @media screen and (min-width: 768px) {
-    /* line 151, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+    /* line 152, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li.gold {
       width: 49%;
       margin-right: 1%; } }
   @media screen and (min-width: 768px) {
-    /* line 158, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
+    /* line 159, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_footer.scss */
     .site-footer ul#sponsors li.silver {
       width: 24%;
       margin-right: 1%; } }
