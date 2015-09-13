@@ -21,5 +21,6 @@
 	</div><!-- #page -->
 <?php get_template_part( 'template-parts/content', 'sidr' );?>
 <?php wp_footer(); ?>
+<noscript><link href="<?php echo get_template_directory_uri() . '/style.min.css'?>" rel="stylesheet"></noscript>
 	</body>
 </html>
