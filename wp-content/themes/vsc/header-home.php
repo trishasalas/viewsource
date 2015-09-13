@@ -8,6 +8,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<style>
+		<?php file_get_contents( get_template_directory_uri() . '/assets/css/critical-css.css' );?>
+	</style>
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
