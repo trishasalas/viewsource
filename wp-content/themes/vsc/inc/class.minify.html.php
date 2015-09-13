@@ -1,4 +1,4 @@
-<?php
+<<?php
 	class WP_HTML_Compression
 	{
 		// Settings
@@ -33,7 +33,7 @@
 		}
 		protected function minifyHTML($html)
 		{
-			$pattern = '/<(?<script>script).*?<\/script\s*>|<(?<style>style).*?<\/style\s*>|<!(?<comment>--).*?-->|<(?<tag>[\/\w.:-]*)(?:".*?"|\'.*?\'|[^\'">]+)*>|(?<text>((<[^!\/\w.:-])?[^<]*)+)|/si';
+			$pattern = '/<(?<script>).*?<\/script\s*>|<(?<style>style).*?<\/style\s*>|<!(?<comment>--).*?-->|<(?<tag>[\/\w.:-]*)(?:".*?"|\'.*?\'|[^\'">]+)*>|(?<text>((<[^!\/\w.:-])?[^<]*)+)|/si';
 			preg_match_all($pattern, $html, $matches, PREG_SET_ORDER);
 			$overriding = false;
 			$raw_tag = false;
