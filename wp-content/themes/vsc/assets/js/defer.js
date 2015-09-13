@@ -2,6 +2,6 @@
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
-	//js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=326473900710878";
+	js.src = "/assets/js/lettering.min.js";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script' ));

@@ -49,17 +49,10 @@ function view_source_widgets_init() {
 add_action( 'widgets_init', 'view_source_widgets_init' );
 
 	function optimize_jquery() {
-		if (!is_admin()) {
-			wp_deregister_script('jquery');
-			wp_deregister_script('jquery-migrate.min');
-			wp_deregister_script('comment-reply.min');
-			$protocol='http:';
-//			if($_SERVER['HTTPS']=='on') {
-//				$protocol='https:';
-//			}
-			wp_register_script('jquery', $protocol.'//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', false, '3.6', true);
-
-			wp_enqueue_script('jquery');
+		if ( !is_admin() ) {
+			wp_deregister_script ( 'jquery' );
+			wp_deregister_script ( 'jquery-migrate.min' );
+			wp_deregister_script ( 'comment-reply.min' );
 		}
 	}
 	add_action('template_redirect', 'optimize_jquery');
@@ -67,6 +60,7 @@ add_action( 'widgets_init', 'view_source_widgets_init' );
 function view_source_scripts() {
 	//wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), '1.9', true );
 	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/sidr.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'konami', get_template_directory_uri() . '/assets/js/konami.min.js', array(), '', true );
 	wp_enqueue_script( 'konami-init', get_template_directory_uri() . '/assets/js/konami-init.js', array( 'konami' ), '', true );
@@ -77,8 +71,8 @@ function view_source_scripts() {
 		wp_enqueue_script( 'google-map-init', get_template_directory_uri() . '/assets/js/google-map-init.js', array(), '', true );
 		wp_enqueue_script( 'google-map-api', get_template_directory_uri() . '/assets/js/google-map-api.js', array( 'google-map-init' ), '', true );
 		wp_enqueue_script( 'remodal', get_template_directory_uri() . '/assets/js/remodal.min.js', array(), '', true );
-		wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.min.js', array( 'jquery' ), '.7', false );
-		wp_enqueue_script( 'lettering-init', get_template_directory_uri() . '/assets/js/lettering-init.js', array( 'jquery', 'lettering-js' ), '1.0', false );
+		wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.min.js', array( 'jquery' ), '.7', true );
+		wp_enqueue_script( 'lettering-init', get_template_directory_uri() . '/assets/js/lettering-init.js', array( 'jquery', 'lettering-js' ), '1.0', true);
 	endif;
 }
 add_action( 'wp_enqueue_scripts', 'view_source_scripts' );
