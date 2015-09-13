@@ -269,5 +269,3 @@ function ajc_detect_scripts_in_wp_foot_post(){
 	}
 	echo $content;
 }
-
-?>

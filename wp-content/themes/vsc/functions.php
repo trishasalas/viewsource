@@ -48,13 +48,6 @@ function view_source_widgets_init() {
 }
 add_action( 'widgets_init', 'view_source_widgets_init' );
 
-	function defer_parsing_of_js ( $url ) {
-		if ( FALSE === strpos( $url, '.js' ) ) return $url;
-		if ( strpos( $url, 'jquery.js' ) ) return $url;
-		return "$url.' async onload='myinit()";
-	}
-	add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
-
 function view_source_scripts() {
 	//wp_enqueue_style( 'view_source-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
