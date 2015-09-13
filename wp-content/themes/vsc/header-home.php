@@ -42,18 +42,6 @@ help support Mozilla.
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<?php wp_head(); ?>
-	<script type="text/javascript">
-		function deferJSWordPress() {
-			var element = document.createElement("script");
-			element.src = "<?php echo get_template_directory_uri();?>/assets/js/defer.js";
-			document.body.appendChild(element);
-		}
-		if (window.addEventListener)
-			window.addEventListener("load", deferJSWordPress, false);
-		else if (window.attachEvent)
-			window.attachEvent("onload", deferJSWordPress);
-		else window.onload = deferJSWordPress;
-	</script>
 </head>
 
 <body <?php body_class(); ?>>
