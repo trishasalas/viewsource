@@ -8,6 +8,8 @@ If you have a plugin conflict LOOK HERE FIRST!!
 
 ### Do not contact the plugin developer until you are sure the existing jquery configuration is NOT the problem!
 
+[Pantheon Rocks! Carry on...]
+
 # WordPress
 
 This is a WordPress repository configured to run on the [Pantheon platform](https://www.getpantheon.com).
