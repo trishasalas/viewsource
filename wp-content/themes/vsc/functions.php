@@ -80,6 +80,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/admin.php';
+	require get_template_directory() . '/inc/class.minify.html.php';
 
 //	add_filter('acf/settings/show_admin', '__return_false');
 	// Fixes Chrome Slim Paint Bug in WordPress Admin Panel
