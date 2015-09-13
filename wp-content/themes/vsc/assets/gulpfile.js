@@ -5,6 +5,7 @@ var gulp            = require('gulp'),
     autoprefixer    = require('gulp-autoprefixer'),
     notify          = require('gulp-notify'),
     minifycss       = require('gulp-minify-css'),
+    minifyHTML		= require( 'gulp-minify-html'),
     concat          = require('gulp-concat'),
     uglify          = require('gulp-uglify'),
     rename          = require('gulp-rename'),
@@ -66,7 +67,16 @@ gulp.task('sass', function() {
 //        .pipe(gulp.dest('js'));
 //});
 
+gulp.task('minify-html', function() {
+	var opts = {
+		conditionals: true,
+		spare:true
+	};
 
+	return gulp.src('*.php')
+		.pipe(minifyHTML(opts))
+		.pipe(gulp.dest(''));
+});
 
 gulp.task('compress', function () {
     return gulp.src('images/*')
