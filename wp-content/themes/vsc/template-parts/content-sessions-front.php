@@ -25,7 +25,16 @@
 					<?php echo get_the_post_thumbnail ( $post->ID ); ?>
 				</li>
 				<li class="session-info">
-					<a href="<?php the_permalink (); ?>"><?php the_title (); ?></a>
+					<h4>
+						<a href="<?php the_permalink (); ?>"><?php echo get_the_title ( $post->ID ); ?></a>
+					</h4>
+					<?php
+						$speaker = get_post_meta( $post->ID, 'vs_session_speaker', true ); if( $speaker ) :
+						echo '<p class="speaker-name">' . get_the_title( $speaker[0] ) . '</p>'; endif;
+
+						$speaker_company = get_post_meta( $speaker[0], 'company', true ); if( $speaker_company ) :
+						echo '<p class="company">' . $speaker_company . '</p>'; endif;
+					?>
 				</li>
 				<li>
 					<a href="<?php the_permalink (); ?>"><i class="fa fa-plus"></i></a>

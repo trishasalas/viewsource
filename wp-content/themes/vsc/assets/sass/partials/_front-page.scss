@@ -1,13 +1,27 @@
 section {
 	padding: 30px 0;
 
+	h2,
+	h3,
+	h4 {
+		padding: 0 15px;
+		margin-bottom: 10px;
+	}
+
 	h2 {
 		@include rem(font-size, 24px);
 		font-family: $headings-lt;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin-bottom: 20px;
-		padding: 0 15px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 18px;
 	}
 
 	p {
@@ -187,6 +201,7 @@ hr::before {
 
 				a.speaker-name {
 					text-transform: uppercase;
+					line-height: 1.4;
 					.word2,
 					.word3 {
 						display: block;
@@ -302,15 +317,23 @@ hr::before {
 				padding-top: 30px;
 				padding-left: 30px;
 
-			span {
-				display: block;
+
+			p.speaker-name {
+				margin-bottom: 0;
+			}
+
+			.company {
+				@include cf();
+				font-size: 10px;
+				text-transform: uppercase;
 			}
 		}
 
 		.fa {
 			display: none;
 			@include bp(large-tablet) {
-				padding-top: 30px;
+				display: block;
+				padding-top: 15px;
 				width: 5%;
 			}
 		}

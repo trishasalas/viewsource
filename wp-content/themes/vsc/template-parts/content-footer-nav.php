@@ -1,4 +1,4 @@
-<div class="branding">
+<div class="branding" style="width:243px;height: auto;">
 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
 	</a>
