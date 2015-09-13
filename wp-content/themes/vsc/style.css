@@ -13,45 +13,2640 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* line 6, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("assets/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("assets/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("assets/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("assets/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("assets/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("assets/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-/* line 16, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+/* line 8, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-/* line 19, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-body {
-  line-height: 1; }
+/* makes the font 33% larger relative to the icon container */
+/* line 17, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
 
-/* line 22, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-ol, ul {
-  list-style: none; }
+/* line 22, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-2x {
+  font-size: 2em; }
 
-/* line 25, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-blockquote, q {
-  quotes: none; }
+/* line 25, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-3x {
+  font-size: 3em; }
 
-/* line 29, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-blockquote:before, blockquote:after {
-  content: "";
-  content: none; }
+/* line 28, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-4x {
+  font-size: 4em; }
 
-/* line 35, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-q:before, q:after {
-  content: "";
-  content: none; }
+/* line 31, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-5x {
+  font-size: 5em; }
 
-/* line 40, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_meyer-reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+/* line 34, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center; }
+
+/* line 38, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none; }
+
+/* line 43, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ul > li {
+  position: relative; }
+
+/* line 46, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center; }
+
+/* line 53, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-li.fa-lg {
+  left: -1.85714286em; }
+
+/* line 56, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em; }
+
+/* line 61, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pull-left {
+  float: left; }
+
+/* line 64, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pull-right {
+  float: right; }
+
+/* line 67, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa.fa-pull-left {
+  margin-right: .3em; }
+
+/* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa.fa-pull-right {
+  margin-left: .3em; }
+
+/* Deprecated as of 4.4.0 */
+/* line 74, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.pull-right {
+  float: right; }
+
+/* line 77, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.pull-left {
+  float: left; }
+
+/* line 80, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa.pull-left {
+  margin-right: .3em; }
+
+/* line 83, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa.pull-right {
+  margin-left: .3em; }
+
+/* line 86, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+/* line 90, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+/* line 114, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+/* line 120, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+/* line 126, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+/* line 132, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+/* line 138, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+/* line 148, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  -webkit-filter: none;
+          filter: none; }
+
+/* line 151, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+/* line 160, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+/* line 166, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stack-1x {
+  line-height: inherit; }
+
+/* line 169, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stack-2x {
+  font-size: 2em; }
+
+/* line 172, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-inverse {
+  color: #ffffff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 177, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-glass:before {
+  content: "\f000"; }
+
+/* line 180, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-music:before {
+  content: "\f001"; }
+
+/* line 183, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-search:before {
+  content: "\f002"; }
+
+/* line 186, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-envelope-o:before {
+  content: "\f003"; }
+
+/* line 189, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-heart:before {
+  content: "\f004"; }
+
+/* line 192, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-star:before {
+  content: "\f005"; }
+
+/* line 195, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-star-o:before {
+  content: "\f006"; }
+
+/* line 198, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-user:before {
+  content: "\f007"; }
+
+/* line 201, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-film:before {
+  content: "\f008"; }
+
+/* line 204, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-th-large:before {
+  content: "\f009"; }
+
+/* line 207, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-th:before {
+  content: "\f00a"; }
+
+/* line 210, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-th-list:before {
+  content: "\f00b"; }
+
+/* line 213, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-check:before {
+  content: "\f00c"; }
+
+/* line 218, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\f00d"; }
+
+/* line 221, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-search-plus:before {
+  content: "\f00e"; }
+
+/* line 224, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-search-minus:before {
+  content: "\f010"; }
+
+/* line 227, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-power-off:before {
+  content: "\f011"; }
+
+/* line 230, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-signal:before {
+  content: "\f012"; }
+
+/* line 234, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013"; }
+
+/* line 237, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-trash-o:before {
+  content: "\f014"; }
+
+/* line 240, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-home:before {
+  content: "\f015"; }
+
+/* line 243, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-o:before {
+  content: "\f016"; }
+
+/* line 246, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-clock-o:before {
+  content: "\f017"; }
+
+/* line 249, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-road:before {
+  content: "\f018"; }
+
+/* line 252, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-download:before {
+  content: "\f019"; }
+
+/* line 255, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a"; }
+
+/* line 258, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b"; }
+
+/* line 261, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-inbox:before {
+  content: "\f01c"; }
+
+/* line 264, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-play-circle-o:before {
+  content: "\f01d"; }
+
+/* line 268, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e"; }
+
+/* line 271, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-refresh:before {
+  content: "\f021"; }
+
+/* line 274, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-list-alt:before {
+  content: "\f022"; }
+
+/* line 277, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-lock:before {
+  content: "\f023"; }
+
+/* line 280, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flag:before {
+  content: "\f024"; }
+
+/* line 283, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-headphones:before {
+  content: "\f025"; }
+
+/* line 286, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-volume-off:before {
+  content: "\f026"; }
+
+/* line 289, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-volume-down:before {
+  content: "\f027"; }
+
+/* line 292, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-volume-up:before {
+  content: "\f028"; }
+
+/* line 295, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-qrcode:before {
+  content: "\f029"; }
+
+/* line 298, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-barcode:before {
+  content: "\f02a"; }
+
+/* line 301, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tag:before {
+  content: "\f02b"; }
+
+/* line 304, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tags:before {
+  content: "\f02c"; }
+
+/* line 307, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-book:before {
+  content: "\f02d"; }
+
+/* line 310, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bookmark:before {
+  content: "\f02e"; }
+
+/* line 313, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-print:before {
+  content: "\f02f"; }
+
+/* line 316, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-camera:before {
+  content: "\f030"; }
+
+/* line 319, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-font:before {
+  content: "\f031"; }
+
+/* line 322, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bold:before {
+  content: "\f032"; }
+
+/* line 325, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-italic:before {
+  content: "\f033"; }
+
+/* line 328, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-text-height:before {
+  content: "\f034"; }
+
+/* line 331, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-text-width:before {
+  content: "\f035"; }
+
+/* line 334, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-align-left:before {
+  content: "\f036"; }
+
+/* line 337, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-align-center:before {
+  content: "\f037"; }
+
+/* line 340, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-align-right:before {
+  content: "\f038"; }
+
+/* line 343, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-align-justify:before {
+  content: "\f039"; }
+
+/* line 346, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-list:before {
+  content: "\f03a"; }
+
+/* line 350, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b"; }
+
+/* line 353, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-indent:before {
+  content: "\f03c"; }
+
+/* line 356, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-video-camera:before {
+  content: "\f03d"; }
+
+/* line 361, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e"; }
+
+/* line 364, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pencil:before {
+  content: "\f040"; }
+
+/* line 367, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-map-marker:before {
+  content: "\f041"; }
+
+/* line 370, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-adjust:before {
+  content: "\f042"; }
+
+/* line 373, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tint:before {
+  content: "\f043"; }
+
+/* line 377, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044"; }
+
+/* line 380, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-share-square-o:before {
+  content: "\f045"; }
+
+/* line 383, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-check-square-o:before {
+  content: "\f046"; }
+
+/* line 386, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrows:before {
+  content: "\f047"; }
+
+/* line 389, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-step-backward:before {
+  content: "\f048"; }
+
+/* line 392, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fast-backward:before {
+  content: "\f049"; }
+
+/* line 395, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-backward:before {
+  content: "\f04a"; }
+
+/* line 398, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-play:before {
+  content: "\f04b"; }
+
+/* line 401, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pause:before {
+  content: "\f04c"; }
+
+/* line 404, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stop:before {
+  content: "\f04d"; }
+
+/* line 407, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-forward:before {
+  content: "\f04e"; }
+
+/* line 410, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fast-forward:before {
+  content: "\f050"; }
+
+/* line 413, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-step-forward:before {
+  content: "\f051"; }
+
+/* line 416, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-eject:before {
+  content: "\f052"; }
+
+/* line 419, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-left:before {
+  content: "\f053"; }
+
+/* line 422, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-right:before {
+  content: "\f054"; }
+
+/* line 425, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-plus-circle:before {
+  content: "\f055"; }
+
+/* line 428, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-minus-circle:before {
+  content: "\f056"; }
+
+/* line 431, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-times-circle:before {
+  content: "\f057"; }
+
+/* line 434, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-check-circle:before {
+  content: "\f058"; }
+
+/* line 437, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-question-circle:before {
+  content: "\f059"; }
+
+/* line 440, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-info-circle:before {
+  content: "\f05a"; }
+
+/* line 443, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-crosshairs:before {
+  content: "\f05b"; }
+
+/* line 446, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-times-circle-o:before {
+  content: "\f05c"; }
+
+/* line 449, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-check-circle-o:before {
+  content: "\f05d"; }
+
+/* line 452, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ban:before {
+  content: "\f05e"; }
+
+/* line 455, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-left:before {
+  content: "\f060"; }
+
+/* line 458, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-right:before {
+  content: "\f061"; }
+
+/* line 461, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-up:before {
+  content: "\f062"; }
+
+/* line 464, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-down:before {
+  content: "\f063"; }
+
+/* line 468, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064"; }
+
+/* line 471, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-expand:before {
+  content: "\f065"; }
+
+/* line 474, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-compress:before {
+  content: "\f066"; }
+
+/* line 477, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-plus:before {
+  content: "\f067"; }
+
+/* line 480, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-minus:before {
+  content: "\f068"; }
+
+/* line 483, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-asterisk:before {
+  content: "\f069"; }
+
+/* line 486, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a"; }
+
+/* line 489, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gift:before {
+  content: "\f06b"; }
+
+/* line 492, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-leaf:before {
+  content: "\f06c"; }
+
+/* line 495, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fire:before {
+  content: "\f06d"; }
+
+/* line 498, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-eye:before {
+  content: "\f06e"; }
+
+/* line 501, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-eye-slash:before {
+  content: "\f070"; }
+
+/* line 505, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071"; }
+
+/* line 508, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-plane:before {
+  content: "\f072"; }
+
+/* line 511, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calendar:before {
+  content: "\f073"; }
+
+/* line 514, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-random:before {
+  content: "\f074"; }
+
+/* line 517, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-comment:before {
+  content: "\f075"; }
+
+/* line 520, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-magnet:before {
+  content: "\f076"; }
+
+/* line 523, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-up:before {
+  content: "\f077"; }
+
+/* line 526, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-down:before {
+  content: "\f078"; }
+
+/* line 529, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-retweet:before {
+  content: "\f079"; }
+
+/* line 532, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-shopping-cart:before {
+  content: "\f07a"; }
+
+/* line 535, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-folder:before {
+  content: "\f07b"; }
+
+/* line 538, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-folder-open:before {
+  content: "\f07c"; }
+
+/* line 541, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrows-v:before {
+  content: "\f07d"; }
+
+/* line 544, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrows-h:before {
+  content: "\f07e"; }
+
+/* line 548, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "\f080"; }
+
+/* line 551, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-twitter-square:before {
+  content: "\f081"; }
+
+/* line 554, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-facebook-square:before {
+  content: "\f082"; }
+
+/* line 557, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-camera-retro:before {
+  content: "\f083"; }
+
+/* line 560, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-key:before {
+  content: "\f084"; }
+
+/* line 564, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085"; }
+
+/* line 567, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-comments:before {
+  content: "\f086"; }
+
+/* line 570, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087"; }
+
+/* line 573, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088"; }
+
+/* line 576, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-star-half:before {
+  content: "\f089"; }
+
+/* line 579, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-heart-o:before {
+  content: "\f08a"; }
+
+/* line 582, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sign-out:before {
+  content: "\f08b"; }
+
+/* line 585, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-linkedin-square:before {
+  content: "\f08c"; }
+
+/* line 588, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-thumb-tack:before {
+  content: "\f08d"; }
+
+/* line 591, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-external-link:before {
+  content: "\f08e"; }
+
+/* line 594, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sign-in:before {
+  content: "\f090"; }
+
+/* line 597, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-trophy:before {
+  content: "\f091"; }
+
+/* line 600, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-github-square:before {
+  content: "\f092"; }
+
+/* line 603, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-upload:before {
+  content: "\f093"; }
+
+/* line 606, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-lemon-o:before {
+  content: "\f094"; }
+
+/* line 609, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-phone:before {
+  content: "\f095"; }
+
+/* line 612, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-square-o:before {
+  content: "\f096"; }
+
+/* line 615, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bookmark-o:before {
+  content: "\f097"; }
+
+/* line 618, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-phone-square:before {
+  content: "\f098"; }
+
+/* line 621, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-twitter:before {
+  content: "\f099"; }
+
+/* line 625, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a"; }
+
+/* line 628, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-github:before {
+  content: "\f09b"; }
+
+/* line 631, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-unlock:before {
+  content: "\f09c"; }
+
+/* line 634, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-credit-card:before {
+  content: "\f09d"; }
+
+/* line 638, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-feed:before,
+.fa-rss:before {
+  content: "\f09e"; }
+
+/* line 641, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hdd-o:before {
+  content: "\f0a0"; }
+
+/* line 644, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bullhorn:before {
+  content: "\f0a1"; }
+
+/* line 647, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bell:before {
+  content: "\f0f3"; }
+
+/* line 650, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-certificate:before {
+  content: "\f0a3"; }
+
+/* line 653, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4"; }
+
+/* line 656, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5"; }
+
+/* line 659, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6"; }
+
+/* line 662, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7"; }
+
+/* line 665, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8"; }
+
+/* line 668, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9"; }
+
+/* line 671, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa"; }
+
+/* line 674, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab"; }
+
+/* line 677, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-globe:before {
+  content: "\f0ac"; }
+
+/* line 680, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-wrench:before {
+  content: "\f0ad"; }
+
+/* line 683, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tasks:before {
+  content: "\f0ae"; }
+
+/* line 686, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-filter:before {
+  content: "\f0b0"; }
+
+/* line 689, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-briefcase:before {
+  content: "\f0b1"; }
+
+/* line 692, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2"; }
+
+/* line 696, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0"; }
+
+/* line 700, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1"; }
+
+/* line 703, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cloud:before {
+  content: "\f0c2"; }
+
+/* line 706, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flask:before {
+  content: "\f0c3"; }
+
+/* line 710, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4"; }
+
+/* line 714, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5"; }
+
+/* line 717, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-paperclip:before {
+  content: "\f0c6"; }
+
+/* line 721, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7"; }
+
+/* line 724, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-square:before {
+  content: "\f0c8"; }
+
+/* line 729, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9"; }
+
+/* line 732, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-list-ul:before {
+  content: "\f0ca"; }
+
+/* line 735, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-list-ol:before {
+  content: "\f0cb"; }
+
+/* line 738, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-strikethrough:before {
+  content: "\f0cc"; }
+
+/* line 741, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-underline:before {
+  content: "\f0cd"; }
+
+/* line 744, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-table:before {
+  content: "\f0ce"; }
+
+/* line 747, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-magic:before {
+  content: "\f0d0"; }
+
+/* line 750, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-truck:before {
+  content: "\f0d1"; }
+
+/* line 753, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pinterest:before {
+  content: "\f0d2"; }
+
+/* line 756, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3"; }
+
+/* line 759, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4"; }
+
+/* line 762, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-google-plus:before {
+  content: "\f0d5"; }
+
+/* line 765, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-money:before {
+  content: "\f0d6"; }
+
+/* line 768, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-caret-down:before {
+  content: "\f0d7"; }
+
+/* line 771, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-caret-up:before {
+  content: "\f0d8"; }
+
+/* line 774, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-caret-left:before {
+  content: "\f0d9"; }
+
+/* line 777, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-caret-right:before {
+  content: "\f0da"; }
+
+/* line 780, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-columns:before {
+  content: "\f0db"; }
+
+/* line 784, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc"; }
+
+/* line 788, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\f0dd"; }
+
+/* line 792, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de"; }
+
+/* line 795, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+/* line 798, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-linkedin:before {
+  content: "\f0e1"; }
+
+/* line 802, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2"; }
+
+/* line 806, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3"; }
+
+/* line 810, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4"; }
+
+/* line 813, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-comment-o:before {
+  content: "\f0e5"; }
+
+/* line 816, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-comments-o:before {
+  content: "\f0e6"; }
+
+/* line 820, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7"; }
+
+/* line 823, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sitemap:before {
+  content: "\f0e8"; }
+
+/* line 826, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-umbrella:before {
+  content: "\f0e9"; }
+
+/* line 830, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea"; }
+
+/* line 833, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb"; }
+
+/* line 836, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-exchange:before {
+  content: "\f0ec"; }
+
+/* line 839, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cloud-download:before {
+  content: "\f0ed"; }
+
+/* line 842, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee"; }
+
+/* line 845, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-user-md:before {
+  content: "\f0f0"; }
+
+/* line 848, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stethoscope:before {
+  content: "\f0f1"; }
+
+/* line 851, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-suitcase:before {
+  content: "\f0f2"; }
+
+/* line 854, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bell-o:before {
+  content: "\f0a2"; }
+
+/* line 857, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-coffee:before {
+  content: "\f0f4"; }
+
+/* line 860, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cutlery:before {
+  content: "\f0f5"; }
+
+/* line 863, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-text-o:before {
+  content: "\f0f6"; }
+
+/* line 866, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-building-o:before {
+  content: "\f0f7"; }
+
+/* line 869, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hospital-o:before {
+  content: "\f0f8"; }
+
+/* line 872, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ambulance:before {
+  content: "\f0f9"; }
+
+/* line 875, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-medkit:before {
+  content: "\f0fa"; }
+
+/* line 878, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb"; }
+
+/* line 881, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-beer:before {
+  content: "\f0fc"; }
+
+/* line 884, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-h-square:before {
+  content: "\f0fd"; }
+
+/* line 887, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-plus-square:before {
+  content: "\f0fe"; }
+
+/* line 890, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-double-left:before {
+  content: "\f100"; }
+
+/* line 893, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-double-right:before {
+  content: "\f101"; }
+
+/* line 896, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-double-up:before {
+  content: "\f102"; }
+
+/* line 899, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-double-down:before {
+  content: "\f103"; }
+
+/* line 902, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-left:before {
+  content: "\f104"; }
+
+/* line 905, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-right:before {
+  content: "\f105"; }
+
+/* line 908, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-up:before {
+  content: "\f106"; }
+
+/* line 911, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angle-down:before {
+  content: "\f107"; }
+
+/* line 914, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-desktop:before {
+  content: "\f108"; }
+
+/* line 917, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-laptop:before {
+  content: "\f109"; }
+
+/* line 920, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tablet:before {
+  content: "\f10a"; }
+
+/* line 924, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b"; }
+
+/* line 927, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-circle-o:before {
+  content: "\f10c"; }
+
+/* line 930, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-quote-left:before {
+  content: "\f10d"; }
+
+/* line 933, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-quote-right:before {
+  content: "\f10e"; }
+
+/* line 936, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-spinner:before {
+  content: "\f110"; }
+
+/* line 939, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-circle:before {
+  content: "\f111"; }
+
+/* line 943, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112"; }
+
+/* line 946, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-github-alt:before {
+  content: "\f113"; }
+
+/* line 949, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-folder-o:before {
+  content: "\f114"; }
+
+/* line 952, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-folder-open-o:before {
+  content: "\f115"; }
+
+/* line 955, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-smile-o:before {
+  content: "\f118"; }
+
+/* line 958, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-frown-o:before {
+  content: "\f119"; }
+
+/* line 961, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-meh-o:before {
+  content: "\f11a"; }
+
+/* line 964, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gamepad:before {
+  content: "\f11b"; }
+
+/* line 967, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-keyboard-o:before {
+  content: "\f11c"; }
+
+/* line 970, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flag-o:before {
+  content: "\f11d"; }
+
+/* line 973, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flag-checkered:before {
+  content: "\f11e"; }
+
+/* line 976, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-terminal:before {
+  content: "\f120"; }
+
+/* line 979, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-code:before {
+  content: "\f121"; }
+
+/* line 983, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\f122"; }
+
+/* line 988, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123"; }
+
+/* line 991, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-location-arrow:before {
+  content: "\f124"; }
+
+/* line 994, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-crop:before {
+  content: "\f125"; }
+
+/* line 997, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-code-fork:before {
+  content: "\f126"; }
+
+/* line 1001, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127"; }
+
+/* line 1004, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-question:before {
+  content: "\f128"; }
+
+/* line 1007, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-info:before {
+  content: "\f129"; }
+
+/* line 1010, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-exclamation:before {
+  content: "\f12a"; }
+
+/* line 1013, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-superscript:before {
+  content: "\f12b"; }
+
+/* line 1016, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-subscript:before {
+  content: "\f12c"; }
+
+/* line 1019, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-eraser:before {
+  content: "\f12d"; }
+
+/* line 1022, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e"; }
+
+/* line 1025, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-microphone:before {
+  content: "\f130"; }
+
+/* line 1028, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-microphone-slash:before {
+  content: "\f131"; }
+
+/* line 1031, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-shield:before {
+  content: "\f132"; }
+
+/* line 1034, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calendar-o:before {
+  content: "\f133"; }
+
+/* line 1037, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134"; }
+
+/* line 1040, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rocket:before {
+  content: "\f135"; }
+
+/* line 1043, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-maxcdn:before {
+  content: "\f136"; }
+
+/* line 1046, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137"; }
+
+/* line 1049, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138"; }
+
+/* line 1052, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139"; }
+
+/* line 1055, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a"; }
+
+/* line 1058, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-html5:before {
+  content: "\f13b"; }
+
+/* line 1061, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-css3:before {
+  content: "\f13c"; }
+
+/* line 1064, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-anchor:before {
+  content: "\f13d"; }
+
+/* line 1067, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-unlock-alt:before {
+  content: "\f13e"; }
+
+/* line 1070, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bullseye:before {
+  content: "\f140"; }
+
+/* line 1073, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ellipsis-h:before {
+  content: "\f141"; }
+
+/* line 1076, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ellipsis-v:before {
+  content: "\f142"; }
+
+/* line 1079, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rss-square:before {
+  content: "\f143"; }
+
+/* line 1082, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-play-circle:before {
+  content: "\f144"; }
+
+/* line 1085, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ticket:before {
+  content: "\f145"; }
+
+/* line 1088, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-minus-square:before {
+  content: "\f146"; }
+
+/* line 1091, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-minus-square-o:before {
+  content: "\f147"; }
+
+/* line 1094, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-level-up:before {
+  content: "\f148"; }
+
+/* line 1097, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-level-down:before {
+  content: "\f149"; }
+
+/* line 1100, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-check-square:before {
+  content: "\f14a"; }
+
+/* line 1103, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pencil-square:before {
+  content: "\f14b"; }
+
+/* line 1106, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-external-link-square:before {
+  content: "\f14c"; }
+
+/* line 1109, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-share-square:before {
+  content: "\f14d"; }
+
+/* line 1112, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-compass:before {
+  content: "\f14e"; }
+
+/* line 1116, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150"; }
+
+/* line 1120, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151"; }
+
+/* line 1124, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152"; }
+
+/* line 1128, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153"; }
+
+/* line 1131, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gbp:before {
+  content: "\f154"; }
+
+/* line 1135, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155"; }
+
+/* line 1139, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156"; }
+
+/* line 1145, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157"; }
+
+/* line 1150, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158"; }
+
+/* line 1154, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159"; }
+
+/* line 1158, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a"; }
+
+/* line 1161, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file:before {
+  content: "\f15b"; }
+
+/* line 1164, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-text:before {
+  content: "\f15c"; }
+
+/* line 1167, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d"; }
+
+/* line 1170, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e"; }
+
+/* line 1173, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160"; }
+
+/* line 1176, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161"; }
+
+/* line 1179, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162"; }
+
+/* line 1182, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163"; }
+
+/* line 1185, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-thumbs-up:before {
+  content: "\f164"; }
+
+/* line 1188, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-thumbs-down:before {
+  content: "\f165"; }
+
+/* line 1191, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-youtube-square:before {
+  content: "\f166"; }
+
+/* line 1194, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-youtube:before {
+  content: "\f167"; }
+
+/* line 1197, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-xing:before {
+  content: "\f168"; }
+
+/* line 1200, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-xing-square:before {
+  content: "\f169"; }
+
+/* line 1203, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-youtube-play:before {
+  content: "\f16a"; }
+
+/* line 1206, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dropbox:before {
+  content: "\f16b"; }
+
+/* line 1209, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stack-overflow:before {
+  content: "\f16c"; }
+
+/* line 1212, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-instagram:before {
+  content: "\f16d"; }
+
+/* line 1215, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-flickr:before {
+  content: "\f16e"; }
+
+/* line 1218, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-adn:before {
+  content: "\f170"; }
+
+/* line 1221, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bitbucket:before {
+  content: "\f171"; }
+
+/* line 1224, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bitbucket-square:before {
+  content: "\f172"; }
+
+/* line 1227, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tumblr:before {
+  content: "\f173"; }
+
+/* line 1230, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tumblr-square:before {
+  content: "\f174"; }
+
+/* line 1233, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-long-arrow-down:before {
+  content: "\f175"; }
+
+/* line 1236, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-long-arrow-up:before {
+  content: "\f176"; }
+
+/* line 1239, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-long-arrow-left:before {
+  content: "\f177"; }
+
+/* line 1242, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-long-arrow-right:before {
+  content: "\f178"; }
+
+/* line 1245, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-apple:before {
+  content: "\f179"; }
+
+/* line 1248, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-windows:before {
+  content: "\f17a"; }
+
+/* line 1251, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-android:before {
+  content: "\f17b"; }
+
+/* line 1254, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-linux:before {
+  content: "\f17c"; }
+
+/* line 1257, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dribbble:before {
+  content: "\f17d"; }
+
+/* line 1260, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-skype:before {
+  content: "\f17e"; }
+
+/* line 1263, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-foursquare:before {
+  content: "\f180"; }
+
+/* line 1266, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-trello:before {
+  content: "\f181"; }
+
+/* line 1269, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-female:before {
+  content: "\f182"; }
+
+/* line 1272, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-male:before {
+  content: "\f183"; }
+
+/* line 1276, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "\f184"; }
+
+/* line 1279, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sun-o:before {
+  content: "\f185"; }
+
+/* line 1282, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-moon-o:before {
+  content: "\f186"; }
+
+/* line 1285, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-archive:before {
+  content: "\f187"; }
+
+/* line 1288, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bug:before {
+  content: "\f188"; }
+
+/* line 1291, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-vk:before {
+  content: "\f189"; }
+
+/* line 1294, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-weibo:before {
+  content: "\f18a"; }
+
+/* line 1297, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-renren:before {
+  content: "\f18b"; }
+
+/* line 1300, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pagelines:before {
+  content: "\f18c"; }
+
+/* line 1303, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stack-exchange:before {
+  content: "\f18d"; }
+
+/* line 1306, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e"; }
+
+/* line 1309, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190"; }
+
+/* line 1313, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191"; }
+
+/* line 1316, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dot-circle-o:before {
+  content: "\f192"; }
+
+/* line 1319, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-wheelchair:before {
+  content: "\f193"; }
+
+/* line 1322, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-vimeo-square:before {
+  content: "\f194"; }
+
+/* line 1326, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195"; }
+
+/* line 1329, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-plus-square-o:before {
+  content: "\f196"; }
+
+/* line 1332, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-space-shuttle:before {
+  content: "\f197"; }
+
+/* line 1335, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-slack:before {
+  content: "\f198"; }
+
+/* line 1338, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-envelope-square:before {
+  content: "\f199"; }
+
+/* line 1341, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-wordpress:before {
+  content: "\f19a"; }
+
+/* line 1344, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-openid:before {
+  content: "\f19b"; }
+
+/* line 1349, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c"; }
+
+/* line 1353, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d"; }
+
+/* line 1356, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-yahoo:before {
+  content: "\f19e"; }
+
+/* line 1359, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-google:before {
+  content: "\f1a0"; }
+
+/* line 1362, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-reddit:before {
+  content: "\f1a1"; }
+
+/* line 1365, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-reddit-square:before {
+  content: "\f1a2"; }
+
+/* line 1368, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3"; }
+
+/* line 1371, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-stumbleupon:before {
+  content: "\f1a4"; }
+
+/* line 1374, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-delicious:before {
+  content: "\f1a5"; }
+
+/* line 1377, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-digg:before {
+  content: "\f1a6"; }
+
+/* line 1380, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pied-piper:before {
+  content: "\f1a7"; }
+
+/* line 1383, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pied-piper-alt:before {
+  content: "\f1a8"; }
+
+/* line 1386, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-drupal:before {
+  content: "\f1a9"; }
+
+/* line 1389, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-joomla:before {
+  content: "\f1aa"; }
+
+/* line 1392, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-language:before {
+  content: "\f1ab"; }
+
+/* line 1395, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fax:before {
+  content: "\f1ac"; }
+
+/* line 1398, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-building:before {
+  content: "\f1ad"; }
+
+/* line 1401, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-child:before {
+  content: "\f1ae"; }
+
+/* line 1404, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-paw:before {
+  content: "\f1b0"; }
+
+/* line 1407, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-spoon:before {
+  content: "\f1b1"; }
+
+/* line 1410, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cube:before {
+  content: "\f1b2"; }
+
+/* line 1413, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cubes:before {
+  content: "\f1b3"; }
+
+/* line 1416, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-behance:before {
+  content: "\f1b4"; }
+
+/* line 1419, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-behance-square:before {
+  content: "\f1b5"; }
+
+/* line 1422, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-steam:before {
+  content: "\f1b6"; }
+
+/* line 1425, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-steam-square:before {
+  content: "\f1b7"; }
+
+/* line 1428, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-recycle:before {
+  content: "\f1b8"; }
+
+/* line 1432, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9"; }
+
+/* line 1436, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba"; }
+
+/* line 1439, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tree:before {
+  content: "\f1bb"; }
+
+/* line 1442, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-spotify:before {
+  content: "\f1bc"; }
+
+/* line 1445, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-deviantart:before {
+  content: "\f1bd"; }
+
+/* line 1448, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-soundcloud:before {
+  content: "\f1be"; }
+
+/* line 1451, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-database:before {
+  content: "\f1c0"; }
+
+/* line 1454, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-pdf-o:before {
+  content: "\f1c1"; }
+
+/* line 1457, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-word-o:before {
+  content: "\f1c2"; }
+
+/* line 1460, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-excel-o:before {
+  content: "\f1c3"; }
+
+/* line 1463, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4"; }
+
+/* line 1468, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5"; }
+
+/* line 1472, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6"; }
+
+/* line 1476, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7"; }
+
+/* line 1480, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8"; }
+
+/* line 1483, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-file-code-o:before {
+  content: "\f1c9"; }
+
+/* line 1486, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-vine:before {
+  content: "\f1ca"; }
+
+/* line 1489, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-codepen:before {
+  content: "\f1cb"; }
+
+/* line 1492, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-jsfiddle:before {
+  content: "\f1cc"; }
+
+/* line 1499, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd"; }
+
+/* line 1502, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-circle-o-notch:before {
+  content: "\f1ce"; }
+
+/* line 1506, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0"; }
+
+/* line 1510, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1"; }
+
+/* line 1513, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-git-square:before {
+  content: "\f1d2"; }
+
+/* line 1516, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-git:before {
+  content: "\f1d3"; }
+
+/* line 1521, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "\f1d4"; }
+
+/* line 1524, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tencent-weibo:before {
+  content: "\f1d5"; }
+
+/* line 1527, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-qq:before {
+  content: "\f1d6"; }
+
+/* line 1531, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7"; }
+
+/* line 1535, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8"; }
+
+/* line 1539, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9"; }
+
+/* line 1542, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-history:before {
+  content: "\f1da"; }
+
+/* line 1545, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-circle-thin:before {
+  content: "\f1db"; }
+
+/* line 1548, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-header:before {
+  content: "\f1dc"; }
+
+/* line 1551, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-paragraph:before {
+  content: "\f1dd"; }
+
+/* line 1554, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sliders:before {
+  content: "\f1de"; }
+
+/* line 1557, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-share-alt:before {
+  content: "\f1e0"; }
+
+/* line 1560, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-share-alt-square:before {
+  content: "\f1e1"; }
+
+/* line 1563, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bomb:before {
+  content: "\f1e2"; }
+
+/* line 1567, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "\f1e3"; }
+
+/* line 1570, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tty:before {
+  content: "\f1e4"; }
+
+/* line 1573, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-binoculars:before {
+  content: "\f1e5"; }
+
+/* line 1576, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-plug:before {
+  content: "\f1e6"; }
+
+/* line 1579, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-slideshare:before {
+  content: "\f1e7"; }
+
+/* line 1582, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-twitch:before {
+  content: "\f1e8"; }
+
+/* line 1585, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-yelp:before {
+  content: "\f1e9"; }
+
+/* line 1588, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-newspaper-o:before {
+  content: "\f1ea"; }
+
+/* line 1591, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-wifi:before {
+  content: "\f1eb"; }
+
+/* line 1594, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calculator:before {
+  content: "\f1ec"; }
+
+/* line 1597, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-paypal:before {
+  content: "\f1ed"; }
+
+/* line 1600, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-google-wallet:before {
+  content: "\f1ee"; }
+
+/* line 1603, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-visa:before {
+  content: "\f1f0"; }
+
+/* line 1606, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-mastercard:before {
+  content: "\f1f1"; }
+
+/* line 1609, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-discover:before {
+  content: "\f1f2"; }
+
+/* line 1612, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-amex:before {
+  content: "\f1f3"; }
+
+/* line 1615, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-paypal:before {
+  content: "\f1f4"; }
+
+/* line 1618, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-stripe:before {
+  content: "\f1f5"; }
+
+/* line 1621, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bell-slash:before {
+  content: "\f1f6"; }
+
+/* line 1624, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bell-slash-o:before {
+  content: "\f1f7"; }
+
+/* line 1627, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-trash:before {
+  content: "\f1f8"; }
+
+/* line 1630, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-copyright:before {
+  content: "\f1f9"; }
+
+/* line 1633, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-at:before {
+  content: "\f1fa"; }
+
+/* line 1636, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-eyedropper:before {
+  content: "\f1fb"; }
+
+/* line 1639, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-paint-brush:before {
+  content: "\f1fc"; }
+
+/* line 1642, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-birthday-cake:before {
+  content: "\f1fd"; }
+
+/* line 1645, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-area-chart:before {
+  content: "\f1fe"; }
+
+/* line 1648, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pie-chart:before {
+  content: "\f200"; }
+
+/* line 1651, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-line-chart:before {
+  content: "\f201"; }
+
+/* line 1654, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-lastfm:before {
+  content: "\f202"; }
+
+/* line 1657, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-lastfm-square:before {
+  content: "\f203"; }
+
+/* line 1660, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-toggle-off:before {
+  content: "\f204"; }
+
+/* line 1663, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-toggle-on:before {
+  content: "\f205"; }
+
+/* line 1666, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bicycle:before {
+  content: "\f206"; }
+
+/* line 1669, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-bus:before {
+  content: "\f207"; }
+
+/* line 1672, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ioxhost:before {
+  content: "\f208"; }
+
+/* line 1675, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-angellist:before {
+  content: "\f209"; }
+
+/* line 1678, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc:before {
+  content: "\f20a"; }
+
+/* line 1683, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "\f20b"; }
+
+/* line 1686, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-meanpath:before {
+  content: "\f20c"; }
+
+/* line 1689, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-buysellads:before {
+  content: "\f20d"; }
+
+/* line 1692, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-connectdevelop:before {
+  content: "\f20e"; }
+
+/* line 1695, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-dashcube:before {
+  content: "\f210"; }
+
+/* line 1698, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-forumbee:before {
+  content: "\f211"; }
+
+/* line 1701, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-leanpub:before {
+  content: "\f212"; }
+
+/* line 1704, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sellsy:before {
+  content: "\f213"; }
+
+/* line 1707, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-shirtsinbulk:before {
+  content: "\f214"; }
+
+/* line 1710, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-simplybuilt:before {
+  content: "\f215"; }
+
+/* line 1713, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-skyatlas:before {
+  content: "\f216"; }
+
+/* line 1716, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cart-plus:before {
+  content: "\f217"; }
+
+/* line 1719, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cart-arrow-down:before {
+  content: "\f218"; }
+
+/* line 1722, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-diamond:before {
+  content: "\f219"; }
+
+/* line 1725, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-ship:before {
+  content: "\f21a"; }
+
+/* line 1728, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-user-secret:before {
+  content: "\f21b"; }
+
+/* line 1731, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-motorcycle:before {
+  content: "\f21c"; }
+
+/* line 1734, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-street-view:before {
+  content: "\f21d"; }
+
+/* line 1737, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-heartbeat:before {
+  content: "\f21e"; }
+
+/* line 1740, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-venus:before {
+  content: "\f221"; }
+
+/* line 1743, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mars:before {
+  content: "\f222"; }
+
+/* line 1746, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mercury:before {
+  content: "\f223"; }
+
+/* line 1750, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "\f224"; }
+
+/* line 1753, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-transgender-alt:before {
+  content: "\f225"; }
+
+/* line 1756, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-venus-double:before {
+  content: "\f226"; }
+
+/* line 1759, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mars-double:before {
+  content: "\f227"; }
+
+/* line 1762, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-venus-mars:before {
+  content: "\f228"; }
+
+/* line 1765, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mars-stroke:before {
+  content: "\f229"; }
+
+/* line 1768, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mars-stroke-v:before {
+  content: "\f22a"; }
+
+/* line 1771, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mars-stroke-h:before {
+  content: "\f22b"; }
+
+/* line 1774, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-neuter:before {
+  content: "\f22c"; }
+
+/* line 1777, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-genderless:before {
+  content: "\f22d"; }
+
+/* line 1780, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-facebook-official:before {
+  content: "\f230"; }
+
+/* line 1783, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-pinterest-p:before {
+  content: "\f231"; }
+
+/* line 1786, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-whatsapp:before {
+  content: "\f232"; }
+
+/* line 1789, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-server:before {
+  content: "\f233"; }
+
+/* line 1792, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-user-plus:before {
+  content: "\f234"; }
+
+/* line 1795, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-user-times:before {
+  content: "\f235"; }
+
+/* line 1799, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hotel:before,
+.fa-bed:before {
+  content: "\f236"; }
+
+/* line 1802, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-viacoin:before {
+  content: "\f237"; }
+
+/* line 1805, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-train:before {
+  content: "\f238"; }
+
+/* line 1808, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-subway:before {
+  content: "\f239"; }
+
+/* line 1811, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-medium:before {
+  content: "\f23a"; }
+
+/* line 1815, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "\f23b"; }
+
+/* line 1818, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-optin-monster:before {
+  content: "\f23c"; }
+
+/* line 1821, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-opencart:before {
+  content: "\f23d"; }
+
+/* line 1824, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-expeditedssl:before {
+  content: "\f23e"; }
+
+/* line 1828, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: "\f240"; }
+
+/* line 1832, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "\f241"; }
+
+/* line 1836, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "\f242"; }
+
+/* line 1840, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "\f243"; }
+
+/* line 1844, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "\f244"; }
+
+/* line 1847, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-mouse-pointer:before {
+  content: "\f245"; }
+
+/* line 1850, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-i-cursor:before {
+  content: "\f246"; }
+
+/* line 1853, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-object-group:before {
+  content: "\f247"; }
+
+/* line 1856, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-object-ungroup:before {
+  content: "\f248"; }
+
+/* line 1859, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sticky-note:before {
+  content: "\f249"; }
+
+/* line 1862, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-sticky-note-o:before {
+  content: "\f24a"; }
+
+/* line 1865, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-jcb:before {
+  content: "\f24b"; }
+
+/* line 1868, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-cc-diners-club:before {
+  content: "\f24c"; }
+
+/* line 1871, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-clone:before {
+  content: "\f24d"; }
+
+/* line 1874, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-balance-scale:before {
+  content: "\f24e"; }
+
+/* line 1877, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hourglass-o:before {
+  content: "\f250"; }
+
+/* line 1881, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "\f251"; }
+
+/* line 1885, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "\f252"; }
+
+/* line 1889, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "\f253"; }
+
+/* line 1892, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hourglass:before {
+  content: "\f254"; }
+
+/* line 1896, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "\f255"; }
+
+/* line 1900, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "\f256"; }
+
+/* line 1903, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-scissors-o:before {
+  content: "\f257"; }
+
+/* line 1906, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-lizard-o:before {
+  content: "\f258"; }
+
+/* line 1909, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-spock-o:before {
+  content: "\f259"; }
+
+/* line 1912, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-pointer-o:before {
+  content: "\f25a"; }
+
+/* line 1915, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-hand-peace-o:before {
+  content: "\f25b"; }
+
+/* line 1918, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-trademark:before {
+  content: "\f25c"; }
+
+/* line 1921, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-registered:before {
+  content: "\f25d"; }
+
+/* line 1924, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-creative-commons:before {
+  content: "\f25e"; }
+
+/* line 1927, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gg:before {
+  content: "\f260"; }
+
+/* line 1930, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-gg-circle:before {
+  content: "\f261"; }
+
+/* line 1933, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tripadvisor:before {
+  content: "\f262"; }
+
+/* line 1936, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-odnoklassniki:before {
+  content: "\f263"; }
+
+/* line 1939, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-odnoklassniki-square:before {
+  content: "\f264"; }
+
+/* line 1942, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-get-pocket:before {
+  content: "\f265"; }
+
+/* line 1945, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-wikipedia-w:before {
+  content: "\f266"; }
+
+/* line 1948, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-safari:before {
+  content: "\f267"; }
+
+/* line 1951, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-chrome:before {
+  content: "\f268"; }
+
+/* line 1954, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-firefox:before {
+  content: "\f269"; }
+
+/* line 1957, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-opera:before {
+  content: "\f26a"; }
+
+/* line 1960, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-internet-explorer:before {
+  content: "\f26b"; }
+
+/* line 1964, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-tv:before,
+.fa-television:before {
+  content: "\f26c"; }
+
+/* line 1967, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-contao:before {
+  content: "\f26d"; }
+
+/* line 1970, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-500px:before {
+  content: "\f26e"; }
+
+/* line 1973, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-amazon:before {
+  content: "\f270"; }
+
+/* line 1976, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calendar-plus-o:before {
+  content: "\f271"; }
+
+/* line 1979, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calendar-minus-o:before {
+  content: "\f272"; }
+
+/* line 1982, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calendar-times-o:before {
+  content: "\f273"; }
+
+/* line 1985, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-calendar-check-o:before {
+  content: "\f274"; }
+
+/* line 1988, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-industry:before {
+  content: "\f275"; }
+
+/* line 1991, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-map-pin:before {
+  content: "\f276"; }
+
+/* line 1994, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-map-signs:before {
+  content: "\f277"; }
+
+/* line 1997, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-map-o:before {
+  content: "\f278"; }
+
+/* line 2000, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-map:before {
+  content: "\f279"; }
+
+/* line 2003, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-commenting:before {
+  content: "\f27a"; }
+
+/* line 2006, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-commenting-o:before {
+  content: "\f27b"; }
+
+/* line 2009, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-houzz:before {
+  content: "\f27c"; }
+
+/* line 2012, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-vimeo:before {
+  content: "\f27d"; }
+
+/* line 2015, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-black-tie:before {
+  content: "\f27e"; }
+
+/* line 2018, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_fontawesome.scss */
+.fa-fonticons:before {
+  content: "\f280"; }
 
 @font-face {
   font-family: 'moonbold';
