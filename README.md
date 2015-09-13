@@ -1,6 +1,8 @@
 # Developers Please Note
 
-1) The ViewSource theme is using a local copy of jquery in order to meet Google Page Speed requirements.  Please! If you have a plugin conflict LOOK HERE FIRST!! Do not contact the plugin developer until you are sure the exisiting jquery configuration is NOT the problem!
+The ViewSource theme is using a local copy of jquery in order to meet Google Page Speed requirements.
+Please! If you have a plugin conflict LOOK HERE FIRST!!
+Do not contact the plugin developer until you are sure the exisiting jquery configuration is NOT the problem!
 
 # WordPress
 
