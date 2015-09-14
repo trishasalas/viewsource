@@ -28,7 +28,7 @@
 	<?php get_template_part( 'template-parts/content', 'speakers' );?>
 </section>
 
-<section id="schedule" class="schedule">
+<section id="schedule" class="schedule schedule-front">
 	<?php get_template_part( 'template-parts/content', 'sessions-front' );?>
 </section>
 

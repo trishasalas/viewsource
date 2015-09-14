@@ -315,7 +315,7 @@ hr::before {
 	}
 }
 
-.schedule {
+.schedule.schedule-front {
 	@include cf();
 	ul.header {
 		font-family: $headings-lt;

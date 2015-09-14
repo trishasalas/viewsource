@@ -10,9 +10,18 @@ if ( ! function_exists( 'view_source_setup' ) ) :
 function view_source_setup() {
 
 	load_theme_textdomain( 'view_source', get_template_directory() . '/languages' );
+
 	add_theme_support( 'automatic-feed-links' );
+
 	add_theme_support( 'title-tag' );
+
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'platinum-sponsor', 800 );
+	add_image_size( 'gold-sponsor', 400 );
+	add_image_size( 'silver-sponsor', 200 );
+	add_image_size( 'sponsor', 150 );
+
+
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'view_source' ),
 		'footer' => esc_html__( 'Footer Menu', 'view_source' ),

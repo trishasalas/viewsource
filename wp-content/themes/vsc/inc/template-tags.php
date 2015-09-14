@@ -320,7 +320,7 @@
 				$time     = 'g:i a';
 				?>
 				<?php setup_postdata ( $post ); ?>
-				<ul>
+				<ul class="single-session">
 					<li class="time">
 						<time>
 							<?php echo date ( $time, $datetime ); ?><br>
@@ -337,9 +337,6 @@
 						<span class="session-speaker"><?php echo get_the_title ( $speaker[ 0 ] ); ?></span>
 						<span class="speaker-company"><?php the_field ( 'company', $speaker[ 0 ] ); ?></span>
 					</li>
-					<li>
-						<a href="<?php the_permalink (); ?>"><i class="fa fa-plus"></i></a>
-					</li>
 				</ul>
 			<?php endforeach; ?>
 
@@ -347,7 +344,7 @@
 		<?php endif;
 	}
 
-	function view_source_sponsors( $sponsor_type ) {
+	function view_source_sponsors( $sponsor_type, $image_size ) {
 		$args = array(
 			'post_type'     => 'sponsor',
 			'post_status'   => 'publish',
@@ -357,7 +354,7 @@
 		foreach ( $posts as $post ) {
 			echo '<li class="' . strtolower( $sponsor_type ) . '">';
 			echo '<small>' . $sponsor_type . '</small>';
-			echo get_the_post_thumbnail ( $post->ID );
+			echo get_the_post_thumbnail ( $post->ID, $image_size );
 			echo '</li>';
 		}
 	}
