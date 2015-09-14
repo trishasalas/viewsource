@@ -3087,6 +3087,20 @@ hr::before {
       width: 24%;
       margin-right: 1%; } }
 
+#dragon {
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 999;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  #dragon .fa {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
 h1,
 h1.entry-title {
   font-size: 30px;

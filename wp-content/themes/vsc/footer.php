@@ -20,6 +20,11 @@
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 <?php get_template_part( 'template-parts/content', 'sidr' );?>
+<div id="dragon">
+	<i id="thar-she-goes" class="fa fa-times-circle"></i>
+	<img src="<?php echo get_template_directory_uri();?>/images/mozilla-dragon.png">
+</div>
+
 <script>
 	// minified loadCSS function
 	function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],s=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(n){for(var o,t=0;t<s.length;t++)s[t].href&&s[t].href.indexOf(e)>-1&&(o=!0);o?n():setTimeout(function(){d.onloadcssdefined(n)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
