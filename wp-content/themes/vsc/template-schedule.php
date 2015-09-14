@@ -14,7 +14,7 @@
 	$reg_time_three = get_field( 'vs_day_one_registration_time' );
 	$time = 'g:i a';?>
 
-<section id="schedule" class="schedule">
+<section id="schedule" class="schedule-inner">
 
 <h2><?php _e( 'Schedule', 'view_source' );?></h2>
 <p><?php echo esc_html( get_post_meta( get_the_ID(), 'vs_sessions_intro_text', true ) );?></p>

@@ -1,4 +1,5 @@
-.schedule {
+.schedule.schedule-inner {
+	margin-bottom: 60px;
 	@include cf();
 	ul.header {
 		font-family: $headings-lt;
@@ -46,7 +47,6 @@
 			padding-top: 30px;
 			padding-left: 30px;
 
-
 			p.speaker-name {
 				margin-bottom: 0;
 			}
@@ -92,7 +92,6 @@
 	.speaker-company {
 		font-size: 12px;
 	}
-	margin-bottom: 60px;
 	ul.day,
 	ul.header {
 		li {
@@ -147,18 +146,18 @@
 			}
 		}
 	}
-}
 
-ul.single-session {
-	min-height: 240px;
-}
+	ul.single-session {
+		min-height: 240px;
+	}
 
-ul.day {
-	background: transparent;
-	margin-top: 60px;
-	li {
-		font-family: $headings-b;
-		font-size: 18px;
-		text-transform: uppercase;
+	ul.day {
+		background: transparent;
+		margin-top: 60px;
+		li {
+			font-family: $headings-b;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
 	}
 }

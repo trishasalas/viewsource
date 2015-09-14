@@ -439,11 +439,12 @@ hr::before {
 		}
 		span,
 		a {
-			font-size: 14px;
-			padding: 0 20px;
+			font-size: 13px;
+			padding: 0 0 0 20px;
 		}
 
 		a {
+			font-size: 16px;
 			display: block;
 			background: $persian-green;
 			color: $white;
@@ -451,6 +452,7 @@ hr::before {
 			text-align: center;
 			text-decoration: none;
 			margin-top: 30px;
+			text-transform: uppercase;
 		}
 	}
 }
