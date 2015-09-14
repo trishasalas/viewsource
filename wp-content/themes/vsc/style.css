@@ -2564,12 +2564,12 @@ section {
   section h2,
   section h3,
   section h4 {
+    font-family: "moonlight", sans-serif;
     padding: 0 15px;
     margin-bottom: 10px; }
   section h2 {
     font-size: 24px;
     font-size: 2.4rem;
-    font-family: "moonlight", sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px; }
@@ -2580,7 +2580,10 @@ section {
   section p {
     line-height: 1.6;
     margin-bottom: 40px;
-    padding: 0 15px; }
+    padding: 0 15px;
+    font-family: "montserratregular", sans-serif; }
+  section span {
+    font-family: "moonlight", sans-serif; }
 
 #site-intro {
   border-bottom: 1px dotted #00aa86;
@@ -2696,6 +2699,8 @@ hr::before {
     height: 190px;
     position: relative;
     margin: 5px; }
+    .speakers ul li:hover a {
+      color: #fff; }
     @media screen and (min-width: 768px) {
       .speakers ul li {
         width: 23.72881%;
@@ -2744,11 +2749,15 @@ hr::before {
         color: #fff; }
     .speakers ul li a {
       text-decoration: none; }
+    .speakers ul li:hover .speaker-info a.speaker-name {
+      color: #fff; }
     .speakers ul li .speaker-info {
       position: absolute;
       bottom: 10px;
       left: 10px; }
       .speakers ul li .speaker-info a.speaker-name {
+        color: #00aa86;
+        font-family: "moonbold", sans-serif;
         text-transform: uppercase;
         line-height: 1.4; }
         .speakers ul li .speaker-info a.speaker-name .word2,
@@ -3315,6 +3324,8 @@ html.remodal-is-locked {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%; }
+  .remodal p {
+    font-family: "montserratregular", sans-serif; }
 
 .remodal-is-initialized {
   display: inline-block; }

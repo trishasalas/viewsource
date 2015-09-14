@@ -47,6 +47,10 @@ html.remodal-is-locked {
 	position: relative;
 	outline: none;
 	text-size-adjust: 100%;
+
+	p {
+		font-family: $font-main;
+	}
 }
 
 .remodal-is-initialized {

@@ -4,13 +4,13 @@ section {
 	h2,
 	h3,
 	h4 {
+		font-family: $headings-lt;
 		padding: 0 15px;
 		margin-bottom: 10px;
 	}
 
 	h2 {
 		@include rem(font-size, 24px);
-		font-family: $headings-lt;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin-bottom: 20px;
@@ -28,6 +28,11 @@ section {
 		line-height: 1.6;
 		margin-bottom: 40px;
 		padding: 0 15px;
+		font-family: $font-main;
+	}
+
+	span {
+		font-family: $headings-lt;
 	}
 }
 
@@ -172,6 +177,12 @@ hr::before {
 			position: relative;
 			margin: 5px;
 
+			&:hover {
+				a {
+					color: $white;
+				}
+			}
+
 			@include bp(large-tablet) {
 				@include gallery(3 of 12);
 			}
@@ -212,14 +223,25 @@ hr::before {
 			a {
 				text-decoration: none;
 			}
+
+			&:hover {
+				.speaker-info {
+					a.speaker-name {
+						color: $white;
+					}
+				}
+			}
 			.speaker-info {
 				position: absolute;
 				bottom: 10px;
 				left: 10px;
 
 				a.speaker-name {
+					color: $persian-green;
+					font-family: $headings-b;
 					text-transform: uppercase;
 					line-height: 1.4;
+
 					.word2,
 					.word3 {
 						display: block;
