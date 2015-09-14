@@ -9,6 +9,10 @@
 		nav {
 			position: relative;
 
+			a {
+				font-family: $font-main;
+			}
+
 			.registration-link {
 				background: $persian-green;
 				color: $white;

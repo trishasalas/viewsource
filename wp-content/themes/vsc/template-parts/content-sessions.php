@@ -13,6 +13,7 @@
 	);
 
 	$posts = get_posts( $args );
+	var_dump($posts);
 	if( $posts ): ?>
 		<?php foreach( $posts as $post ):
 			$speaker = get_post_meta( $post->ID, 'vs_session_speaker', true );
@@ -33,7 +34,7 @@
 					<?php echo get_the_post_thumbnail( $post->ID );?>
 				</li>
 				<li class="session-info">
-					<span class="session-title"><?php the_title (); ?></span>
+					<span class="session-title"><?php echo get_the_title ( $post->ID ); ?></span>
 					<span class="session-speaker"><?php echo get_the_title ( $speaker[ 0 ] ); ?></span>
 					<span class="speaker-company"><?php the_field ( 'company', $speaker[ 0 ] ); ?></span>
 				</li>

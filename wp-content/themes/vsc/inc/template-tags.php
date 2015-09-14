@@ -333,7 +333,7 @@
 						<?php echo get_the_post_thumbnail ( $post->ID ); ?>
 					</li>
 					<li class="session-info">
-						<span class="session-title"><?php the_title (); ?></span>
+						<a href="<?php echo get_the_permalink($post->ID);?>"<span class="session-title"><?php echo get_the_title ( $post->ID ); ?></span></a>
 						<span class="session-speaker"><?php echo get_the_title ( $speaker[ 0 ] ); ?></span>
 						<span class="speaker-company"><?php the_field ( 'company', $speaker[ 0 ] ); ?></span>
 					</li>

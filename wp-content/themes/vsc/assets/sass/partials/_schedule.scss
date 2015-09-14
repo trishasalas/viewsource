@@ -15,9 +15,37 @@
 	}
 
 	ul {
+		@include cf();
+		position: relative;
 		.time {
+			position: absolute;
+			top: 30px;
+			left: 30px;
 			text-align: left;
-			padding-left: 30px;
+			width: 40%;
+			padding: 0;
+
+			@include bp(large-tablet) {
+				text-align: left;
+				padding-left: 30px;
+			}
+		}
+
+		.featured-image {
+			width: 50%;
+			float: right;
+		}
+
+		.session-info {
+			position: absolute;
+			top: 60px;
+			left: 30px;
+			width: 40%;
+			padding: 0;
+
+			@include bp(large-tablet) {
+				width: 60%;
+			}
 		}
 	}
 }

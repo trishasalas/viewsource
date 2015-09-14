@@ -316,6 +316,11 @@ hr::before {
 }
 
 .schedule {
+	@include cf();
+	ul.header {
+		font-family: $headings-lt;
+		text-transform: uppercase;
+	}
 	ul {
 		@include cf();
 		background: $lt-grayish-yellow;
@@ -329,6 +334,7 @@ hr::before {
 		}
 
 		.time {
+			font-family: $font-main;
 			width: 50%;
 			text-align: center;
 			padding-top: 30px;
@@ -386,6 +392,22 @@ hr::before {
 	.date {
 		margin-bottom: 10px;
 		padding: 10px;
+	}
+
+	.session-title,
+	.speaker-company {
+		display: block;
+	}
+	.session-info {
+		a {
+			font-size: 18px;
+			font-family: $headings-b;
+			margin-bottom: 10px;
+		}
+
+	}
+	.speaker-company {
+		font-size: 12px;
 	}
 
 }

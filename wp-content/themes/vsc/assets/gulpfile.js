@@ -30,7 +30,7 @@ gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({
             style: 'compact',
-            sourceComments: false
+            sourceComments: true
         })
             .on('error', notify.onError(function(error) {
                 return "Error: " + error.message;
