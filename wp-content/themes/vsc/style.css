@@ -2582,6 +2582,20 @@ section {
     margin-bottom: 40px;
     padding: 0 15px; }
 
+#site-intro {
+  border-bottom: 1px dotted #00aa86;
+  width: 50%;
+  margin: 0 auto 20px auto;
+  padding-bottom: 0; }
+  #site-intro h2,
+  #site-intro p {
+    text-align: center; }
+  #site-intro h2 {
+    color: #00aa86;
+    margin-bottom: 5px; }
+  #site-intro p {
+    padding-top: 30px; }
+
 #page-header {
   position: relative;
   padding-bottom: 0;

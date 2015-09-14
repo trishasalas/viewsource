@@ -361,3 +361,18 @@
 			echo '</li>';
 		}
 	}
+
+	function view_source_site_intro() {
+		$intro = esc_html( get_post_meta( get_the_ID(), 'vs_intro_text', true ) );
+		$date = esc_html( get_post_meta( get_the_ID(), 'vs_date', true ) );
+		$location = esc_html( get_post_meta( get_the_ID(), 'vs_location', true ) );
+		if( $date ) :
+			echo '<h2>' . $date . '</h2>';
+			endif;
+		if( $location ) :
+			echo '<h2>' . $location . '</h2>';
+		endif;
+		if( $intro ) :
+			echo '<p>' . $intro . '</p>';
+			endif;
+	}

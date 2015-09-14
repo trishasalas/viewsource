@@ -31,6 +31,24 @@ section {
 	}
 }
 
+#site-intro {
+	border-bottom: 1px dotted $persian-green;
+	width: 50%;
+	margin: 0 auto 20px auto;
+	padding-bottom: 0;
+	h2,
+	p {
+		text-align: center;
+	}
+	h2 {
+		color: $persian-green;
+		margin-bottom: 5px;
+	}
+	p {
+		padding-top: 30px;
+	}
+}
+
 #page-header {
 	position: relative;
 	padding-bottom: 0;
