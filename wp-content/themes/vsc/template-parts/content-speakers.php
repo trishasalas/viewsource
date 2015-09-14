@@ -38,7 +38,7 @@
 			<div class="remodal" data-remodal-id="<?php echo $post->ID; ?>">
 				<button data-remodal-action="close" class="remodal-close"></button>
 				<div class="left">
-					<?php echo get_the_post_thumbnail ( $post->ID ); ?>
+					<?php echo get_the_post_thumbnail ( $post->ID, 'speaker-photo'); ?>
 					<h4><?php the_title (); ?></h4>
 					<p class="company"><?php the_field ( 'company' ); ?></p>
 					<p class="twitter-handle"><?php if( $twitter ) : echo '<i class="fa fa-twitter fa-2x"></i>@' . $twitter; endif; ?></p>

@@ -330,7 +330,7 @@
 					</span>
 					</li>
 					<li class="featured-image">
-						<?php echo get_the_post_thumbnail ( $post->ID ); ?>
+						<?php if( function_exists( 'the_post_thumbnail' ) ) : echo get_the_post_thumbnail ( $post->ID ); endif;?>
 					</li>
 					<li class="session-info">
 						<a href="<?php echo get_the_permalink($post->ID);?>"<span class="session-title"><?php echo get_the_title ( $post->ID ); ?></span></a>

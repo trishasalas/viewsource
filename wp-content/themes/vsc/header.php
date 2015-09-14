@@ -48,7 +48,7 @@ help support Mozilla.
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'view_source' ); ?></a>
 	<div id="main" class="main">
 		<section id="page-header" class="page-header">
-			<div class="branding">
+			<div class="branding" style="width:243px;height: auto;">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
 				</a>

@@ -1,4 +1,4 @@
-.schedule.schedule-inner {
+#schedule.schedule-inner {
 	margin-bottom: 60px;
 	@include cf();
 	ul.header {
@@ -20,8 +20,7 @@
 		.time {
 			font-family: $font-main;
 			width: 50%;
-			text-align: center;
-			padding-top: 30px;
+			padding: 30px 0 0 30px;
 
 			@include bp(large-tablet) {
 				padding-top: 30px;
@@ -43,9 +42,9 @@
 		}
 
 		.session-info {
-			width: 60%;
-			padding-top: 30px;
-			padding-left: 30px;
+			//width: 60%;
+			padding: 30px;
+			margin-left: 15%;
 
 			p.speaker-name {
 				margin-bottom: 0;
@@ -106,50 +105,50 @@
 		}
 	}
 
-	ul {
-		@include cf();
-		position: relative;
+	//ul {
+	//	@include cf();
+	//	position: relative;
 
-		.time {
-			position: absolute;
-			top: 30px;
-			left: 15px;
-			text-align: left;
-			width: 40%;
-			padding: 0;
+		//.time {
+		//	position: absolute;
+		//	top: 30px;
+		//	left: 15px;
+		//	text-align: left;
+		//	width: 40%;
+		//	padding: 0;
+		//
+		//	@include bp(large-tablet) {
+		//		text-align: left;
+		//	}
+		//}
 
-			@include bp(large-tablet) {
-				text-align: left;
-			}
-		}
+		//.featured-image {
+		//	width: 50%;
+		//	float: right;
+		//
+		//	@include bp(large-table) {
+		//		width: auto;
+		//		height: auto;
+		//	}
+		//}
+		//
+		//.session-info {
+		//	position: absolute;
+		//	top: 60px;
+		//	left: 15px;
+		//	width: 40%;
+		//	padding: 0;
+		//	margin-bottom: 20px;
+		//
+		//	@include bp(large-tablet) {
+		//		width: 60%;
+		//	}
+		//}
+	//}
 
-		.featured-image {
-			width: 50%;
-			float: right;
-
-			@include bp(large-table) {
-				width: auto;
-				height: auto;
-			}
-		}
-
-		.session-info {
-			position: absolute;
-			top: 60px;
-			left: 15px;
-			width: 40%;
-			padding: 0;
-			margin-bottom: 20px;
-
-			@include bp(large-tablet) {
-				width: 60%;
-			}
-		}
-	}
-
-	ul.single-session {
-		min-height: 240px;
-	}
+	//ul.single-session {
+	//	min-height: 240px;
+	//}
 
 	ul.day {
 		background: transparent;

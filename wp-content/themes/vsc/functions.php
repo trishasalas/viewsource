@@ -16,10 +16,11 @@ function view_source_setup() {
 	add_theme_support( 'title-tag' );
 
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'platinum-sponsor', 800 );
-	add_image_size( 'gold-sponsor', 400 );
-	add_image_size( 'silver-sponsor', 200 );
+	add_image_size( 'platinum-sponsor', 400 );
+	add_image_size( 'gold-sponsor', 200 );
+	add_image_size( 'silver-sponsor', 180 );
 	add_image_size( 'sponsor', 150 );
+	add_image_size( 'speaker-photo', 200 );
 
 
 	register_nav_menus( array(
@@ -92,8 +93,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/admin.php';
-
-//	add_filter('acf/settings/show_admin', '__return_false');
+	
 	// Fixes Chrome Slim Paint Bug in WordPress Admin Panel
 	function chromefix_inline_css() {
 		wp_add_inline_style( 'wp-admin', '#adminmenu { transform: translateZ(0); }' );

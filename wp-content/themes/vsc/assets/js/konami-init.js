@@ -3,6 +3,7 @@ var easter_egg = new Konami();easter_egg.code = function() {
 	var dragon = document.getElementById("dragon");
 	dragon.style.visibility = "visible";
 
+
 	document.getElementById("thar-she-goes").onclick = function() {
 		document.getElementById("dragon").style.visibility = "hidden";
 	}

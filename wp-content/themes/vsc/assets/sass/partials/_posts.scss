@@ -13,7 +13,7 @@ h1.entry-title {
 h2 {
 	a {
 		font-size: 28px;
-	margin-bottom: 20px;
+		margin-bottom: 20px;
 		text-decoration: none;
 	}
 }
@@ -27,10 +27,50 @@ h2 {
 article {
 	margin-bottom: 90px;
 	padding: 0 15px;
+	min-height: 400px;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $headings-lt;
+		margin-bottom: 20px;
+		line-height: 1.2;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	h5 {
+		font-size: 18px;
+	}
+	h6 {
+		font-size: 16px;
+		font-style: italic;
+	}
+
 
 	.featured-image {
 		float: right;
 		margin: 0 0 30px 30px;
+	}
+
+	p {
+		font-family: $font-main;
+		line-height: 1.8;
+		margin-bottom: 20px;
+	}
+
+	li {
+		margin-bottom: 10px;
 	}
 
 	footer {
@@ -38,6 +78,6 @@ article {
 	}
 }
 
-.page-header {
-
+.sticky-wrapper {
+	margin-bottom: 30px;
 }
