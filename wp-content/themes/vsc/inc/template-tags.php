@@ -329,13 +329,10 @@
 						<?php the_field ( 'vs_session_date' ); ?><br>
 					</span>
 					</li>
-					<li class="featured-image">
-						<?php if( function_exists( 'the_post_thumbnail' ) ) : echo get_the_post_thumbnail ( $post->ID ); endif;?>
-					</li>
 					<li class="session-info">
 						<a href="<?php echo get_the_permalink($post->ID);?>"<span class="session-title"><?php echo get_the_title ( $post->ID ); ?></span></a>
-						<span class="session-speaker"><?php echo get_the_title ( $speaker[ 0 ] ); ?></span>
-						<span class="speaker-company"><?php the_field ( 'company', $speaker[ 0 ] ); ?></span>
+						<span class="session-speaker"><?php echo get_the_title ( $post->ID ) ; ?></span>
+						<span class="speaker-company"><?php the_field ( 'company', $post->ID ); ?></span>
 					</li>
 				</ul>
 			<?php endforeach; ?>

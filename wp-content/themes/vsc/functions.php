@@ -88,11 +88,12 @@ function view_source_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'view_source_scripts' );
 
-require get_template_directory() . '/inc/post-types.php';
-require get_template_directory() . '/inc/template-tags.php';
-require get_template_directory() . '/inc/extras.php';
-require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/admin.php';
+	require get_template_directory() . '/inc/post-types.php';
+	require get_template_directory() . '/inc/template-tags.php';
+	require get_template_directory() . '/inc/extras.php';
+	require get_template_directory() . '/inc/customizer.php';
+	require get_template_directory() . '/inc/admin.php';
+	require get_template_directory() . '/inc/cmb.php';
 
 	// Fixes Chrome Slim Paint Bug in WordPress Admin Panel
 	function chromefix_inline_css() {

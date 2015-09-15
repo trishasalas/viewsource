@@ -12,9 +12,6 @@
 	 */
 
 	get_header( 'home' ); ?>
-<section id="site-intro" class="site-intro">
-	<?php view_source_site_intro();?>
-</section>
 
 <section id="page-header" class="page-header sticky">
 	<?php get_template_part( 'template-parts/content', 'secondary-header' );?>

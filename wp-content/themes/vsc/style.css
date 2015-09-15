@@ -4649,6 +4649,171 @@ html.remodal-is-locked {
 .lt-ie9 .remodal {
   width: 500px; }
 
+/* line 1, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+.session-meta {
+  *zoom: 1; }
+  /* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .session-meta:before, .session-meta:after {
+    content: '';
+    display: table; }
+  /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .session-meta:after {
+    clear: both; }
+  /* line 4, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+  .session-meta .date {
+    background: #f0f0e8;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px; }
+  /* line 10, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+  .session-meta .date-date {
+    text-transform: uppercase; }
+  /* line 15, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+  .session-meta .time,
+  .session-meta .speaker {
+    background: #f0f0e8;
+    width: 49%;
+    display: inline-block;
+    padding: 20px; }
+  /* line 22, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+  .session-meta .time {
+    float: left;
+    margin-right: 2%; }
+  /* line 26, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+  .session-meta .speaker {
+    float: right; }
+
+/* line 33, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+.nav-links .nav-previous,
+.nav-links .nav-next {
+  width: 50%;
+  text-transform: uppercase;
+  line-height: 1.4; }
+  /* line 37, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_single-session.scss */
+  .nav-links .nav-previous a,
+  .nav-links .nav-next a {
+    text-decoration: none; }
+
+/* line 1, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+.day-header {
+  *zoom: 1; }
+  /* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .day-header:before, .day-header:after {
+    content: '';
+    display: table; }
+  /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .day-header:after {
+    clear: both; }
+  /* line 4, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .day-header .day-header-date {
+    width: 20%;
+    display: inline-block;
+    padding: 0 10px;
+    float: left; }
+  /* line 10, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .day-header .day-header-text {
+    width: 80%;
+    display: inline-block;
+    padding: 0 10px;
+    float: right;
+    text-align: center; }
+  /* line 20, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .day-header .day-header-date h3,
+  .day-header .day-header-text h3 {
+    font-family: "moonbold", sans-serif; }
+
+/* line 26, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+.time-header {
+  *zoom: 1;
+  background: #f0f0e8;
+  margin-bottom: 10px; }
+  /* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .time-header:before, .time-header:after {
+    content: '';
+    display: table; }
+  /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .time-header:after {
+    clear: both; }
+  /* line 30, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .time-header h3 {
+    padding: 0;
+    margin: 0;
+    text-transform: none; }
+  /* line 36, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .time-header .time-header-time,
+  .time-header .time-header-title {
+    width: 49%;
+    display: inline-block;
+    padding: 20px; }
+  /* line 42, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .time-header .time-header-time {
+    float: left; }
+  /* line 45, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .time-header .time-header-title {
+    float: right; }
+
+/* line 50, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+.single-session {
+  *zoom: 1;
+  position: relative;
+  width: 100%; }
+  /* line 70, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .single-session:before, .single-session:after {
+    content: '';
+    display: table; }
+  /* line 75, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/helpers/_mixins.scss */
+  .single-session:after {
+    clear: both; }
+  /* line 54, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .single-session .headshot {
+    width: 30%;
+    float: left;
+    display: inline-block;
+    padding: 0 10px; }
+  /* line 61, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .single-session .time {
+    float: left;
+    display: inline-block;
+    width: 20%;
+    padding: 40px 20px 20px 0;
+    text-align: center; }
+  /* line 69, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .single-session .title {
+    padding-right: 60px; }
+  /* line 73, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .single-session a {
+    color: #000;
+    text-decoration: none;
+    line-height: 1.6; }
+    /* line 78, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+    .single-session a .speaker {
+      padding: 20px 0 10px 0;
+      line-height: 1.6;
+      text-decoration: none; }
+  /* line 85, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .single-session .fa {
+    position: absolute;
+    color: #00aa86;
+    right: 20px;
+    top: 20px; }
+
+/* line 96, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+.day-one,
+.day-two,
+.day-three {
+  border-bottom: 1px dotted #e6e6d9; }
+  /* line 99, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+  .day-one .single-session,
+  .day-two .single-session,
+  .day-three .single-session {
+    background: #f0f0e8;
+    margin-bottom: 10px; }
+
+/* line 105, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/partials/_new-schedule.scss */
+.day-header {
+  margin-top: 60px;
+  margin-bottom: 0; }
+
 /* line 3, /Users/trishasalas/Sites/viewsource.dev/wp-content/themes/vsc/assets/sass/media/_media.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
