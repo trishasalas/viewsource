@@ -12,17 +12,14 @@
 	if ( $posts ):?>
 		<?php foreach ( $posts as $post ): // variable must be called $post (IMPORTANT)?>
 			<?php setup_postdata ( $post );
-			$datetime = get_field ( 'vs_session_time', $post->ID );
+			$datetime = get_field ( 'vs_session_date', $post->ID );
 			$time     = 'g:i a';
 			?>
 			<ul>
 				<li class="time">
 					<time>
-						<?php echo date ( $time, $datetime ); ?>
+						<?php echo $datetime; ?>
 					</time>
-				</li>
-				<li class="featured-image">
-					<?php echo get_the_post_thumbnail ( $post->ID ); ?>
 				</li>
 				<li class="session-info">
 					<h4>
@@ -41,6 +38,6 @@
 				</li>
 			</ul>
 		<?php endforeach; ?>
-		<a class="btn btn-primary" href="/schedule">See Full Schedule</a>
+		<!--<a class="btn btn-primary" href="/schedule">See Full Schedule</a>-->
 		<?php wp_reset_postdata (); ?>
 	<?php endif; ?>

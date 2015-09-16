@@ -36,34 +36,12 @@ section {
 	}
 }
 
-#site-intro {
-	border-bottom: 1px dotted $persian-green;
-	width: 50%;
-	margin: 0 auto 20px auto;
-	padding-bottom: 0;
-	h2,
-	p {
-		text-align: center;
-	}
-	h2 {
-		color: $persian-green;
-		margin-bottom: 5px;
-	}
-	p {
-		padding-top: 30px;
-	}
-}
-
 #page-header {
 	position: relative;
 	padding-bottom: 0;
 	background: $white;
 	width: 100%;
 	z-index: 100;
-	a.registration-link {
-		color: $white;
-		right: 200px;
-	}
 	.menu-toggle {
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -298,7 +276,7 @@ hr::before {
 	.left,
 	.right {
 		display: block;
-		width: 98%;
+		width: 100%;
 		margin-left: 1%;
 
 		@include bp(large-tablet) {
@@ -307,15 +285,27 @@ hr::before {
 		}
 	}
 	.left {
-		float: left;
 		margin-right: 2%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		@include bp(large-tablet) {
+			float: left;
+		}
 	}
 	.right {
-		float: right;
+
+		@include bp(large-tablet) {
+			float: right;
+		}
 	}
 }
 
 .schedule.schedule-front {
+	margin-bottom: 30px;
 	@include cf();
 	ul.header {
 		font-family: $headings-lt;
@@ -326,7 +316,7 @@ hr::before {
 		background: $lt-grayish-yellow;
 		list-style-type: none;
 		margin: 0 0 10px 0;
-		padding: 0;
+		padding: 20px 10px;
 		li {
 			display: inline-block;
 			float: left;
@@ -340,7 +330,7 @@ hr::before {
 			padding-top: 30px;
 
 			@include bp(large-tablet) {
-				padding-top: 30px;
+				padding-top: 10px;
 				width: 20%;
 			}
 		}
@@ -360,8 +350,8 @@ hr::before {
 
 		.session-info {
 				width: 60%;
-				padding-top: 30px;
-				padding-left: 30px;
+				padding-top: 10px;
+				//padding-left: 30px;
 
 
 			p.speaker-name {

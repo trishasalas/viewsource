@@ -24,3 +24,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "modules/clearings";
 @import "partials/partials";
 @import "media/media";
+
+.main-navigation {
+	.registration-link {
+		right: 160px; // change this value to 260px when the schedule link is added back in
+		bottom: -4px;
+	}
+}
+
+#page-header {
+	.main-navigation {
+		a.registration-link {
+			color: $white;
+			top: -5px;
+			right: 100px; // change this value to 200px when the schedule link is added back in
+		}
+	}
+}

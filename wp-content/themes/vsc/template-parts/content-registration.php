@@ -28,7 +28,7 @@
 				echo '<p>' . $description . '<br>';
 			endif;
 			if ( $end_date ) :
-				echo 'On sale until ' . $end_date . '</p>';
+				echo 'On sale until ' . date( 'm-d-Y', $end_date ) . '</p>';
 			endif;
 			if ( $cost ) :
 				echo '<span class="cost">$ ' . $cost . '</span>';

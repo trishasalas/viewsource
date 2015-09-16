@@ -29,8 +29,8 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({
-            style: 'compact',
-            sourceComments: true
+            style: 'compressed',
+            sourceComments: false
         })
             .on('error', notify.onError(function(error) {
                 return "Error: " + error.message;

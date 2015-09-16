@@ -94,11 +94,15 @@
 .day-one,
 .day-two,
 .day-three {
-	border-bottom: 1px dotted darken($lt-grayish-yellow, 5%);
+	border-bottom: 3px double darken($lt-grayish-yellow, 5%);
 
 	.single-session {
 		background: $lt-grayish-yellow;
 		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 2px;
+		}
 	}
 }
 

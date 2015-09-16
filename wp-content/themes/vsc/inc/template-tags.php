@@ -356,17 +356,68 @@
 		}
 	}
 
-	function view_source_site_intro() {
-		$intro = esc_html( get_post_meta( get_the_ID(), 'vs_intro_text', true ) );
-		$date = esc_html( get_post_meta( get_the_ID(), 'vs_date', true ) );
-		$location = esc_html( get_post_meta( get_the_ID(), 'vs_location', true ) );
-		if( $date ) :
-			echo '<h2>' . $date . '</h2>';
-			endif;
-		if( $location ) :
-			echo '<h2>' . $location . '</h2>';
-		endif;
-		if( $intro ) :
-			echo '<p>' . $intro . '</p>';
-			endif;
-	}
+	function view_source_schedule( $date, $day, $header ) {
+		$date = '11/02/2015';
+		$day = 'one';
+		$header = 'Arrival Day';
+	?>
+	<div class="day-<?php echo $day;?>">
+	<div class="day-header">
+		<div class="day-header-date">
+			<h3><?php echo $date;?></h3>
+		</div>
+		<div class="day-header-text">
+			<h3><?php echo $header;?></h3>
+		</div>
+	</div>
+
+	</div>
+	<?php
+		$posts = get_posts( array(
+			                    'post_type' => 'session',
+			                    'post_status' => 'publish',
+			                    'meta_key' => strtotime( 'view_source_session_time' ),
+			                    'order_by' => 'meta_key',
+			                    'order' => 'DESC',
+			                    'meta_query' => array(
+				                    array(
+					                    'key' => 'view_source_session_date',
+					                    'value' => $date,
+					                    'compare' => '=',
+				                    )
+			                    ))
+		);
+		if( $posts ):
+			foreach( $posts as $post ) {
+				$time = strtotime( get_post_meta( $post->ID, 'view_source_session_time', true ) );
+				$speaker = get_post_meta( $post->ID, 'view_source_speaker', true );
+
+				echo '<div class="single-session">';
+
+				if( '' != $time ) :
+					echo '<div class="time">' . date( 'g:i a', $time ) . '</div>';
+				endif;
+
+				if( '' != $speaker ) :
+					echo '<div class="headshot">' . get_the_post_thumbnail( $speaker, 'speaker-photo' ) . '</div>';
+				endif;
+
+				if( '' != $speaker ) :
+					echo '<a href="' . get_permalink( $speaker ) . '">';
+					echo '<i class="fa fa-plus"></i>';
+					echo '<div class="speaker">' . get_the_title( $speaker ) . '</div>';
+					echo '</a>';
+				endif;
+
+				if( '' != $post->post_title ) :
+					echo '<a href="' . get_permalink( $post->ID ) . '">';
+					echo '<div class="title">' . $post->post_title . '</div>';
+					echo '</a>';
+				endif;
+
+				echo '</div>';
+			}
+		endif;?>
+</div>
+
+<?php	}
