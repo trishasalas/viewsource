@@ -1,7 +1,7 @@
 .main-navigation {
 	display: none;
 	@include cf();
-	font-family: $font-main;
+	font-family: $font-main-bold;
 	position: relative;
 
 	@include bp(large-tablet) {
@@ -87,7 +87,7 @@
 	}
 
 	.registration-link {
-		padding: 10px;
+		padding: 7px;
 		background: $persian-green;
 		position: absolute;
 	}

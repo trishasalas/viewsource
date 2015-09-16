@@ -152,15 +152,15 @@
 
 		li.platinum {
 			@include bp(large-tablet) {
-				width: 100%;
+				width: 49%;
 				margin-right: 1%;
 			}
 		}
 
 		li.gold {
 			@include bp(large-tablet) {
-				width: 49%;
-				margin-right: 1%;
+				width: 24%;
+				//margin-right: 1%;
 			}
 		}
 
@@ -170,7 +170,7 @@
 			}
 			@include bp(large-tablet) {
 				width: 24%;
-				margin-right: 1%;
+				//margin-right: 1%;
 			}
 
 			img {
@@ -184,7 +184,7 @@
 		li.silver {
 			@include bp(large-tablet) {
 				width: 24%;
-				margin-right: 1%;
+				//margin-right: 1%;
 			}
 
 			img {

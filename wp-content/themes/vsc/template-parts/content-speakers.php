@@ -32,19 +32,24 @@
 
 
 <?php
-	$posts = get_field ( 'vs_speakers_list' );
-	if ( $posts ):
-		foreach ( $posts as $post ):
-			setup_postdata ( $post );
-			$session = get_post_meta ( $post->ID, 'vs_speaker_session', true );
-			$twitter = esc_html( get_post_meta ( $post->ID, 'vs_speaker_twitter_handle', true ) );
+	$speakers = get_posts(
+		array(
+			'post_type' => 'speaker',
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+
+		));
+	//var_dump($speakers);
+		foreach ( $speakers as $speaker ):
+			$session = get_post_meta ( $speaker->ID, 'view_source_speaker_session', true );
+			$twitter = esc_html( get_post_meta ( $speaker->ID, 'view_source_speaker_twitter', true ) );
 			?>
-			<div class="remodal" data-remodal-id="<?php echo $post->ID; ?>">
+			<div class="remodal" data-remodal-id="<?php echo $speaker->ID; ?>">
 				<button data-remodal-action="close" class="remodal-close"></button>
 				<div class="left">
-					<?php echo get_the_post_thumbnail ( $post->ID, 'speaker-photo'); ?>
-					<h4><?php the_title (); ?></h4>
-					<p class="company"><?php the_field ( 'company' ); ?></p>
+					<?php echo get_the_post_thumbnail ( $speaker->ID, 'speaker-photo'); ?>
+					<h4><?php echo get_the_title( $speaker->ID ); ?></h4>
+					<p><?php echo get_the_title ( $session );?></p>
 					<?php if( $twitter ) :
 						echo '<p class="twitter-handle">';
 						echo '<a href="https://twitter.com/' . $twitter . '">';
@@ -54,14 +59,11 @@
 ?>
 				</div>
 				<div class="right">
-					<h5><?php if( $session ) : echo get_the_title ( $session[ 0 ] ); endif; ?></h5>
-					<p><?php if( $session ) : echo get_the_content ( $session[ 0 ] ); endif; ?></p>
+					<h5><?php echo get_the_title ( $session );?></h5>
+					<p><?php echo get_post_field( 'post_content', $speaker->ID );?></p>
 				</div>
 
 			</div>
 
 		<?php endforeach; ?>
-
-		<?php wp_reset_postdata (); ?>
-	<?php endif; ?>
 

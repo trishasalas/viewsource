@@ -58,7 +58,7 @@
 		z-index: 1;
 
 		@include bp(large-tablet) {
-			font-size: 40px;
+			font-size: 60px;
 			left: 50%;
 			transform: translateX(-50%);
 		}
@@ -132,7 +132,7 @@ nav {
 			position: absolute;
 			margin: 0;
 			padding: 0;
-			top: 40px;
+			top: 36px;
 			right: 0;
 		}
 		li {

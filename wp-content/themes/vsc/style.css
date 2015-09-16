@@ -2274,7 +2274,7 @@ a {
 .main-navigation {
   display: none;
   *zoom: 1;
-  font-family: "montserratlight", sans-serif;
+  font-family: "montserratbold", sans-serif;
   position: relative; }
   .main-navigation:before, .main-navigation:after {
     content: '';
@@ -2325,7 +2325,7 @@ a {
     text-decoration: none;
     text-transform: uppercase; }
   .main-navigation .registration-link {
-    padding: 10px;
+    padding: 7px;
     background: #00aa86;
     position: absolute; }
 
@@ -2503,7 +2503,7 @@ a {
   z-index: 1; }
   @media screen and (min-width: 768px) {
     .site-header h2.description {
-      font-size: 40px;
+      font-size: 60px;
       left: 50%;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
@@ -2550,7 +2550,7 @@ nav .menu {
       position: absolute;
       margin: 0;
       padding: 0;
-      top: 40px;
+      top: 36px;
       right: 0; } }
   #masthead .social-media li {
     list-style: none;
@@ -2588,13 +2588,15 @@ section {
   section span {
     font-family: "moonlight", sans-serif; }
 
-#page-header {
+#page-header,
+#page-header-front-page {
   position: relative;
   padding-bottom: 0;
   background: #fff;
   width: 100%;
   z-index: 100; }
-  #page-header .menu-toggle {
+  #page-header .menu-toggle,
+  #page-header-front-page .menu-toggle {
     margin-top: 20px;
     margin-bottom: 20px; }
 
@@ -2718,6 +2720,7 @@ hr::before {
     .speakers ul li .company {
       *zoom: 1;
       font-size: 10px;
+      font-family: "montserratlight", sans-serif;
       text-transform: uppercase; }
       .speakers ul li .company:before, .speakers ul li .company:after {
         content: '';
@@ -2742,10 +2745,15 @@ hr::before {
       bottom: 10px;
       left: 10px; }
       .speakers ul li .speaker-info a.speaker-name {
-        color: #00aa86;
-        font-family: "moonbold", sans-serif;
+        color: #111;
+        font-family: "montserratbold", sans-serif;
         text-transform: uppercase;
         line-height: 1.4; }
+        .speakers ul li .speaker-info a.speaker-name .word1,
+        .speakers ul li .speaker-info a.speaker-name .word2,
+        .speakers ul li .speaker-info a.speaker-name .word3,
+        .speakers ul li .speaker-info a.speaker-name .word4 {
+          font-family: "montserratbold", sans-serif; }
         .speakers ul li .speaker-info a.speaker-name .word2,
         .speakers ul li .speaker-info a.speaker-name .word3 {
           display: block; }
@@ -2772,12 +2780,14 @@ hr::before {
 .remodal h4 {
   font-family: "montserratbold", sans-serif;
   font-size: 15px;
+  line-height: 1.2;
   text-align: left;
   text-transform: uppercase; }
 
 .remodal h5 {
   font-family: "montserratbold", sans-serif;
   font-size: 11px;
+  line-height: 1.4;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 10px; }
@@ -2786,6 +2796,8 @@ hr::before {
   font-size: 12px;
   text-align: left;
   margin-bottom: 10px; }
+  .remodal p a {
+    text-decoration: none; }
 
 .remodal small {
   font-size: 10px;
@@ -3093,18 +3105,16 @@ hr::before {
         height: 110px; } }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.platinum {
-      width: 100%;
+      width: 49%;
       margin-right: 1%; } }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.gold {
-      width: 49%;
-      margin-right: 1%; } }
+      width: 24%; } }
   .site-footer ul#sponsors li.other small {
     display: none; }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.other {
-      width: 24%;
-      margin-right: 1%; } }
+      width: 24%; } }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.other img {
       left: 50%;
@@ -3113,8 +3123,7 @@ hr::before {
               transform: translateX(-50%); } }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.silver {
-      width: 24%;
-      margin-right: 1%; } }
+      width: 24%; } }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.silver img {
       top: 50%;
@@ -3873,10 +3882,14 @@ object {
   display: block; }
 
 .main-navigation .registration-link {
-  right: 160px;
+  right: 150px;
   bottom: -4px; }
 
 #page-header .main-navigation a.registration-link {
   color: #fff;
-  top: -5px;
+  bottom: 24px;
+  right: 100px; }
+
+#page-header-front-page a.registration-link {
+  color: #fff;
   right: 100px; }

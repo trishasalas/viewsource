@@ -36,7 +36,8 @@ section {
 	}
 }
 
-#page-header {
+#page-header,
+#page-header-front-page {
 	position: relative;
 	padding-bottom: 0;
 	background: $white;
@@ -179,6 +180,7 @@ hr::before {
 			.company {
 				@include cf();
 				font-size: 10px;
+				font-family: $font-main;
 				text-transform: uppercase;
 			}
 
@@ -215,10 +217,17 @@ hr::before {
 				left: 10px;
 
 				a.speaker-name {
-					color: $persian-green;
-					font-family: $headings-b;
+					color: #111;
+					font-family: $font-main-bold;
 					text-transform: uppercase;
 					line-height: 1.4;
+
+					.word1,
+					.word2,
+					.word3,
+					.word4 {
+						font-family: $font-main-bold;
+					}
 
 					.word2,
 					.word3 {
@@ -242,6 +251,7 @@ hr::before {
 	h4 {
 		font-family: $font-main-bold;
 		font-size: 15px;
+		line-height: 1.2;
 		text-align: left;
 		text-transform: uppercase;
 	}
@@ -249,6 +259,7 @@ hr::before {
 	h5 {
 		font-family: $font-main-bold;
 		font-size: 11px;
+		line-height: 1.4;
 		text-align: left;
 		text-transform: uppercase;
 		margin-bottom: 10px;
@@ -258,6 +269,10 @@ hr::before {
 		font-size: 12px;
 		text-align: left;
 		margin-bottom: 10px;
+
+		a {
+			text-decoration: none;
+		}
 	}
 
 	small {
