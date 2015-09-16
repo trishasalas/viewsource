@@ -8,6 +8,31 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<!--
+		 _.-~-.
+	   7''  Q..\
+	_7         (_
+  _7  _/    _q.  /
+_7 . ___  /VVvv-'_                                            .
+7/ / /~- \_\\      '-._     .-'                      /       //
+./ ( /-~-/||'=.__  '::. '-~'' {             ___   /  //     ./{
+V   V-~-~| ||   __''_   ':::.   ''~-~.___.-'' _/  // / {_   /  {  /
+VV/-~-~-|/ \ .'__'. '.    '::                     _ _ _        ''.
+/ /~~~~||VVV/ /  \ )  \        _ __ ___   ___ ___(_) | | __ _   .::'
+/ (~-~-~\\.-' /    \'   \::::. | '_ ` _ \ / _ \_  / | | |/ _` | :::'
+/..\    /..\__/      '     '::: | | | | | | (_) / /| | | | (_| | ::'
+vVVv    vVVv                 ': |_| |_| |_|\___/___|_|_|_|\__,_| ''
+
+Hi there, nice to meet you!
+
+Interested in having a direct impact on hundreds of millions of users? Join
+Mozilla, and become part of a global community that’s helping to build a
+brighter future for the Web.
+
+Visit https://careers.mozilla.org to learn about our current job openings.
+Visit https://www.mozilla.org/contribute for more ways to get involved and
+help support Mozilla.
+-->
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +59,8 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 			<ul class="social-media">
-				<li><a href="<?php esc_html_e( get_theme_mod( 'twitter' ) );?>"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="<?php esc_html_e( get_theme_mod( 'twitter' ) );?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
 			</ul>
 		</div><!-- .header-top -->
 		<div class="date"><?php _e( '2-4 November 2015' );?></div>
