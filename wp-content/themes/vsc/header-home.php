@@ -38,7 +38,7 @@
 				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>"><i class="fa fa-facebook"></i></a></li>
 			</ul>
 		</div><!-- .header-top -->
-		<date style="font-size: 28px;color: #ffffff;text-align:center;position: absolute;left: 50%;transform: translate(-50%);top: 20%;"><?php _e( '2-4 November 2015' );?></date>
+		<div class="date"><?php _e( '2-4 November 2015' );?></div>
 		<h2 class="description"><?php bloginfo( 'description' ); ?></h2>
 		<div class="mountains" style="background: url(<?php echo get_template_directory_uri();?>/images/mountains.png) no-repeat top center;background-size:cover;height:90vh;width:100%;position:absolute;top:0;"></div>
 	</header><!-- #masthead -->

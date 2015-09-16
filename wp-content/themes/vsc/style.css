@@ -2490,28 +2490,55 @@ a {
   line-height: 2;
   padding: 0 10px; }
 
+.site-header .date {
+  font-size: 20px;
+  color: #FFF;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  top: 20%; }
+  @media screen and (min-width: 768px) {
+    .site-header .date {
+      font-size: 32px;
+      color: #ffffff;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+          -ms-transform: translate(-50%);
+              transform: translate(-50%);
+      top: 20%; } }
+
 .site-header h2.description {
   font-family: "moonlight", sans-serif;
   color: #fff;
-  letter-spacing: 1px;
-  text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1.2;
-  padding: 0 15px;
   position: absolute;
-  top: 28%;
-  z-index: 1; }
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .site-header h2.description {
+      top: 33%;
       font-size: 60px;
       left: 50%;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); } }
-  .site-header h2.description .word1,
-  .site-header h2.description .word2,
-  .site-header h2.description .word3 {
-    letter-spacing: 3px; }
+  @media screen and (min-width: 768px) {
+    .site-header h2.description .word1,
+    .site-header h2.description .word2,
+    .site-header h2.description .word3 {
+      letter-spacing: 3px; } }
   @media screen and (min-width: 768px) {
     .site-header h2.description .word3:after {
       content: '';
