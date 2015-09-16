@@ -2504,14 +2504,14 @@ a {
   @media screen and (min-width: 768px) {
     .site-header .date {
       font-size: 32px;
-      color: #ffffff;
+      color: #f2f2f2;
       text-align: center;
       position: absolute;
       left: 50%;
       -webkit-transform: translate(-50%);
           -ms-transform: translate(-50%);
               transform: translate(-50%);
-      top: 20%; } }
+      top: 18%; } }
 
 .site-header h2.description {
   font-family: "moonlight", sans-serif;
@@ -2528,12 +2528,10 @@ a {
   text-align: center; }
   @media screen and (min-width: 768px) {
     .site-header h2.description {
-      top: 33%;
-      font-size: 60px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+      top: 31%;
+      font-size: 55px;
+      letter-spacing: 1px;
+      line-height: 1; } }
   @media screen and (min-width: 768px) {
     .site-header h2.description .word1,
     .site-header h2.description .word2,
