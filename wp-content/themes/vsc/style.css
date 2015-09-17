@@ -3158,7 +3158,7 @@ hr::before {
               transform: translate(-50%, -50%); } }
 
 #dragon {
-  visibility: hidden;
+  display: none;
   top: 50%;
   left: 50%;
   position: absolute;
