@@ -57,6 +57,10 @@ help support Mozilla.
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php view_source_registration_link()?>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'light-menu' ) ); ?>
+				<ul class="social-media">
+				<li><a href="<?php esc_html_e( get_theme_mod( 'twitter' ) );?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			</ul>
 			</nav><!-- #site-navigation -->
 			<hr>
 		</section>

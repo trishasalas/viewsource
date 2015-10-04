@@ -29,7 +29,7 @@
 						$speaker = get_post_meta( $post->ID, 'vs_session_speaker', true ); if( $speaker ) :
 						echo '<p class="speaker-name">' . get_the_title( $speaker[0] ) . '</p>'; endif;
 
-						$speaker_company = get_post_meta( $speaker[0], 'company', true ); if( $speaker_company ) :
+						$speaker_company = get_post_meta( $speaker, 'company', true ); if( $speaker_company ) :
 						echo '<p class="company">' . $speaker_company . '</p>'; endif;
 					?>
 				</li>

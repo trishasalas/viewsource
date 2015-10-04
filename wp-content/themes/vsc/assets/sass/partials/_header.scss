@@ -28,9 +28,7 @@
 	.main-navigation {
 		width: 50%;
 		float: right;
-		padding: 40px 60px 0 0;
-
-
+		padding: 40px 60px 0;
 	}
 
 	.menu-toggle {
@@ -77,6 +75,7 @@
 		transform: translate(-50%);
 		width: 100%;
 		text-align:center;
+		z-index:5;
 
 		@include bp(large-tablet) {
 			top: 31%;

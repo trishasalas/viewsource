@@ -2478,7 +2478,7 @@ a {
 .site-header .main-navigation {
   width: 50%;
   float: right;
-  padding: 40px 60px 0 0; }
+  padding: 40px 60px 0; }
 
 .site-header .menu-toggle {
   position: absolute;
@@ -2525,7 +2525,8 @@ a {
       -ms-transform: translate(-50%);
           transform: translate(-50%);
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   @media screen and (min-width: 768px) {
     .site-header h2.description {
       top: 31%;
@@ -2640,6 +2641,10 @@ section {
 
 .page-header nav {
   margin-bottom: 60px; }
+
+.page-header .social-media {
+  position: absolute;
+  right: 0; }
 
 hr {
   position: relative;
@@ -3119,13 +3124,15 @@ hr::before {
                   transform: translateY(-50%); } }
   .site-footer ul#sponsors li.platinum,
   .site-footer ul#sponsors li.gold,
-  .site-footer ul#sponsors li.silver {
+  .site-footer ul#sponsors li.silver,
+  .site-footer ul#sponsors li.other {
     border: 5px solid #e6e5dc;
     width: 100%; }
     @media screen and (min-width: 768px) {
       .site-footer ul#sponsors li.platinum,
       .site-footer ul#sponsors li.gold,
-      .site-footer ul#sponsors li.silver {
+      .site-footer ul#sponsors li.silver,
+      .site-footer ul#sponsors li.other {
         display: inline-block;
         height: 110px; } }
   @media screen and (min-width: 768px) {
@@ -3140,12 +3147,6 @@ hr::before {
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.other {
       width: 24%; } }
-  @media screen and (min-width: 768px) {
-    .site-footer ul#sponsors li.other img {
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); } }
   @media screen and (min-width: 768px) {
     .site-footer ul#sponsors li.silver {
       width: 24%; } }
@@ -3907,14 +3908,19 @@ object {
   display: block; }
 
 .main-navigation .registration-link {
-  right: 150px;
+  right: 260px;
   bottom: -4px; }
 
 #page-header .main-navigation a.registration-link {
   color: #fff;
   bottom: 24px;
-  right: 100px; }
+  right: 275px; }
 
-#page-header-front-page a.registration-link {
+#page-header-front-page a.registration-link,
+#page-header a.registration-link {
   color: #fff;
-  right: 100px; }
+  right: 275px; }
+
+#page-header-front-page nav .menu,
+#page-header nav .menu {
+  padding-right: 75px; }

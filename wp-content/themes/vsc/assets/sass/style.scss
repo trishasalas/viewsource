@@ -27,7 +27,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .main-navigation {
 	.registration-link {
-		right: 150px; // change this value to 260px when the schedule link is added back in
+		right: 260px; // change this value to 260px when the schedule link is added back in...consider using flexbox next time, k? ;p
 		bottom: -4px;
 	}
 }
@@ -37,14 +37,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		a.registration-link {
 			color: $white;
 			bottom: 24px;
-			right: 100px; // change this value to 200px when the schedule link is added back in
+			right: 275px; // change this value to 200px when the schedule link is added back in
 		}
 	}
 }
 
-#page-header-front-page {
+#page-header-front-page,
+#page-header {
 	a.registration-link {
 		color: $white;
-		right: 100px; // change this value to 200px when the schedule link is added back in
+		right: 275px; // change this value to 200px when the schedule link is added back in
+	}
+	nav {
+		.menu {
+			padding-right: 75px;
+		}
 	}
 }

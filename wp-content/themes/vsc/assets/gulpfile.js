@@ -19,7 +19,7 @@ gulp.task('browserSync', function() {
     ];
 
     browserSync.init(files, {
-        proxy: 'viewsource.dev/'
+        proxy: 'vs.dev/'
     });
 
 	browserSync.reload();
@@ -30,7 +30,7 @@ gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
         .pipe(sass({
             style: 'compressed',
-            sourceComments: false
+            sourceComments: true
         })
             .on('error', notify.onError(function(error) {
                 return "Error: " + error.message;
@@ -65,4 +65,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'compress', 'browserSync', 'watch']);
+gulp.task('default', ['sass', 'watch']);
