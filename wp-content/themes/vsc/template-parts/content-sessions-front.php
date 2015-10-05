@@ -8,7 +8,6 @@
 
 <?php
 	$posts = get_field ( 'vs_scheduled_sessions' );
-	//var_dump($posts);
 	if ( $posts ):?>
 		<?php foreach ( $posts as $post ): // variable must be called $post (IMPORTANT)?>
 			<?php setup_postdata ( $post );
@@ -34,10 +33,27 @@
 					?>
 				</li>
 				<li>
-					<a href="<?php the_permalink (); ?>"><i class="fa fa-plus"></i></a>
+					<a href="#<?php echo $post->ID; ?>"><i class="fa fa-plus"></i></a>
 				</li>
 			</ul>
 		<?php endforeach; ?>
-		<!--<a class="btn btn-primary" href="/schedule">See Full Schedule</a>-->
+		<a class="btn btn-schedule btn-primary" href="/schedule">See Full Schedule</a>
 		<?php wp_reset_postdata (); ?>
 	<?php endif; ?>
+
+	<?php 
+	$sessions = get_posts(
+		array(
+			'post_type' => 'session',
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+
+		));
+	foreach ( $sessions as $session ):
+			?>
+			<div class="remodal" data-remodal-id="<?php echo $session->ID; ?>">
+				<button data-remodal-action="close" class="remodal-close"></button>
+				<h4><?php echo get_the_title( $session->ID ); ?></h4>
+				<p><?php echo wpautop( get_post_field( 'post_content', $session->ID ) );?></p>
+			</div>
+			<?php endforeach; ?>

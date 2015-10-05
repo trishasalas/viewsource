@@ -20,7 +20,10 @@
 		);
 
 		$speakers = array(
-			array( 'id' => 'view_source_speaker_twitter', 'name' => 'Twitter Handle', 'type' => 'text' ),
+			array( 
+				'id' => 'view_source_speaker_twitter', 
+				'name' => 'Twitter Handle', 
+				'type' => 'text' ),
 		);
 
 		$meta_boxes[] = array(
@@ -28,16 +31,6 @@
 			'pages' => 'speaker',
 			'context' => 'side',
 			'fields' => $speakers
-		);
-
-		$speaker_session = array(
-			array( 'id' => 'view_source_speaker_session', 'name' => 'Session', 'type' => 'post_select', 'use_ajax' => true, 'query' => array( 'post_type' => 'session' ) ),
-		);
-
-		$meta_boxes[] = array(
-			'title' => 'Which Session is this speaker associated with?',
-			'pages' => 'speaker',
-			'fields' => $speaker_session
 		);
 
 		return $meta_boxes;
