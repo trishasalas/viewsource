@@ -8,10 +8,11 @@
 
 <?php
 	$posts = get_field ( 'vs_scheduled_sessions' );
+	//var_dump($posts);
 	if ( $posts ):?>
 		<?php foreach ( $posts as $post ): // variable must be called $post (IMPORTANT)?>
 			<?php setup_postdata ( $post );
-			$datetime = get_field ( 'vs_session_date', $post->ID );
+			$datetime = get_post_meta ( $post->ID, 'view_source_overview_session_date', true );
 			$time     = 'g:i a';
 			?>
 			<ul>
@@ -22,13 +23,13 @@
 				</li>
 				<li class="session-info">
 					<h4>
-						<a href="<?php the_permalink (); ?>"><?php echo get_the_title ( $post->ID ); ?></a>
+						<a href="#<?php echo $post->ID; ?>"><?php echo get_the_title ( $post->ID ); ?></a>
 					</h4>
 					<?php
 						$speaker = get_post_meta( $post->ID, 'vs_session_speaker', true ); if( $speaker ) :
 						echo '<p class="speaker-name">' . get_the_title( $speaker[0] ) . '</p>'; endif;
 
-						$speaker_company = get_post_meta( $speaker, 'company', true ); if( $speaker_company ) :
+						$speaker_company = get_post_meta( $speaker[0], 'company', true ); if( $speaker_company ) :
 						echo '<p class="company">' . $speaker_company . '</p>'; endif;
 					?>
 				</li>
@@ -37,10 +38,9 @@
 				</li>
 			</ul>
 		<?php endforeach; ?>
-		<a class="btn btn-schedule btn-primary" href="/schedule">See Full Schedule</a>
+		<a class="btn btn-primary" href="/schedule">See Full Schedule</a>
 		<?php wp_reset_postdata (); ?>
 	<?php endif; ?>
-
 	<?php 
 	$sessions = get_posts(
 		array(

@@ -20,7 +20,8 @@ function view_source_setup() {
 	add_image_size( 'gold-sponsor', 200 );
 	add_image_size( 'silver-sponsor', 180 );
 	add_image_size( 'sponsor', 150 );
-	add_image_size( 'speaker-photo', 200 );
+	add_image_size( 'speaker-photo', 100 );
+	add_image_size( 'posts-front', 150, 150 );
 
 
 	register_nav_menus( array(
@@ -76,10 +77,12 @@ function view_source_scripts() {
 	wp_enqueue_script( 'konami-init', get_template_directory_uri() . '/assets/js/konami-init.js', array( 'konami' ), '', true );
 	wp_enqueue_script( 'sticky', get_template_directory_uri() . '/assets/js/sticky.min.js', array(), '', true );
 	wp_enqueue_script( 'vs-js', get_template_directory_uri() . '/assets/js/vs-functions.js', array( 'jquery', 'sticky', 'sidr' ), '1.0', true );
+	wp_enqueue_script( 'remodal', get_template_directory_uri() . '/assets/js/remodal.min.js', array(), '', true );
 
 
 	if( is_front_page() ) :
-		wp_enqueue_script( 'remodal', get_template_directory_uri() . '/assets/js/remodal.min.js', array(), '', true );
+		wp_enqueue_script( 'bxslider', get_template_directory_uri() . '/assets/js/bxslider.min.js', array( 'jquery' ), '', true );
+		wp_enqueue_script( 'bxslider-init', get_template_directory_uri() . '/assets/js/bxslider-init.js', array( 'jquery', 'bxslider' ), '', true );
 		wp_enqueue_script( 'lettering-js', get_template_directory_uri() . '/assets/js/lettering.min.js', array( 'jquery' ), '.7', true );
 		wp_enqueue_script( 'lettering-init', get_template_directory_uri() . '/assets/js/lettering-init.js', array( 'jquery', 'lettering-js' ), '1.0', true);
 	endif;
@@ -92,6 +95,7 @@ add_action( 'wp_enqueue_scripts', 'view_source_scripts' );
 	require get_template_directory() . '/inc/customizer.php';
 	require get_template_directory() . '/inc/admin.php';
 	require get_template_directory() . '/inc/cmb.php';
+
 
 	// Fixes Chrome Slim Paint Bug in WordPress Admin Panel
 	function chromefix_inline_css() {

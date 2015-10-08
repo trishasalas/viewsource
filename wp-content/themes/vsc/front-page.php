@@ -17,6 +17,10 @@
 	<?php get_template_part( 'template-parts/content', 'secondary-header' );?>
 </section>
 
+<section id="latest-news" class="latest-news">
+<?php get_template_part( 'template-parts/content', 'post' );?>
+</section>
+
 <section id="registration" class="registration">
 	<?php get_template_part( 'template-parts/content', 'registration' );?>
 </section>
@@ -32,5 +36,15 @@
 <section id="venue" class="venue">
 	<?php get_template_part( 'template-parts/content', 'map' );?>
 </section>
+
+<section id="twitter" class="twitter">
+	<h2><?php _e( 'Twitter' );?></h2>
+	<div class="content-wrap">
+		<div class="tweets">
+			<?php if ( function_exists( "display_tweets" ) ) { display_tweets(); };?>
+		</div>
+	</div>
+</section>
+
 
 <?php get_footer(); ?>

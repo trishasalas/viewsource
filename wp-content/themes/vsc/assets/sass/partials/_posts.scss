@@ -1,3 +1,50 @@
+.latest-news {
+  @include cf();
+
+  h2 {
+	margin-bottom: 60px;
+  }
+  h3 {
+	font-size: 28px;
+	margin-bottom: 20px;
+	a {
+	  text-decoration: none;
+	}
+  }
+  .featured-image {
+	width: 20%;
+	float: left;
+
+	@include bp(max) {
+	  width: 100%;
+	  margin-bottom: 20px;
+	  padding: 0 20px;
+	}
+
+	img {
+	  width: 150px;
+	  height: auto;
+	}
+  }
+  .excerpt {
+	width: 75%;
+	float: right;
+	 p {
+	   margin-bottom: 0;
+	 }
+	@include bp(max) {
+	  width: 100%;
+	}
+  }
+  a.read-more-button {
+	padding: 5px;
+	background: $persian-green;
+	color: $white;
+	text-decoration: none;
+	font-size: 12px;
+	text-transform: uppercase;
+  }
+}
 h1,
 h1.entry-title {
 	font-family: $headings-lt;

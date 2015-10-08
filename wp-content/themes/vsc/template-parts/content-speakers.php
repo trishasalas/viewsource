@@ -39,7 +39,7 @@
 			'posts_per_page' => -1,
 
 		));
-	//var_dump($speakers);
+	
 		foreach ( $speakers as $speaker ):
 			$session = get_post_meta ( $speaker->ID, 'view_source_speaker_session', true );
 			$twitter = esc_html( get_post_meta ( $speaker->ID, 'view_source_speaker_twitter', true ) );
@@ -56,7 +56,7 @@
 						echo '<i class="fa fa-twitter fa-2x"></i>';
 						echo '@' . $twitter . '</a></p>';
 						endif;
-?>
+						?>
 				</div>
 				<div class="right">
 					<h5><?php echo get_the_title ( $session );?></h5>

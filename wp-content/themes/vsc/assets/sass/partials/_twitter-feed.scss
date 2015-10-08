@@ -1,0 +1,14 @@
+.twitter {
+  @include cf();
+  p {
+    visibility: hidden;
+  }
+  .muted {
+    font-size: 11px;
+    color: #ccc;
+    font-style: italic;
+    &:before {
+      content: 'Posted on';
+    }
+  }
+}

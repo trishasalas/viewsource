@@ -1,48 +1,43 @@
 .day-header {
-	background: $lt-grayish-yellow;
 	padding: 20px 0;
 	@include cf();
 
 	.day-header-date {
-		width: 20%;
-		display: inline-block;
-		float: left;
-	}
-	.day-header-text {
-		width: 80%;
-		display: inline-block;
-		padding: 0 10px;
-		float: right;
-		text-align: center;
+		width: 100%;
+
 	}
 
-	.day-header-date,
-	.day-header-text {
+
+	.day-header-date {
 		h3 {
 			font-family: $headings-b;
+			margin: 0;
+			font-size: 24px;
 		}
 	}
 }
 
 .time-header {
+	background: $lt-grayish-yellow;
 	@include cf();
 	margin-bottom: 10px;
 	h3 {
 		padding: 0;
 		margin: 0;
-		text-transform: none;
+		text-transform: capitalize;
 	}
 	.time-header-time,
 	.time-header-title {
-		width: 49%;
 		display: inline-block;
 		padding: 20px;
 	}
 
 	.time-header-time {
+		width: 35%;
 		float: left;
 	}
 	.time-header-title {
+		width: 65%;
 		float: right;
 	}
 }
@@ -52,22 +47,37 @@
 	position: relative;
 	width: 100%;
 	.headshot {
-		width: 30%;
+		width: 20%;
 		float: left;
 		display: inline-block;
 		padding: 0 10px;
+
+	  @include bp(max) {
+		width: 50%;
+		padding-bottom: 10px;
+	  }
 	}
 
 	.time {
 		float: left;
 		display: inline-block;
-		width: 20%;
+		width: 15%;
 		padding: 40px 20px 20px 0;
 		text-align: center;
+
+	  @include bp(max) {
+		width: 50%;
+	  }
 	}
 
 	.title {
+		font-family: $font-main;
+		font-size: 18px;
 		padding-right: 60px;
+	  @include bp(max) {
+		text-align: center;
+		padding: 0 20px;
+	  }
 	}
 
 	a {
@@ -76,9 +86,14 @@
 		line-height: 1.6;
 
 		.speaker {
-			padding: 20px 0 10px 0;
+			font-family: $font-main-bold;
+			padding: 10px 0 10px 0;
 			line-height: 1.6;
 			text-decoration: none;
+
+		  @include bp(max) {
+			text-align: center;
+		  }
 		}
 	}
 
@@ -87,6 +102,10 @@
 		color: $persian-green;
 		right: 20px;
 		top: 20px;
+
+	  @include bp(max) {
+		display: none;
+	  }
 	}
 
 }

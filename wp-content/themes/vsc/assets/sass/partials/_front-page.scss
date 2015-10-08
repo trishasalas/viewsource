@@ -12,7 +12,6 @@ section {
 	h2 {
 		@include rem(font-size, 24px);
 		letter-spacing: 2px;
-		text-transform: uppercase;
 		margin-bottom: 20px;
 	}
 

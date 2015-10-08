@@ -7,9 +7,25 @@
 	 */
 	function cmb_sample_metaboxes( array $meta_boxes ) {
 
+		$session_overview = array(
+			array( 
+				'id' => 'view_source_overview_session_date', 
+				'name' => 'Date', 
+				'desc' => 'Use this date input for the overview posts on the front page.',
+				'type' => 'date' 
+				),
+		);
+
+		$meta_boxes[] = array(
+			'title' => 'Overview Session Date',
+			'pages' => 'session',
+			'priority' => 'high',
+			'fields' => $session_overview,
+		);
+
 		$sessions = array(
-			array( 'id' => 'view_source_session_date', 'name' => 'Session Date', 'type' => 'date',  'cols' => 4 ),
-			array( 'id' => 'view_source_session_time', 'name' => 'Session Time', 'type' => 'time',  'cols' => 4 ),
+			array( 'id' => 'vs_datetime', 'name' => 'Session Date', 'type' => 'datetime_unix',  'cols' => 4 ),
+			//array( 'id' => 'view_source_session_time', 'name' => 'Session Time', 'type' => 'time',  'cols' => 4 ),
 			array( 'id' => 'view_source_speaker', 'name' => 'Speaker', 'type' => 'post_select', 'use_ajax' => true, 'query' => array( 'post_type' => 'speaker' ),  'cols' => 4 ),
 		);
 
@@ -23,7 +39,8 @@
 			array( 
 				'id' => 'view_source_speaker_twitter', 
 				'name' => 'Twitter Handle', 
-				'type' => 'text' ),
+				'type' => 'text' 
+				),
 		);
 
 		$meta_boxes[] = array(

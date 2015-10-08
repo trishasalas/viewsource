@@ -20,7 +20,7 @@
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
 				<div class="featured-image">
-					<?php echo get_the_post_thumbnail( get_the_ID() );?>
+					<?php echo get_the_post_thumbnail( get_the_ID(), 'speaker-photo' );?>
 				</div>
 				<div class="entry-content">
 					<?php the_content(); ?>
