@@ -1,24 +1,56 @@
 .site-header {
+  background:url(images/sky.png) no-repeat top center;
+  background-size:cover;
+  position: relative;
+  height:100vh;
+  width: 100%;
+
+  @include bp(small-tablet) {
+    height:90vh;
+  }
+
 	.header-top {
-		@include cf();
-		z-index: 2;
+      @include container(1260px);
+      padding: 15px;
+      position:relative;
+      z-index: 2;
+
+      @include bp(tablet) {
+        padding: 0 20px;
+      }
+
+      @include bp(desktop) {
+        padding: 0 80px;
+      }
 	}
 
 	.logo {
-		width: 200px;
-		position: absolute;
-		top: 15px;
-		left: 15px;
+		@include span(9 of 12);
 
-		@include bp(large-tablet) {
-			width: 243px;
-			display: inline-block;
-			left: 0;
-			padding-top: 30px;
-			position: relative;
-			transform: none;
+      @include bp(phablet) {
+        @include span(6 of 12);
+      }
+
+		@include bp(small-tablet) {
+          @include span(5 of 12);
 		}
+
+      @include bp(large-tablet) {
+        @include span(8 of 12);
+      }
+
+      @include bp(small-desktop) {
+        padding-top: 30px;
+      }
+
+      @include bp(desktop) {
+        @include span(5 of 12);
+        padding-top: 30px;
+      }
 		svg {
+          @include bp(large-tablet) {
+            width: 380px;
+          }
 			path {
 				fill: $white;
 			}
@@ -26,16 +58,15 @@
 	}
 
 	.main-navigation {
-		width: 50%;
-		float: right;
-		padding: 40px 60px 0;
+      display: none;
+
+      @include bp(desktop) {
+        padding-top: 50px;
+        display: block;
+        @include span(6 of 12);
+      }
 	}
 
-	.menu-toggle {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
 
 	.fa {
 		color: $white;
@@ -51,7 +82,11 @@
 		left: 50%;
 		transform: translate(-50%);
 		width: 100%;
-		top: 20%;
+		top: 30%;
+
+      @include bp(small-tablet) {
+        top: 30%;
+      }
 
 		@include bp(large-tablet) {
 			font-size: 32px;
@@ -60,7 +95,7 @@
 			position: absolute;
 			left: 50%;
 			transform: translate(-50%);
-			top: 18%;
+			top: 30%;
 		}
 	}
 
@@ -70,18 +105,24 @@
 		font-size: 30px;
 		line-height: 1.2;
 		position: absolute;
-		top: 30%;
+		top: 40%;
 		left: 50%;
 		transform: translate(-50%);
-		width: 100%;
+		width: 90%;
 		text-align:center;
 		z-index:5;
 
+      @include bp(small-tablet) {
+        top: 40%;
+        width:50%;
+      }
+
 		@include bp(large-tablet) {
-			top: 31%;
+			top: 40%;
 			font-size: 55px;
 			letter-spacing: 1px;
 			line-height: 1;
+          width:70%;
 		}
 
 		.word1,
@@ -113,13 +154,18 @@
 		}
 
 	}
-}
+  .mountains {
+    background: url(images/mountains.png) no-repeat top center;
+    background-size:cover;
+    height:100vh;
+    width:100%;
+    position:absolute;
+    top:0;
 
-nav {
-	.menu {
-		display: inline-block;
-		float: right;
-	}
+    @include bp(small-tablet) {
+      height:90vh;
+    }
+  }
 }
 
 #page-header {
@@ -149,15 +195,22 @@ nav {
 
 #masthead {
 	.social-media {
-		display: none;
+      display: none;
+      margin: 0;
+      padding: 0;
 
-		@include bp(large-tablet) {
+
+      @include bp(small-desktop) {
+        display: block;
+        @include span(4 of 12 offset 8);
+        padding-top: 30px;
+      }
+
+		@include bp(desktop) {
+          padding-top: 50px;
+          @include span(1 of 12 last);
 			display: block;
-			position: absolute;
-			margin: 0;
-			padding: 0;
-			top: 36px;
-			right: 0;
+
 		}
 		li {
 			list-style: none;
@@ -168,7 +221,6 @@ nav {
 }
 
 .main {
-	max-width: 900px;
-	width: 100%;
-	margin: 0 auto;
+	@include container(1260px);
+  padding: 0 70px;
 }

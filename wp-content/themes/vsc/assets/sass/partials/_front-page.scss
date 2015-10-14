@@ -147,7 +147,7 @@ hr::before {
 		width: 100%;
 
 		@include bp(large-tablet) {
-			width: 90%;
+			padding: 0 70px;
 		}
 
 		li {

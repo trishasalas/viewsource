@@ -80,30 +80,41 @@
 // Media Queries
 @mixin bp($point) {
 	@if $point == large-desktop {
-		@media screen and (min-width: 1280px) {
+		@media screen and (min-width: 1260px) {
 			@content;
 		}
-	} @else if $point == desktop {
+	}
+    @else if $point == desktop {
 		@media screen and (min-width: 1140px) {
 			@content;
 		}
-	} @else if $point == small-desktop {
+	}
+    @else if $point == small-desktop {
 		@media screen and (min-width: 1024px) {
 			@content;
 		}
-	} @else if $point == nexus {
+	}
+    @else if $point == nexus {
 		@media screen and (min-width: 900px) {
 			@content;
 		}
-	} @else if $point == large-tablet {
+	}
+    @else if $point == tablet {
+      @media screen and (min-width: 800px) {
+        @content;
+      }
+    }
+    @else if $point == large-tablet {
 		@media screen and (min-width: 768px) {
 			@content;
 		}
-	} @else if $point == small-tablet {
+	}
+    @else if $point == small-tablet {
 		@media screen and (min-width: 600px) {
 			@content;
 		}
-	} @else if $point == phablet {
+	}
+    @else if $point == phablet {
 		@media screen and (min-width: 480px) {
 			@content;
 		}
