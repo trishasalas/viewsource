@@ -429,23 +429,32 @@ function vs_scheduled_sessions( $datetime ) {
                 'posts_per_page' => -1,
             )
         );
+//        echo '<pre>';
+//        var_dump( $posts );
+//         echo '</pre>';
         foreach( $posts as $post ) {
             $is_discussion = get_post_meta( $post->ID, 'vs_discussion', true );
             $timestamp = get_post_meta( $post->ID, 'vs_datetime', true );
             $date = gmdate("Ymd", $timestamp);
             $time = gmdate("g:i a", $timestamp);
+            $speakers = get_post_meta( $post->ID, 'view_source_speaker', false );
             $speaker = get_post_meta( $post->ID, 'view_source_speaker', true );
+
 
             if( $date == $datetime &&  $is_discussion == 'yes') :
                 echo '<div class="single-session discussion">';
                 echo '<div class="time">' . $time . '</div>';
-                echo '<a href="' . get_permalink($post->ID) . '">';
+                echo '<a href="' . get_permalink( $post->ID ) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
-                echo '<a href="' . get_permalink($speaker) . '">';
-                echo '<i class="fa fa-plus"></i>';
-                echo '<div class="speaker">' . get_the_title($speaker) . '</div>';
-                echo '</a>';
+
+                foreach ( $speakers as $speaker ) {
+                    echo '<a href="' . get_permalink( $speaker ) . '">';
+                    echo '<i class="fa fa-plus"></i>';
+                    echo '<div class="speaker">' . get_the_title( $speaker ) . '</div>';
+                    echo '</a>';
+                }
+
                 echo '</div>';
             endif;
             if( $date == $datetime &&  empty($is_discussion) ) :
@@ -453,9 +462,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<div class="time">' . $time . '</div>';
                 if( $speaker ) :
                 echo '<div class="headshot">' . get_the_post_thumbnail( $speaker, 'speaker-photo' ) . '</div>';
-                echo '<a href="' . get_permalink($speaker) . '">';
+                echo '<a href="' . get_permalink( $speaker ) . '">';
                 echo '<i class="fa fa-plus"></i>';
-                echo '<div class="speaker">' . get_the_title($speaker) . '</div>';
+                echo '<div class="speaker">' . get_the_title( $speaker ) . '</div>';
                 echo '</a>';
                 endif;
                 echo '<a href="' . get_permalink($post->ID) . '">';
