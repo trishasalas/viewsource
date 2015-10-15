@@ -26,7 +26,7 @@
 		$sessions = array(
 			array( 'id' => 'vs_datetime', 'name' => 'Session Date', 'type' => 'datetime_unix',  'cols' => 4 ),
 			//array( 'id' => 'view_source_session_time', 'name' => 'Session Time', 'type' => 'time',  'cols' => 4 ),
-			array( 'id' => 'view_source_speaker', 'name' => 'Speaker', 'type' => 'post_select', 'use_ajax' => true, 'query' => array( 'post_type' => 'speaker' ),  'cols' => 4 ),
+			array( 'id' => 'view_source_speaker', 'name' => 'Speaker', 'type' => 'post_select', 'use_ajax' => true, 'query' => array( 'post_type' => 'speaker' ),  'cols' => 4, 'repeatable' => 'true' ),
 		);
 
 		$meta_boxes[] = array(
@@ -35,22 +35,7 @@
 			'fields' => $sessions,
 		);
 
-		$speakers = array(
-			array( 
-				'id' => 'view_source_speaker_twitter', 
-				'name' => 'Twitter Handle', 
-				'type' => 'text' 
-				),
-		);
-
-		$meta_boxes[] = array(
-			'title' => 'Speaker Info',
-			'pages' => 'speaker',
-			'context' => 'side',
-			'fields' => $speakers
-		);
-
-		return $meta_boxes;
+        return $meta_boxes;
 
 	}
 	add_filter( 'cmb_meta_boxes', 'cmb_sample_metaboxes' );

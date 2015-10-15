@@ -15,17 +15,26 @@
 				'post_type' => 'speaker',
 				'post_status' => 'publish',
 				'posts_per_page' => -1,
-
 			));
-		foreach( $speakers as $speaker ) {
-			$speaker_session = esc_html( get_post_meta( $speaker->ID, 'view_source_speaker_session', true ) );
+        foreach( $speakers as $speaker ) {
 
-			echo '<li class="speaker">';
-			echo '<a href="#' . $speaker->ID . '"><i class="fa fa-plus"></i></a>';
-			echo '<span class="speaker-info">';
-			echo '<a class="speaker-name" href="#' . $speaker->ID . '">' . $speaker->post_title . '</a>';
-			echo '<span class="company">' . get_the_title( $speaker_session ) . '</span>';
+            echo '<li class="speaker">';
+            echo '<a href="#' . $speaker->ID . '"><i class="fa fa-plus"></i></a>';
+            echo '<span class="speaker-info">';
+            echo '<a class="speaker-name" href="#' . $speaker->ID . '">' . $speaker->post_title . '</a>';
+
+            $sessions = get_field('vs_speaker_session', $speaker->ID);
+            //var_dump($sessions);
+            if (is_array($sessions)) {
+                foreach ($sessions as $session) {
+
+                    echo '<span class="company">' . $session->post_title . '</span>';
+                }
+            } else {
+                echo '<span class="company">' . get_the_title( $sessions ) . '</span>';
+            }
 			echo '</li>';
+
 		}
 	?>
 </ul>
