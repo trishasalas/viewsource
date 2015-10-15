@@ -124,3 +124,17 @@
 		}
 	}
 }
+
+.single-session.discussion {
+  padding: 20px 0;
+  .time {
+    padding-top: 20px;
+  }
+  .title,
+  .speaker {
+    margin-left: 35%;
+  }
+  .speaker {
+    padding: 0;
+  }
+}

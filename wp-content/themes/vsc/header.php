@@ -46,9 +46,9 @@ help support Mozilla.
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'view_source' ); ?></a>
-	<div id="main" class="main">
-		<section id="page-header" class="page-header">
-			<div class="branding" style="width:243px;height: auto;">
+		<section id="page-header" class="page-header page">
+            <div class="inner">
+			<div class="branding">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/branding.svg' );?>
 				</a>
@@ -62,5 +62,7 @@ help support Mozilla.
 				<li><a href="<?php esc_html_e( get_theme_mod( 'facebook' ) );?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
 			</ul>
 			</nav><!-- #site-navigation -->
+            </div>
 			<hr>
 		</section>
+    <div id="main" class="main">

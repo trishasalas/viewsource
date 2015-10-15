@@ -180,6 +180,9 @@
 			}
 		}
 	}
+  a.registration-link {
+    color: white;
+  }
 	.dark {
 		a {
 			color: $white;
@@ -191,6 +194,15 @@
 	.menu-toggle {
 		color: $black;
 	}
+}
+
+#page-header-sticky-wrapper.is-sticky {
+  #page-header {
+    max-width: 100% !important;
+  .inner {
+    @include container(1260px);
+  }
+  }
 }
 
 #masthead {
@@ -219,7 +231,6 @@
 		}
 	}
 }
-
 .main {
 	@include container(1260px);
   padding: 0 70px;

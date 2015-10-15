@@ -48,30 +48,30 @@ section {
 	}
 }
 .page-header {
-
+  @include container(1260px);
 	.branding {
-		width: 242px;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-		padding-bottom: 10px;
+		@include span(6 of 12);
 
-		@include bp(large-tablet) {
-			display: inline-block;
-			float: left;
-		}
 		svg {
+          width: 240px;
 			path {
 				fill: $black;
 			}
 		}
 	}
-	nav {
+  .registration-link {
+    @include span(2 of 12);
+    color: white;
+    margin-left: 0;
+  }
+	.menu-menu-container {
+      @include span(3 of 12);
 		margin-bottom: 60px;
+      text-align: center;
+
 	}
 	.social-media {
-		position: absolute;
-		right: 0;
+		@include span(1 of 12 last);
 	}
 }
 
@@ -148,7 +148,7 @@ hr::before {
 		width: 100%;
 
 		@include bp(large-tablet) {
-			padding: 0 70px;
+			padding: 0 80px;
 		}
 
 		li {

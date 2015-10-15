@@ -418,3 +418,63 @@
 </div>
 
 <?php	}
+
+function vs_scheduled_sessions( $datetime ) {
+    $posts = get_posts(
+            array(
+                'post_type' => 'session',
+                'order' => 'ASC',
+                'orderby' => 'meta_value',
+                'meta_key' => 'vs_datetime',
+                'posts_per_page' => -1,
+            )
+        );
+        foreach( $posts as $post ) {
+            $is_discussion = get_post_meta( $post->ID, 'vs_discussion', true );
+            $timestamp = get_post_meta( $post->ID, 'vs_datetime', true );
+            $date = gmdate("Ymd", $timestamp);
+            $time = gmdate("g:i a", $timestamp);
+            $speaker = get_post_meta( $post->ID, 'view_source_speaker', true );
+
+            if( $date == $datetime &&  $is_discussion == 'yes') :
+                echo '<div class="single-session discussion">';
+                echo '<div class="time">' . $time . '</div>';
+                echo '<a href="' . get_permalink($post->ID) . '">';
+                echo '<div class="title">' . $post->post_title . '</div>';
+                echo '</a>';
+                echo '<a href="' . get_permalink($speaker) . '">';
+                echo '<i class="fa fa-plus"></i>';
+                echo '<div class="speaker">' . get_the_title($speaker) . '</div>';
+                echo '</a>';
+                echo '</div>';
+            endif;
+            if( $date == $datetime &&  empty($is_discussion) ) :
+                echo '<div class="single-session">';
+                echo '<div class="time">' . $time . '</div>';
+                if( $speaker ) :
+                echo '<div class="headshot">' . get_the_post_thumbnail( $speaker, 'speaker-photo' ) . '</div>';
+                echo '<a href="' . get_permalink($speaker) . '">';
+                echo '<i class="fa fa-plus"></i>';
+                echo '<div class="speaker">' . get_the_title($speaker) . '</div>';
+                echo '</a>';
+                endif;
+                echo '<a href="' . get_permalink($post->ID) . '">';
+                echo '<div class="title">' . $post->post_title . '</div>';
+                echo '</a>';
+                echo '</div>';
+            endif;
+            if( $date == $datetime &&  $is_discussion == 'no' ) :
+                echo '<div class="single-session">';
+                echo '<div class="time">' . $time . '</div>';
+                echo '<div class="headshot">' . get_the_post_thumbnail( $speaker, 'speaker-photo' ) . '</div>';
+                echo '<a href="' . get_permalink($speaker) . '">';
+                echo '<i class="fa fa-plus"></i>';
+                echo '<div class="speaker">' . get_the_title($speaker) . '</div>';
+                echo '</a>';
+                echo '<a href="' . get_permalink($post->ID) . '">';
+                echo '<div class="title">' . $post->post_title . '</div>';
+                echo '</a>';
+                echo '</div>';
+            endif;
+        }
+}
