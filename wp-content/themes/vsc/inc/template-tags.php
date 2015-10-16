@@ -449,7 +449,7 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '</a>';
 
                 foreach ( $speakers as $speaker ) {
-                    echo '<a href="' . get_permalink( $speaker ) . '">';
+                    echo '<a href="#' . $post->ID . '">';
                     echo '<i class="fa fa-plus"></i>';
                     echo '<div class="speaker">' . get_the_title( $speaker ) . '</div>';
                     echo '</a>';
@@ -462,7 +462,7 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<div class="time">' . $time . '</div>';
                 if( $speaker ) :
                 echo '<div class="headshot">' . get_the_post_thumbnail( $speaker, 'speaker-photo' ) . '</div>';
-                echo '<a href="' . get_permalink( $speaker ) . '">';
+                echo '<a href="#' . $post->ID . '">';
                 echo '<i class="fa fa-plus"></i>';
                 echo '<div class="speaker">' . get_the_title( $speaker ) . '</div>';
                 echo '</a>';
@@ -476,9 +476,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<div class="single-session">';
                 echo '<div class="time">' . $time . '</div>';
                 echo '<div class="headshot">' . get_the_post_thumbnail( $speaker, 'speaker-photo' ) . '</div>';
-                echo '<a href="' . get_permalink($speaker) . '">';
+                echo '<a href="#' . $post->ID . '">';
                 echo '<i class="fa fa-plus"></i>';
-                echo '<div class="speaker">' . get_the_title($speaker) . '</div>';
+                echo '<div class="speaker">' . get_the_title( $speaker ) . '</div>';
                 echo '</a>';
                 echo '<a href="' . get_permalink($post->ID) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';

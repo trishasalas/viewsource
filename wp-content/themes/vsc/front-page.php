@@ -29,7 +29,7 @@
 	<?php get_template_part( 'template-parts/content', 'speakers' );?>
 </section>
 
-<section id="schedule" class="schedule schedule-front">
+<section id="schedule" class="schedule schedule-front"  style="padding:0 80px;">
 	<?php get_template_part( 'template-parts/content', 'sessions-front' );?>
 </section>
 
