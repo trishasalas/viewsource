@@ -69,8 +69,8 @@ add_action( 'widgets_init', 'view_source_widgets_init' );
 	add_action('template_redirect', 'optimize_jquery');
 
 function view_source_scripts() {
-	//wp_enqueue_style( 'view-source-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
+	wp_enqueue_style( 'view-source-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'vsc-style', get_template_directory_uri() . '/style.min.css' );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), '1.9', true );
 	wp_enqueue_script( 'sidr', get_template_directory_uri() . '/assets/js/sidr.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'konami', get_template_directory_uri() . '/assets/js/konami.min.js', array(), '', true );

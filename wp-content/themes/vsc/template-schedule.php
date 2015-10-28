@@ -11,7 +11,9 @@ get_header(); ?>
 
 <section id="schedule" class="schedule-inner">
     <h2><?php _e( 'Schedule', 'view_source' );?></h2>
-    <p><?php echo esc_html( get_post_meta( get_the_ID(), 'vs_sessions_intro_text', true ) );?></p>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<p><?php the_content();?></p>
+	<?php endwhile; // End of the loop. ?>
     <!-- First Day -->
     <div class="day-one">
         <!-- Day Header -->

@@ -4,7 +4,14 @@
 	 */
 ?>
 	<h2><?php _e ( 'Schedule', 'view_source' ); ?></h2>
-	<p><?php echo esc_html ( get_post_meta ( get_the_ID (), 'vs_sessions_intro_text', true ) ); ?></p>
+	<p><?php echo esc_html ( get_post_meta ( get_the_ID (), 'vs_schedule_intro_text', true ) ); ?></p>
+	<?php
+	 $livestream_info = esc_html ( get_post_meta ( get_the_ID (), 'vs_live_stream_info', true ) );
+	 if( $livestream_info ) :?>
+	<h3><?php _e ( 'Live Stream', 'view_source' ); ?></h3>
+	<p><?php echo $livestream_info; ?></p>
+		 <?php endif;?>
+
 
 <?php
 	$posts = get_field ( 'vs_scheduled_sessions' );

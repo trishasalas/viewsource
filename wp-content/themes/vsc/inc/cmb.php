@@ -43,6 +43,20 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
         'fields' => $sessions,
     );
 
+	$session_location = array(
+		array(
+			'id' => 'view_source_session_location',
+			'name' => 'Location',
+			'type' => 'text'
+		)
+	);
+
+	$meta_boxes[] = array(
+		'title' => 'Session Location',
+		'pages' => 'session',
+		'fields' => $session_location
+	);
+
     $speakers = array(
         array(
             'id' => 'view_source_speaker_twitter',

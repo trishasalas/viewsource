@@ -439,6 +439,7 @@ function vs_scheduled_sessions( $datetime ) {
             $time = gmdate("g:i a", $timestamp);
             $speakers = get_post_meta( $post->ID, 'view_source_speaker', false );
             $speaker = get_post_meta( $post->ID, 'view_source_speaker', true );
+            $location = esc_html( get_post_meta( $post->ID, 'view_source_session_location', true ) );
 
 
             if( $date == $datetime &&  $is_discussion == 'yes') :
@@ -447,6 +448,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<a href="' . get_permalink( $post->ID ) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
+                if( $location ) :
+                echo '<p>' . $location . '</p>';
+                endif;
 
                 foreach ( $speakers as $speaker ) {
                     echo '<a href="#' . $post->ID . '">';
@@ -457,7 +461,7 @@ function vs_scheduled_sessions( $datetime ) {
 
                 echo '</div>';
             endif;
-            if( $date == $datetime &&  empty($is_discussion) ) :
+            if( $date == $datetime &&  empty( $is_discussion ) ) :
                 echo '<div class="single-session">';
                 echo '<div class="time">' . $time . '</div>';
                 if( $speaker ) :
@@ -470,6 +474,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<a href="' . get_permalink($post->ID) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
+                if( $location ) :
+                echo '<p>' . $location . '</p>';
+                endif;
                 echo '</div>';
             endif;
             if( $date == $datetime &&  $is_discussion == 'no' ) :
@@ -483,6 +490,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<a href="' . get_permalink($post->ID) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
+                if( $location ) :
+                echo '<p>' . $location . '</p>';
+                endif;
                 echo '</div>';
             endif;
         }

@@ -26,11 +26,14 @@
 		margin: 0;
 		text-transform: capitalize;
 	}
-	.time-header-time,
-	.time-header-title {
+	.time-header-time {
 		display: inline-block;
-		padding: 20px;
+		padding: 20px 0 20px 35px;
 	}
+  .time-header-title {
+    display: inline-block;
+    padding: 20px 0;
+  }
 
 	.time-header-time {
 		width: 35%;
