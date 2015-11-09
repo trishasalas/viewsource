@@ -72,6 +72,9 @@
 		width: 50%;
 	  }
 	}
+  .location {
+    margin: 0 0 15px 20%;
+  }
 
 	.title {
 		font-family: $font-main;
@@ -90,7 +93,7 @@
 
 		.speaker {
 			font-family: $font-main-bold;
-			padding: 10px 0 10px 0;
+			padding: 10px 0 0 0;
 			line-height: 1.6;
 			text-decoration: none;
 
@@ -132,6 +135,10 @@
   padding: 20px 0;
   .time {
     padding-top: 20px;
+  }
+  .location {
+    margin: 0 0 15px 35%;
+    padding: 15px 0 0 0;
   }
   .title,
   .speaker {

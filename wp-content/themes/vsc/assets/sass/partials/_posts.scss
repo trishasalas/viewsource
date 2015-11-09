@@ -128,3 +128,28 @@ article {
 .sticky-wrapper {
 	margin-bottom: 30px;
 }
+.remodal {
+  a.session-slides {
+    text-transform: uppercase;
+    color: $persian-green !important;
+    text-align: left;
+
+    &:after {
+      content: '\f08e';
+      font-family: 'fontawesome';
+      margin-left: 5px;
+    }
+  }
+}
+
+a.session-slides {
+  text-transform: uppercase;
+  color: $persian-green !important;
+  text-align: left;
+
+  &:after {
+    content: '\f08e';
+    font-family: 'fontawesome';
+    margin-left: 5px;
+  }
+}

@@ -440,6 +440,7 @@ function vs_scheduled_sessions( $datetime ) {
             $speakers = get_post_meta( $post->ID, 'view_source_speaker', false );
             $speaker = get_post_meta( $post->ID, 'view_source_speaker', true );
             $location = esc_html( get_post_meta( $post->ID, 'view_source_session_location', true ) );
+            $slides = esc_url( get_post_meta( $post->ID, 'view_source_session_slides_link', true ) );
 
 
             if( $date == $datetime &&  $is_discussion == 'yes') :
@@ -449,7 +450,7 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
                 if( $location ) :
-                echo '<p>' . $location . '</p>';
+                echo '<p class="location">' . $location . '</p>';
                 endif;
 
                 foreach ( $speakers as $speaker ) {
@@ -474,8 +475,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<a href="' . get_permalink($post->ID) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
-                if( $location ) :
-                echo '<p>' . $location . '</p>';
+                if( $location || $slides) :
+                echo '<p class="location">' . $location . '</p>';
+                echo '<a href="' . $slides . '" class="slides">Session Slides</a>';
                 endif;
                 echo '</div>';
             endif;
@@ -490,8 +492,9 @@ function vs_scheduled_sessions( $datetime ) {
                 echo '<a href="' . get_permalink($post->ID) . '">';
                 echo '<div class="title">' . $post->post_title . '</div>';
                 echo '</a>';
-                if( $location ) :
-                echo '<p>' . $location . '</p>';
+                if( $location || $slides ) :
+                echo '<p class="location">' . $location . '</p>';
+                echo '<a href="' . $slides . '" class="slides">Session Slides</a>';
                 endif;
                 echo '</div>';
             endif;

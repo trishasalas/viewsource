@@ -8,9 +8,9 @@
     display: block;
   }
 
-  .menu-menu-container {
-    @include span(5 of 12);
-  }
+  //.menu-menu-container {
+  //  @include span(5 of 12);
+  //}
 
   ul {
     display: none;
@@ -20,6 +20,7 @@
 
     @include bp(desktop) {
       display: inline-block;
+      float:right;
     }
 
     ul {

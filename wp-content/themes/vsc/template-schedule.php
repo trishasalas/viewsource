@@ -127,7 +127,11 @@ foreach ( $sessions as $session ):
         <h4><?php echo get_the_title( $session->ID ); ?></h4>
 
         <p><?php echo wpautop( get_post_field( 'post_content', $session->ID ) );?></p>
+	    <?php $slides = esc_url( get_post_meta( $session->ID, 'view_source_session_slides_link', true ) );
+	    if( $slides ) : ?>
+	    <a class="session-slides" href="<?php echo $slides;?>">Session Slides</a>
     </div>
+		    <?php endif;?>
 <?php endforeach; ?>
 
 <?php get_footer(); ?>

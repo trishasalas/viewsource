@@ -19,6 +19,13 @@
 
 				<div class="entry-content">
 					<?php the_content(); ?>
+					<?php
+					$speaker = esc_html( get_post_meta( $post->ID, 'view_source_speaker', true ) );
+					$slides = esc_url( get_post_meta( $post->ID, 'view_source_session_slides_link', true ) );
+					if( $speaker ) : echo '<p>Speaker: ' . get_the_title( $speaker ) . '</p>'; endif;
+					if ( $slides ) : echo '<a class="session-slides" href="' . $slides . '">Session Slides</a>'; endif;
+					?>
+
 				</div><!-- .entry-content -->
 
 				<footer class="entry-footer">

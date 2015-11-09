@@ -57,6 +57,20 @@ function cmb_sample_metaboxes( array $meta_boxes ) {
 		'fields' => $session_location
 	);
 
+	$session_slides = array(
+		array(
+			'id' => 'view_source_session_slides_link',
+			'name' => 'Session Slides Link',
+			'type' => 'url'
+		)
+	);
+
+	$meta_boxes[] = array(
+		'title' => 'Slides',
+		'pages' => 'session',
+		'fields' => $session_slides
+	);
+
     $speakers = array(
         array(
             'id' => 'view_source_speaker_twitter',
